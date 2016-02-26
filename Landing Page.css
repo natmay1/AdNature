@@ -1,0 +1,33 @@
+body {
+    background-color: #FEF0EC;
+    display:inline;
+}
+
+@font-face {
+    font-family: "Overlock";
+    src: url("overlock-regular.ttf");
+}
+.realtitle {
+    font-family: Overlock;
+    font-size: 40pt;
+    
+}
+
+.title {
+    font-family: "Calibri";
+    font-style: bold;
+    font-size: 28pt;
+    background-color: none;
+    display:inline;
+    
+}
+.thirty {
+    color: darkgoldenrod;
+    font-style: bold;
+    display:inline;
+}
+
+.header {
+    text-align: center;
+    
+}
