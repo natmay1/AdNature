@@ -1,0 +1,30 @@
+Body {
+    background-image: url(Profile%20Background.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.cover {
+    position: relative;
+    left: 0; 
+    top: 0; 
+}
+
+.BlueBG {
+    position: relative; 
+    top: 0; 
+    left: 0;
+}
+
+.Logo {
+    position: absolute; 
+    top: 30px; 
+    left: 70px;
+}
+
+.Triangle {
+     position: absolute; 
+    top: 30px; 
+    left: 600px;
+    
+}
