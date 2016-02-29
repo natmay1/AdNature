@@ -103,10 +103,9 @@
 }
 
     
-}
 
 .page {
-    background-color: #fbe4d4;
+    background-color: #fbe4d4
 }
 
 
@@ -114,13 +113,19 @@
 .pic {
     
     float: left;
-    border: 5px;
-    width: 300px;
-    padding: 100px 100px; 
-    background-color: #fbe4d4;
+    width: 310px;
+    padding: 100px; 
+    background-color: #fbe4d4;  
+    margin: auto;
+}
 
+.about {
     
-    
+    float: left;
+    text-align: center;
+    margin: auto;
+    width: 899px;
+    padding 100px;
 }
 
 @font-face {
@@ -140,7 +145,7 @@
     
 }
 .tile {
-    width: 220px;
+    width: 15%;
     height: 280px;
     margin: 10px;
     padding: 55px;
@@ -212,19 +217,24 @@
     
     font-size: 20pt;
    font-family: Overlock;
-}
 
-.about {
+}
+.disclaimer {
     
     float: left;
-    text-align: center;
-    margin: auto;
-    width: 800px;
-    padding 100px 100px;
-
-
+    margin-left: 50px;
+    width: 30%;
+    
 }
 .backgroundcolor {
     
     background-color: #fbe4d4;
+}
+.sharing {
+    
+    float: center;
+    width: 50px;
+    padding: 30px;
+    border: 30px;
+    width: auto;
 }
