@@ -1,0 +1,14 @@
+.background {
+    
+    background-image: url(backgroundforest.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.image {
+    
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+}
+.header {
+    text-align: center;
+}
