@@ -94,7 +94,9 @@
     padding: 14px 25px;
     font-size: 16px;
     margin: 4px 2px;
-    color: White
+    color: White;
+        
+ 
 }
 
 .center {
@@ -114,9 +116,13 @@
     
     float: left;
     width: 310px;
-    padding: 100px; 
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 30px;
     background-color: #fbe4d4;  
-    margin: auto;
+    margin:auto;
+    position: relative;
+    top:0px;
 }
 
 .about {
@@ -226,9 +232,14 @@
     width: 30%;
     
 }
+
+
 .backgroundcolor {
-    
+
     background-color: #fbe4d4;
+    padding-right: 94px;
+    
+    
 }
 .sharing {
     
