@@ -1,0 +1,19 @@
+
+  @font-face {
+    font-family: "Overlock";
+      src: url("overlock-regular.ttf");}
+.header {
+    padding: 20px;
+    text-align: center;
+    font-family: "Overlock";
+    font-size: 35pt;
+}
+.info {
+    float: center;
+    margin-left: 300px;
+    width: 900px;
+    text-align: left;
+    font-family: "Overlock";
+    font-size: 20pt;
+    
+}
