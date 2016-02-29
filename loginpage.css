@@ -3,6 +3,7 @@
     background-image: url(backgroundforest.png);
     background-repeat: no-repeat;
     background-size:cover;
+    font-family: calibri;
 }
 .image {
     
@@ -11,4 +12,13 @@
 }
 .header {
     text-align: center;
+}
+
+#signup {
+    font-size: 24pt;
+}
+
+#othertext {
+    font-size: 18pt;
+    
 }
