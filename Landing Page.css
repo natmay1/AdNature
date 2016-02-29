@@ -40,7 +40,8 @@
     
 }
 .text1{
-    text-indent: 20px;
+    position: relative;
+    left: 40px;
     
 }
 .text3{
@@ -72,6 +73,9 @@
     font-size: 18pt;
     
 }
-
+.slider {
+    font-family: calibri;
+    font-size: 18pt;
+}
 
 
