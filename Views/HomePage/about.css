@@ -1,0 +1,32 @@
+
+  @font-face {
+    font-family: "Overlock";
+      src: url("overlock-regular.ttf");}
+.header {
+    padding: 20px;
+    text-align: center;
+    font-family: "Overlock";
+    font-size: 35pt;
+}
+.info {
+    float: center;
+    margin-left: 300px;
+    width: 900px;
+    text-align: left;
+    font-family: "Overlock";
+    font-size: 20pt;
+    
+}
+
+#button4 {
+    
+    background-color: #035208;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border: 5px solid #035208;
+    padding: 14px 25px;
+    font-size: 16px;
+    margin: 4px 2px;
+    color: White;
+    text-align: center
+} 
