@@ -32,38 +32,43 @@
 
 .signup {
      text-align: center;
-    
-    
 }
 
 #Username {
     font-family: calibri;
     font-size: 18pt;
-    
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
 }
 #Email {
     font-family: calibri;
     font-size: 18pt;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
 }
 #PhoneNum {
     font-family: calibri;
     font-size: 18pt;
-
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
 }
 
 #Password {
     font-family: calibri;
     font-size: 18pt;
-    
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
 }
 
 #confirmPassword {
     font-family: calibri;
     font-size: 18pt;
-    
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
 }
 
-#button5 {
+
+.button5 {
 background-color: #035208;
     -moz-border-radius: 15px;
     -webkit-border-radius: 15px;
@@ -72,10 +77,6 @@ background-color: #035208;
     font-size: 16px;
     margin: 4px 2px;
     color: White;
-    position: absolute;
-    left:600px;
-    bottom: 10px;
-    
-        
-    
+    margin:auto;
+    display:block;   
 }
