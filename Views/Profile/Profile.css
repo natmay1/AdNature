@@ -126,11 +126,14 @@ Body {
 }
 .activities {
     
+    display: inline;
+    margin-left: auto;
+    margin-right: auto; 
     width: 180px;
     float: left;
     padding: 10px;
     text-align: center;       
-    display: inline-block;
+
     
 }
 
