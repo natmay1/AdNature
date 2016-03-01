@@ -1,10 +1,14 @@
 .background {
     
-    background-image: url(backgroundforest.png);
+    background-image: url(background%20forest%20transparent.png);
     background-repeat: no-repeat;
     background-size:cover;
+    background-position: center;
     font-family: calibri;
+    position: relative;
+    
 }
+
 .image {
     
     opacity: 0.4;
@@ -14,11 +18,64 @@
     text-align: center;
 }
 
-#signup {
-    font-size: 24pt;
+#sign {
+    font-size: 30pt;
+    text-align: center;
+
 }
 
 #othertext {
     font-size: 18pt;
+    text-align: center;
+
+}
+
+.signup {
+     text-align: center;
+    
+    
+}
+
+#Username {
+    font-family: calibri;
+    font-size: 18pt;
+    
+}
+#Email {
+    font-family: calibri;
+    font-size: 18pt;
+}
+#PhoneNum {
+    font-family: calibri;
+    font-size: 18pt;
+
+}
+
+#Password {
+    font-family: calibri;
+    font-size: 18pt;
+    
+}
+
+#confirmPassword {
+    font-family: calibri;
+    font-size: 18pt;
+    
+}
+
+#button5 {
+background-color: #035208;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border: 5px solid #035208;
+    padding: 14px 25px;
+    font-size: 16px;
+    margin: 4px 2px;
+    color: White;
+    position: absolute;
+    left:600px;
+    bottom: 10px;
+    
+        
     
 }
