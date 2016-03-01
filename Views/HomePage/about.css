@@ -7,6 +7,7 @@
     text-align: center;
     font-family: "Overlock";
     font-size: 35pt;
+    position: relative;
 }
 .info {
     float: center;
@@ -15,6 +16,7 @@
     text-align: left;
     font-family: "Overlock";
     font-size: 20pt;
+    position: absolute;
     
 }
 
