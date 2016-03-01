@@ -106,3 +106,28 @@ Body {
     top: -60px; 
     left: 22px;
 }
+.header {
+    
+    text-align: center;
+    font-size: 25pt;
+}
+.paragraph {
+    
+    text-align: center;
+}
+
+.selections {
+    
+    width: 170px;
+    padding: 50px;
+    float: left;
+}
+.activities {
+    
+    width: 180px;
+    float: left;
+    padding: 10px;
+    text-align: center;       
+    display: inline-block;
+    
+}
