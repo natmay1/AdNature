@@ -167,9 +167,9 @@
  } 
 
 .tile {
-    width: 18%;
+    width: 22%;
     height: 280px;
-    margin: 10px;
+    margin-bottom: 100px;
     padding: 55px;
     float: left;
     text-align: center;
@@ -188,6 +188,7 @@
 }
 .image3 {
     float:right;
+    padding-left: 10px;
     
 }
 .image4 {
