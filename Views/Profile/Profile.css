@@ -1,0 +1,136 @@
+Body {
+    background-image: url(Profilebackground.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    
+}
+
+.cover {
+    position: relative;
+    left: 0; 
+    top: 0; 
+}
+
+.BlueBG {
+    /*position: relative; 
+    top: 0; 
+    left: 0;*/
+}
+
+.Logo {
+    position: absolute; 
+    top: 30px; 
+    left: 70px;
+}
+
+.Triangle {
+    position: absolute; 
+    top: 140px; 
+    left: 560px;
+    
+}
+
+.Skiier {
+    position: absolute;
+     top: 130px; 
+    left: 600px;
+    
+    
+}
+#signout {
+    position: absolute; 
+    top: 10px; 
+    left: 1225px;
+     background-color: #035208;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border: 5px solid #035208;
+    padding: 14px 25px;
+    font-size: 16px;
+    margin: 4px 2px;
+    color: White
+}
+
+#customize {
+    position: absolute; 
+    top: 300px; 
+    left: 50px;
+    background-color: #035208;    
+    border: 5px solid #035208;
+    padding: 8px 12px;
+    font-size: 16px;
+    margin: 4px 2px;
+    color: White
+    
+}
+
+.name {
+    font-weight: bold;
+    font-family: calibri;
+    font-size: 32pt;
+    position: absolute;
+    top:360px;
+    left: 555px;
+}
+
+#City {
+    font-weight: bold;
+    font-family: calibri;
+    font-size: 18pt;
+    position: absolute;
+    top: 410px; 
+    left: 50px;
+    
+}
+
+#Type {
+    font-weight: bold;
+    font-family: calibri;
+    font-size: 18pt;
+    position: absolute;
+    top: 500px;
+    left:50px;
+}
+#Activities {
+     font-weight: bold;
+    font-family: calibri;
+    font-size: 18pt;
+    position: absolute;
+    top: 300px; 
+    left: 1100px;
+    
+}
+#Schedule {
+     font-weight: bold;
+    font-family: calibri;
+    font-size: 18pt;
+    position: absolute;
+    top: 540px; 
+    left: 580px;
+}
+.header {
+    
+    text-align: center;
+    font-size: 25pt;
+}
+.paragraph {
+    
+    text-align: center;
+}
+
+.selections {
+    
+    width: 170px;
+    padding: 50px;
+    float: left;
+}
+.activities {
+    
+    width: 180px;
+    float: left;
+    padding: 10px;
+    text-align: center;       
+    display: inline-block;
+    
+}
+

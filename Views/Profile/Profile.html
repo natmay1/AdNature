@@ -1,0 +1,259 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="Profile.css">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    </head>
+       
+    <body>
+        <div class="Profile">
+            
+          
+            
+            <div class="cover">
+                <div class="BlueBG"><img src="Blue%20Background.png" width=1350px height=270px></div>
+                <div class="Logo"><img src="Logo.png" ></div>
+            </div>
+            
+            <div class="Triangle"><img src="Green%20Triangle.png" width=235 height=213/></div>
+            
+            <a href="Adnature.html"><button type="button" id="signout">Sign Out</button></a>
+            <a href="#myModal" data-toggle="modal"> <button type="button" id="customize">Customize your <br> profile</button> </a>   
+            <div class="Skiier"><img src="skiier.png" height="250" width="195"></div>
+            
+            <div class="name">Renata Burns</div>    
+            
+            
+            <div id="City">City: </div>
+            <div id="Type">Enjoys activities that are:</div>
+            <div id="Activities">Favourite activities:</div>
+            <div id="Schedule">Renata's Schedule:</div>
+            
+        </div>
+            
+            <!-- Trigger the modal with a button -->
+  
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <header class="header">Customize your Profile</header>
+            <p class="paragraph">Let us get to know you, so we can find the best activity spots near you!
+</p>
+        </div>
+        <div class="modal-body">
+          <form role="form">
+            <div class="form-group"> 
+              <input type="text" class="form-control" placeholder="City">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control"  placeholder="Postal Code">
+            </div>
+           <div class="form-group">
+              <input type="text" class="form-control"  placeholder="Province">
+              </div>
+              <a href="#my2Modal" data-toggle="modal"><button type="submit" class="btn btn-default btn-success btn-block"> Continue</button></a>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-default btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div> 
+</div>
+        
+          <div class="modal fade" id="my2Modal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <header class="header">Customize your Profile</header>
+            <p class="paragraph">Fitness Level: (Choose all that apply)
+</p>
+        </div>
+        <div class="modal-body">
+          <form role="form">
+          <div class="selections">
+              <button type="submit" class="btn btn-primary btn-lg" > Low </button>
+              <p>easy or low impact sports such as walking or swimming</p>
+              </div>
+              <div class="selections">
+                  <button type="submit" class="btn btn-primary btn-lg" > Medium </button>
+                  <p>more physically intensive sports such as bicycling or running</p>
+            </div>
+            <div class="selections">
+                <button type="submit" class="btn btn-primary btn-lg" > High </button>
+                <p>extreme sports or sports that require more vigorous effort such as mountain biking or rock climbing</p>
+              </div>
+              <a href="#my3Modal" data-toggle="modal"><button type="submit" class="btn btn-default btn-success btn-block"> Continue</button></a>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-default btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div> 
+</div>
+    
+      <div class="modal fade" id="my3Modal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <header class="header">Low Impact Activities</header>
+            <p class="paragraph">Choose activities that you enjoy:
+(click all that apply)
+
+</p>
+        </div>
+        <div class="modal-body">
+          <form role="form">
+          <div class="activities">
+              <button type="submit" class="btn btn-primary" > fruit picking </button> </div>
+                        <div class="activities">
+                            <button type="submit" class="btn btn-primary" > snow shoeing </button>  </div>        <div class="activities">
+
+                            <button type="submit" class="btn btn-primary" > walking </button>   </div>       <div class="activities">
+
+                            <button type="submit" class="btn btn-primary" > fishing </button>  </div>        <div class="activities">
+
+                            <button type="submit" class="btn btn-primary" > dog walking </button>   </div>       <div class="activities">
+
+                            <button type="submit" class="btn btn-primary" > photography </button>   </div>       <div class="activities">
+
+                            <button type="submit" class="btn btn-primary" > picnicking </button> </div>         <div class="activities">
+
+                            <button type="submit" class="btn btn-primary" > camping </button></div>          <div class="activities">
+
+               <button type="submit" class="btn btn-primary" > <input type="text" placeholder="other"></input> </button>
+</div>
+              <a href="#my4Modal" data-toggle="modal"><button type="submit" class="btn btn-default btn-success btn-block"> Continue</button></a>
+          </form>
+      
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-default btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div> 
+</div>
+
+<div class="modal fade" id="my4Modal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <header class="header">Medium Impact Activities
+</header>
+            <p class="paragraph">Choose activities that you enjoy:
+(click all that apply)
+
+</p>
+        </div>
+        <div class="modal-body">
+          <form role="form">
+              <div class="activities">
+              <button type="submit" class="btn btn-primary" > kayaking </button>
+              </div>
+             <div class="activities">
+                 <button type="submit" class="btn btn-primary" > swimming </button></div>
+             <div class="activities">
+                 <button type="submit" class="btn btn-primary" > casual biking </button></div>
+                  <div class="activities">
+                      <button type="submit" class="btn btn-primary" > running </button> </div> <div class="activities">
+                      <button type="submit" class="btn btn-primary" > baseball </button> </div> <div class="activities">
+                      <button type="submit" class="btn btn-primary" > horseback riding </button> </div><div class="activities">
+                      <button type="submit" class="btn btn-primary" > stand up paddle boarding </button> </div> <div class="activities">
+                      <button type="submit" class="btn btn-primary" > basketball </button> </div><div class="activities">
+                      <button type="submit" class="btn btn-primary" > cross-country skiing </button> </div> <div class="activities">
+                      <button type="submit" class="btn btn-primary" > soccer </button> </div> <div class="activities">
+                      <button type="submit" class="btn btn-primary" > rowing </button> </div> <div class="activities">
+                      <button type="submit" class="btn btn-primary" > canoeing </button> </div><div class="activities">
+                      <button type="submit" class="btn btn-primary" > hiking </button></div>
+                      <div class="activities">
+               <button type="submit" class="btn btn-primary" > <input type="text" placeholder="other"></input> </button>
+</div>
+              <a href="#my5Modal" data-toggle="modal"><button type="submit" class="btn btn-default btn-success btn-block"> Continue</button></a>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-default btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div> 
+</div>
+
+<div class="modal fade" id="my5Modal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <header class="header">High Impact Activities</header>
+            <p class="paragraph">Choose activities that you enjoy:
+(click all that apply)
+</p>
+        </div>
+        <div class="modal-body">
+          <form role="form">
+          <div class="activities">
+              <button type="submit" class="btn btn-primary" > road biking </button>
+              </div>
+              <div class="activities">
+                  <button type="submit" class="btn btn-primary" > cliff diving </button>
+            </div>
+              <div class="activities">
+              <button type="submit" class="btn btn-primary" > mountain biking </button>
+          </div>
+              <div class="activities">
+               <button type="submit" class="btn btn-primary" > rock climbing </button>
+        </div>
+              <div class="activities">
+              <button type="submit" class="btn btn-primary" > tobaganning </button>
+    </div>
+              <div class="activities">
+               <button type="submit" class="btn btn-primary" > surfing  </button>
+</div>
+              <div class="activities">
+              <button type="submit" class="btn btn-primary" > downhill skiing/snowboarding </button>
+</div>
+              <div class="activities">
+                  <button type="submit" class="btn btn-primary" > waterskiing </button></div>
+              <div class="activities">
+                  <button type="submit" class="btn btn-primary" > wakeboarding </button></div>
+              <div class="activities">
+              <button type="submit" class="btn btn-primary" > windsurfing </button>
+            </div>
+              <div class="activities">
+               <button type="submit" class="btn btn-primary" > <input type="text" placeholder="other"></input> </button>
+</div>
+              
+              <button type="submit" class="btn btn-default btn-success btn-block"> Continue</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-default btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div> 
+</div>
+    </body>
+</html>
+    
+<!--<img src="Green%20Button.png" width=100 height=50> -->
