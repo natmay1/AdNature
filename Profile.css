@@ -12,9 +12,9 @@ Body {
 }
 
 .BlueBG {
-    position: relative; 
+    /*position: relative; 
     top: 0; 
-    left: 0;
+    left: 0;*/
 }
 
 .Logo {
@@ -32,8 +32,8 @@ Body {
 
 .Skiier {
     position: absolute;
-     top: 140px; 
-    left: 560px;
+     top: 130px; 
+    left: 600px;
     
     
 }
@@ -68,16 +68,18 @@ Body {
     font-weight: bold;
     font-family: calibri;
     font-size: 32pt;
-    position: relative;
-    top:-20px;
+    position: absolute;
+    top:360px;
+    left: 555px;
 }
 
 #City {
     font-weight: bold;
     font-family: calibri;
     font-size: 18pt;
-    position: relative;
-    left:-510px;
+    position: absolute;
+    top: 410px; 
+    left: 50px;
     
 }
 
@@ -85,26 +87,26 @@ Body {
     font-weight: bold;
     font-family: calibri;
     font-size: 18pt;
-    position: relative;
-    left:-510px;
-    top: 50px;
+    position: absolute;
+    top: 500px;
+    left:50px;
 }
 #Activities {
      font-weight: bold;
     font-family: calibri;
     font-size: 18pt;
-    position: relative;
-    top: -220px; 
-    left: 450px;
+    position: absolute;
+    top: 300px; 
+    left: 1100px;
     
 }
 #Schedule {
      font-weight: bold;
     font-family: calibri;
     font-size: 18pt;
-    position: relative;
-    top: -60px; 
-    left: 22px;
+    position: absolute;
+    top: 540px; 
+    left: 580px;
 }
 .header {
     
