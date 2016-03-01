@@ -4,13 +4,20 @@
         <title>AdNature | outdoor recreation locating tool</title>
         
         <link rel="stylesheet" type="text/css" href="Style.css">
+           <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
     <body>
         <div class="hi">
         <div class="header">
         <img id="logo" src="../logo.png" alt="Logo" style="10px" float="left" margin-left="20px" >
         <div id="buttons">
-        <button type="button" id="button3" >Log In</button>
+            <button type="button" id="button3" data-toggle="modal" data-target="#loginModal">Log In</button></a>
         <a href="../Signuppage/signuppage.html"
            <button type="button" id="button4">Sign Up</button></a>
         </div>
@@ -135,6 +142,41 @@
         Copyright &copy; AdNature. All rights reserved.
 AdNature is not responsible for what you do in nature.
             </p></div>
+
+
+
+<!--- login Modal -->
+ <div class="modal fade" id="loginModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <header class="h1">Log In</header>
+    
+        </div>
+        <div class="modal-body">
+          <form role="form">
+              <div class="glow">
+              <input type="text" placeholder="Username">
+              <br>
+              <br>
+              <input type="text" placeholder="Password" >
+            <br>
+              <br>
+              </div>
+              <button type="submit" class="btn btn-default btn-success btn-block"> Log in</button>
+            
+          </form>
+      
+        <div class="modal-footer">
+           <button type="submit" class="btn btn-default btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div> 
+</div>
+
     </body>
     
     
