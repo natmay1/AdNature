@@ -8,7 +8,7 @@
     float: center;
     width: 500px;
     margin-left: 497px;
-    margin-top: 200px;
+    margin-top: 130px;
 
 }
 
@@ -16,6 +16,7 @@ form{
 	width:600px;
 	margin:0 auto;
     margin-left: 470px;
+    margin-top: 0px;
 }
 .search { 
 	padding:6px 15px 6px 30px;
@@ -27,7 +28,7 @@ input[type=text]{
 }
 input[type=button], input[type=button]:hover {
 	position:relative; 
-	left:-6px;
+	left: 5px;
 	border:1px solid #adc5cf;
 	background: #e4f1f9; /* Old browsers */
 	background: -moz-linear-gradient(top, #e4f1f9 0%, #d5e7f3 100%); /* FF3.6+ */
@@ -41,7 +42,7 @@ input[type=button], input[type=button]:hover {
 	cursor: pointer;
 }
 .lighter {
-	width:95%;
+	width:100%;
 	height:50px;
 	padding:40px 25px;
     
