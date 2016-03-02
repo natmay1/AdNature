@@ -168,12 +168,13 @@
 
 .tile {
     width: 22%;
-    height: 280px;
+    height: 350px;
     margin-bottom: 100px;
-    padding: 55px;
+    padding: 30px;
     float: left;
     text-align: center;
-    
+    /*border: 1px solid black;*/
+
      
 }
 
@@ -186,25 +187,39 @@
     text-align: center;
     
 }
+.image1 {
+    padding-top: 100px;
+}
+.image2 {
+    padding-left: 80px;
+    
+}
 .image3 {
     float:right;
-    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 70px;
     
 }
 .image4 {
     float: right;
+    padding-left: 50px;
 }
     
     
 }
 .text1{
-    position: relative;
-    left: 40px;
+    position: absolute;
+    left: 50px;
     
 }
-.text3{
+.text2 {
     position: relative;
-    left: 40px;
+    left: 15px;    
+}
+
+.text3{
+   position: relative;
+    left: 20px;
 }
 
 .secondtitle {
@@ -253,7 +268,8 @@
     
     float: left;
     margin-left: 50px;
-    width: 30%;
+    width: 90%;
+    text-align: center;
     
 }
 
