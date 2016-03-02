@@ -7,7 +7,7 @@
 .header {
     
     background-color: white;
-       position: fixed;
+    position: fixed;
     left: 0;
     top: 0;
     width: 100%;
@@ -139,7 +139,7 @@
     float: left;
     text-align: center;
     margin: auto;
-    width: 1240px;
+    width: 100%;
     padding 100px;
     padding-right: 94px;
     border: 1px solid black;
@@ -179,16 +179,27 @@
 }
 
 .tile2 {
-    width: 520px;
-    height: 261px;
+    width: 100%;
+    height: 201px;
     margin: 10px;
     padding: 50px;
     float: left;    
     text-align: center;
     
 }
+.tile3 {
+    width: 100%;
+    height: 250px;
+    float: left;    
+    text-align: center;
+    top: 1300px;
+    
+}
 .image1 {
     padding-top: 100px;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    border: 20px;
 }
 .image2 {
     padding-left: 80px;
@@ -212,15 +223,7 @@
     left: 50px;
     
 }
-.text2 {
-    position: relative;
-    left: 15px;    
-}
 
-.text3{
-   position: relative;
-    left: 20px;
-}
 
 .secondtitle {
     font-family: "Calibri";
