@@ -36,6 +36,7 @@
     
     float: right;
     margin-right: 50px;
+    margin-top: 10px;
     
 }
 
@@ -178,9 +179,10 @@
      
 }
 
+
 .tile2 {
     width: 100%;
-    height: 201px;
+    height: 150px;
     margin: 10px;
     padding: 50px;
     float: left;    
@@ -188,11 +190,12 @@
     
 }
 .tile3 {
-    width: 100%;
-    height: 250px;
+    width: 274px;
+    height: 238px;
     float: left;    
     text-align: center;
     top: 1300px;
+    margin-left: 600px;
     
 }
 .image1 {
@@ -249,10 +252,6 @@
     font-size: 18pt;
     
 }
-.slider {
-    font-family: calibri;
-    font-size: 18pt;
-}
 
 
 #h2 {
@@ -275,6 +274,7 @@
     text-align: center;
     
 }
+
 
 .sharing {
     
