@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.adnature.domain.sport.query.SportQuery">
+
+	<select id="findSportByUserId" parameterType="String" resultType="Sport">
+		SELECT 
+			S.ID AS ID, 
+			S.NAME AS NAME, 
+			S.FITNESS_LEVEL AS FITNESS_LEVEL
+			FROM SPORT S , SPORT_USER SU
+			<where>
+				AND S.ID =  SU.SPORT_ID
+				<if test="userId!=null">
+				AND SU.USER_ID = #{userId}
+				</if>
+			</where>
+	</select>
+
+</mapper>
