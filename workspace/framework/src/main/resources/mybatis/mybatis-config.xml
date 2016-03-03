@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!-- See http://mybatis.github.io/mybatis-3/configuration.html#settings -->
+    <settings>
+        <setting name="mapUnderscoreToCamelCase" value="true" />
+        <setting name="lazyLoadingEnabled" value="true" />
+        <setting name="aggressiveLazyLoading" value="false" />
+<!--
+        <setting name="defaultExecutorType" value="REUSE" />
+        <setting name="jdbcTypeForNull" value="NULL" />
+        <setting name="proxyFactory" value="JAVASSIST" />
+        <setting name="localCacheScope" value="STATEMENT" />
+-->
+    </settings>
+
+    <typeAliases>
+    	<!-- //TODOBUG 
+        <package name="com.adnature.domain.workflow.criteria" />
+        <package name="com.adnature.domain.workflow.entity" />
+        <package name="com.adnature.domain.workflow.dto" />
+        <package name="com.adnature.domain.workflow.repository" />
+        <package name="com.adnature.domain.workflow.query" />
+        -->
+        <package name="com.adnature.domain.system.criteria" />
+        <package name="com.adnature.domain.system.entity" />
+        <package name="com.adnature.domain.system.dto" />
+        <package name="com.adnature.domain.system.repository" />
+        <package name="com.adnature.domain.system.query" />
+        
+        <package name="com.adnature.domain.user.criteria" />
+        <package name="com.adnature.domain.user.entity" />
+        <package name="com.adnature.domain.user.dto" />
+        <package name="com.adnature.domain.user.repository" />
+        <package name="com.adnature.domain.user.query" />  
+        
+        <package name="com.adnature.domain.cms.criteria" />
+        <package name="com.adnature.domain.cms.entity" />
+        <package name="com.adnature.domain.cms.dto" />
+        <package name="com.adnature.domain.cms.repository" />
+        <package name="com.adnature.domain.cms.query" />
+        
+        <package name="com.adnature.domain.message.criteria" />
+        <package name="com.adnature.domain.message.entity" />
+        <package name="com.adnature.domain.message.dto" />
+        <package name="com.adnature.domain.message.repository" />
+        <package name="com.adnature.domain.message.query" /> 
+           
+        <package name="com.adnature.domain.sport.criteria" />
+        <package name="com.adnature.domain.sport.entity" />
+        <package name="com.adnature.domain.sport.dto" />
+        <package name="com.adnature.domain.sport.repository" />
+        <package name="com.adnature.domain.sport.query" />
+        
+        <package name="com.adnature.domain.profile.criteria" />
+        <package name="com.adnature.domain.profile.entity" />
+        <package name="com.adnature.domain.profile.dto" />
+        <package name="com.adnature.domain.profile.repository" />
+        <package name="com.adnature.domain.profile.query" />
+    
+           
+<!--
+        <package name="xxxxxx.yyyyyy.zzzzzz.infra.mybatis.typehandler" />
+-->
+    </typeAliases>
+
+    <typeHandlers>
+<!--
+        <package name="xxxxxx.yyyyyy.zzzzzz.infra.mybatis.typehandler" />
+-->
+    </typeHandlers>
+	<plugins>
+		<plugin
+			interceptor="com.adnature.framework.aop.pagination.interceptor.PaginationInterceptor">
+			<property name="dialect" value="MySql" />
+			<property name="pageRowCount" value="10" />
+			<property name="sqlPattern" value=".*findPage*.*" />
+		</plugin>
+		<plugin
+			interceptor="com.adnature.framework.aop.update.interceptor.UpdateQueueInterceptor">
+		</plugin>
+	</plugins>
+</configuration>
