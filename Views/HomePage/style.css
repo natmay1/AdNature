@@ -118,6 +118,7 @@
 .page {
     background-color: #fbe4d4;
     text-align: center;
+     border: 1px solid black;
     
 }
 
@@ -126,10 +127,8 @@
 .pic {
     
     float: left;
-    width: 310px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 30px;
+    width: 500px;
+    padding: 100px;
     background-color: #fbe4d4; 
     
     
@@ -141,11 +140,7 @@
     text-align: center;
     margin: auto;
     width: 100%;
-    padding 100px;
-    padding-right: 94px;
     border: 1px solid black;
-    overflow: hidden;
-    white-space: nowrap;
 }
 
 @font-face {
@@ -195,7 +190,8 @@
     float: left;    
     text-align: center;
     top: 1300px;
-    margin-left: 600px;
+    margin-left: 50%;
+     transform: translate(-50%);
     
 }
 .image1 {
@@ -269,8 +265,8 @@
 .disclaimer {
     
     float: left;
-    margin-left: 50px;
-    width: 90%;
+    margin-left: 50%;
+    transform: translate(-50%);
     text-align: center;
     
 }
