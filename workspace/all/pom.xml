@@ -404,57 +404,6 @@
 		        </exclusion>
 			</exclusions>
 		</dependency>
-		<dependency>
-			<groupId>fakepath</groupId>
-			<artifactId>payment</artifactId>
-			<classifier>jdk5</classifier>
-			<version>1.6</version>
-			<exclusions>
-				<exclusion>
-		            <artifactId>xercesImpl</artifactId>
-		            <groupId>xerces</groupId>
-		        </exclusion>
-			</exclusions>
-
-		</dependency>
-		<dependency>
-			<groupId>fakepath</groupId>
-			<artifactId>tools</artifactId>
-			<version>1.4.0</version>
-			<exclusions>
-				<exclusion>
-		            <artifactId>xercesImpl</artifactId>
-		            <groupId>xerces</groupId>
-		        </exclusion>
-			</exclusions>
-		</dependency>
-		<!-- <dependency> <groupId>fakepath</groupId> <artifactId>log4j</artifactId> 
-			<version>1.2.15</version> </dependency> -->
-		<dependency>
-			<groupId>fakepath</groupId>
-			<artifactId>ojdbc</artifactId>
-			<version>6</version>
-			<exclusions>
-				<exclusion>
-		            <artifactId>xercesImpl</artifactId>
-		            <groupId>xerces</groupId>
-		        </exclusion>
-			</exclusions>
-		</dependency>
-		
-		<!-- 图片裁剪工具 -->
-		<dependency>
-			<groupId>fakepath</groupId>
-			<artifactId>thumbnailator</artifactId>
-			<version>0.4.8</version>
-			<exclusions>
-				<exclusion>
-		            <artifactId>xercesImpl</artifactId>
-		            <groupId>xerces</groupId>
-		        </exclusion>
-			</exclusions>
-		</dependency>
-		<!-- 图片裁剪工具 -->
 		
 		<dependency>
 			<groupId>commons-httpclient</groupId>
