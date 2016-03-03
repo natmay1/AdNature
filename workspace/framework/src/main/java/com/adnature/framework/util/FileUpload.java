@@ -16,7 +16,7 @@ import javax.imageio.ImageIO;
 import javax.imageio.ImageWriteParam;
 import javax.imageio.ImageWriter;
 
-import net.coobird.thumbnailator.Thumbnails;
+//import net.coobird.thumbnailator.Thumbnails;
 
 import org.apache.commons.io.IOUtils;
 
@@ -83,11 +83,11 @@ public class FileUpload implements Serializable {
         FileOutputStream fos = new FileOutputStream(originalPath + newName);
         FileOutputStream fosThumb = new FileOutputStream(thumbPath + newName);
         FileOutputStream fosBig = new FileOutputStream(bigPath + newName);
-        Thumbnails.of(fisBig).size(670, 670).toOutputStream(fosBig);
+        // TODO Thumbnails.of(fisBig).size(670, 670).toOutputStream(fosBig);
 
         // 如果图片小于50Kb不压缩
         if (file.length() < 50 * 1024) {
-            Thumbnails.of(fisThumb).size(200, 200).toOutputStream(fosThumb);
+            // TODO Thumbnails.of(fisThumb).size(200, 200).toOutputStream(fosThumb);
             fosThumb.flush();
             fosThumb.close();
         } else {
@@ -198,11 +198,11 @@ public class FileUpload implements Serializable {
             FileInputStream fisBig = new FileInputStream(file);
             FileOutputStream fosThumb = new FileOutputStream(thumbPath + newName);
             FileOutputStream fosBig = new FileOutputStream(bigPath + newName);
-            Thumbnails.of(fisBig).size(670, 670).toOutputStream(fosBig);
+            // TODO Thumbnails.of(fisBig).size(670, 670).toOutputStream(fosBig);
 
             // 如果图片小于50Kb不压缩
             if (file.length() < 50 * 1024) {
-                Thumbnails.of(fisThumb).size(200, 200).toOutputStream(fosThumb);
+                // TODO Thumbnails.of(fisThumb).size(200, 200).toOutputStream(fosThumb);
                 fosThumb.flush();
                 fosThumb.close();
             } else {
