@@ -1,0 +1,9 @@
+#Tomcat publish data
+#Thu Mar 03 15:23:39 EST 2016
+org.eclipse.jst.j2ee.server\:corebiz=WEB-INF/lib/corebiz-1.0.jar
+org.eclipse.jst.j2ee.server\:framework=WEB-INF/lib/framework-1.0.jar
+org.eclipse.jst.j2ee.server\:common=WEB-INF/lib/common-1.0.jar
+org.eclipse.jst.j2ee.server\:domain=WEB-INF/lib/domain-1.0.jar
+org.eclipse.jst.j2ee.server\:cms=WEB-INF/lib/cms-1.0.jar
+org.eclipse.jst.j2ee.server\:security=WEB-INF/lib/security-1.0.jar
+org.eclipse.jst.j2ee.server\:/binary\:/Users/Natasha/.m2/repository/org/springframework/spring-web/4.0.5.RELEASE/spring-web-4.0.5.RELEASE.jar=WEB-INF/lib/spring-web-4.0.5.RELEASE.jar

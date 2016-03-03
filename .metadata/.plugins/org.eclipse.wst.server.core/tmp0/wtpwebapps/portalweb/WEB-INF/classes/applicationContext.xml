@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jee="http://www.springframework.org/schema/jee" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="    
+        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd  
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd  
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd  
+        http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-4.0.xsd  
+        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
+
+    <context:property-placeholder location="classpath*:/spring/fero-db-dev.properties,classpath:spring_secutity.properties" />
+	<bean class="com.adnature.framework.context.SpringBeanContext"
+		lazy-init="false" />
+	<import resource="classpath:/spring/fero-context.xml" />
+	<bean id="settings"
+		class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+		<property name="locations">
+			<list>
+				<value>classpath:setting-dev.properties</value>
+			</list>
+		</property>
+	</bean>
+	<bean id="logConfig" class="com.adnature.framework.log.LogConfig">
+	  <property name="logfullpath" value=""/>
+	</bean>
+	<bean
+		class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor" />
+
+	<!-- 自动加载构建bean -->
+	<context:component-scan base-package="com.adnature.framework.web.freemarker" />
+	<context:component-scan base-package="com.adnature.*.service" />
+	<context:component-scan base-package="com.adnature.*.*.service"/>
+	<!-- <context:component-scan base-package="com.adnature.security.control.password.service"/> -->
+	<!-- <context:component-scan base-package="com.adnature.message.internal.send"/> -->
+	 
+	<!-- 资源与权限对应关系 -->
+	<!--
+	<bean id="customSecurityMetadataSource"
+		class="com.adnature.security.control.back.MySecurityMetaDataSource" init-method="init">
+	</bean>
+	 -->
+	<bean id="passwordEncoder" class="com.adnature.security.control.CheckPasswordEncoder" />
+		<bean id="category_list" class="com.adnature.ui.control.CategoryListControl" />
+		<bean id="advertisement_list" class="com.adnature.ui.control.AdvertisementListControl" />
+		<bean id="aboutCategorys" class="com.adnature.ui.service.AboutCategorys" />
+		<bean id="getSettingValue" class="com.adnature.ui.service.GetSettingMethod"/>
+		<bean id="getHeaderMessage" class="com.adnature.ui.control.HeaderMessageControl"/>
+		<bean id="getEnum" class="com.adnature.framework.web.ui.GetEnumControl"/>
+		
+	<!-- 加载所有省份信息 -->
+	
+	<bean id="freemarkerConfigurer"
+		class="com.adnature.framework.web.freemarker.MyFreeMarkerConfigurer">
+		<property name="freemarkerSettings">
+			<props>
+				<prop key="classic_compatible">true</prop>
+				<prop key="defaultEncoding">UTF-8</prop>
+				<prop key="url_escaping_charset">UTF-8</prop>
+				<prop key="locale">zh_CN</prop>
+				<prop key="boolean_format">true,false</prop>
+				<prop key="datetime_format">yyyy-MM-dd HH:mm:ss</prop>
+				<prop key="date_format">yyyy-MM-dd</prop>
+				<prop key="time_format">HH:mm:ss</prop>
+				<prop key="number_format">0.######</prop>
+				<prop key="whitespace_stripping">true</prop>
+				<prop key="auto_import">/WEB-INF/view/common/layout/taglibs.ftl as taglibs,
+					/WEB-INF/view/common/layout/common_layout.ftl as cl,
+					/WEB-INF/view/common/htmlTag.ftl as h,
+					/WEB-INF/view/common/control/control.ftl as ctl
+				</prop>
+			</props>
+		</property>
+		<property name="freemarkerVariables">
+			<map>
+				<entry key="category_list" value-ref="category_list" />
+				<entry key="advertisement_list" value-ref="advertisement_list" />
+				<entry key="aboutCategorys" value-ref="aboutCategorys" />
+				<entry key="getSettingValue" value-ref="getSettingValue" />
+				<entry key="getHeaderMessage" value-ref="getHeaderMessage" />
+				<entry key="getEnum" value-ref="getEnum" />
+			</map>
+		</property>
+	</bean>	
+	
+    <bean class="com.adnature.framework.web.event.SpringInitBeanPostProcessor" />
+    <!-- AOP 异常拦截 -->
+    <bean class="com.adnature.control.exception.DBExceptionAspect"/> 
+    <bean class="com.adnature.control.exception.SysExceptionAspect"/> 
+    <!-- AOP log -->
+    <bean class="com.adnature.control.log.ApplicationLogAspect"/> 
+    <!-- AOP 加载-->
+    <aop:aspectj-autoproxy/>
+</beans> 
