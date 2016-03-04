@@ -21,7 +21,7 @@
 
                 <div class="BlueBG"><img src="/style/Blue%20Background.png" width=6000px height=270px></div>
 
-                <div class="Logo"><img src="/style/Logo.png" ></div>
+                <div class="Logo"><img src="/style/logo.png" ></div>
             </div>
             
             <div class="Triangle"><img src="/style/Green%20Triangle.png" width=235 height=213/></div>
