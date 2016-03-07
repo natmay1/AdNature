@@ -84,6 +84,6 @@
 	</listener>
 
 	<welcome-file-list>
-		<welcome-file>index.ftl login.ftl register.ftl registersuccess.ftl</welcome-file>
+		<welcome-file>index.ftl register.ftl registersuccess.ftl</welcome-file>
 	</welcome-file-list>
 </web-app>
