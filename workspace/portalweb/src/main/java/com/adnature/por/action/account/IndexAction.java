@@ -114,8 +114,9 @@ public class IndexAction extends BaseAction{
 			profile.setUserId(userId);
 			profileService.insert(profile);
 		}else{
-			profile.setUserId(userId);
-			profileService.dynamicUpdate(profile);
+			profileTemp.setCity(profile.getCity());
+			profileTemp.setProvince(profile.getProvince());
+			profileService.dynamicUpdate(profileTemp);
 		}
 		// save sport
 		sportService.insertSportUser(addSportIds, userId);
