@@ -9,5 +9,5 @@ import com.adnature.domain.sport.entity.Sport;
 public interface SportQuery {
 
 	List<Sport> findSportByUserId(@Param("userId") String userId);
-
+	
 }
