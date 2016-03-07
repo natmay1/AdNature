@@ -11,13 +11,12 @@
 }
 .info {
     float: center;
-    margin-left: 50%;
+    margin-left: 300px;
     width: 900px;
     text-align: left;
     font-family: "Overlock";
     font-size: 20pt;
     position: absolute;
-    transform: translate(-50%);
     
 }
 

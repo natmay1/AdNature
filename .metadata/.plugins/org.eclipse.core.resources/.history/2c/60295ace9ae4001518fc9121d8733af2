@@ -1,6 +1,6 @@
 #logo {
-    
-    margin-left: 50px;
+    float:left;
+    margin-left: 30px;
 }
 
 
@@ -17,6 +17,7 @@
     
     position: absolute;
 }
+
 
 #h1 {
     
@@ -40,13 +41,12 @@
     
     float: right;
     margin-right: 50px;
-    margin-top: 10px;
-    
+        margin-top: 10px;
 }
 
 .bgimage {
     margin-top: 0;
-    background-image: url(Website%20Pic.jpg);
+    background-image: url(../Website%20Pic.jpg);
     background-size: 1440px 800px;
     background-repeat: no-repeat;
     width: 100%;
@@ -122,8 +122,7 @@
 .page {
     background-color: #fbe4d4;
     text-align: center;
-     border: 1px solid black;
-    
+    border: 1px solid black;
 }
 
 
@@ -131,8 +130,10 @@
 .pic {
     
     float: left;
-    width: 500px;
-    padding: 100px;
+    width: 310px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 30px;
     background-color: #fbe4d4; 
     
     
@@ -144,20 +145,22 @@
     text-align: center;
     margin: auto;
     width: 100%;
+    padding 100px;
+    padding-right: 94px;
     border: 1px solid black;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 @font-face {
     font-family: "Overlock";
-    src: url("overlock-regular.ttf");
+    src: url("../style/fonts/Overlock-Regular.ttf");
 }
 
 .firsttitle {
     font-family: Overlock;
     font-size: 40pt;
     text-align: center;
-    width: 50%;
-    margin-left: 25%;
     
 }
 
@@ -180,10 +183,9 @@
      
 }
 
-
 .tile2 {
     width: 100%;
-    height: 150px;
+    height: 201px;
     margin: 10px;
     padding: 50px;
     float: left;    
@@ -199,18 +201,6 @@
     margin-left: 50%;
      transform: translate(-50%);
     
-}
-.tile4 {
-    
-    margin-top: -30px;
-    margin-right: 30px;
-    width: 22%;
-    height: 350px;
-    margin-bottom: 200px;
-    float: left;
-    text-align: center;
-    /*border: 1px solid black;*/
-
     
 }
 .image1 {
@@ -231,11 +221,9 @@
 }
 .image4 {
     float: right;
-    margin-bottom: 0px;
-    padding-left: 40px;
+    padding-left: 50px;
 }
-
-
+    
     
 }
 .text1{
@@ -286,12 +274,11 @@
 .disclaimer {
     
     float: left;
-    margin-left: 50%;
-    transform: translate(-50%);
+    margin-left: 50px;
+    width: 90%;
     text-align: center;
     
 }
-
 
 .sharing {
     
