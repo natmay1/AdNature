@@ -14,9 +14,9 @@
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
     <body>
-        <div class="hi">
+        <div class="bgimage">
         <div class="header">
-        <img id="logo" src="style/logo.png" alt="Logo" style="10px" float="left" margin-left="20px" width=165px height=84px >
+        <img id="logo" src="style/logo.png" alt="Logo" width=165px height=84px >
         <div id="buttons">
             <button type="button" id="button3" data-toggle="modal" data-target="#loginModal">Log In</button></a>
         	<a href="register.htm"><button type="button" id="button4">Sign Up</button></a>

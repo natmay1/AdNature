@@ -1,6 +1,6 @@
 #logo {
-    
-    margin-left: 50px;
+    float:left;
+    margin-left: 30px;
 }
 
 
@@ -39,7 +39,7 @@
     
 }
 
-.hi {
+.bgimage {
     margin-top: 0;
     background-image: url(../Website%20Pic.jpg);
     background-size: 1440px 800px;
@@ -149,7 +149,7 @@
 
 @font-face {
     font-family: "Overlock";
-    src: url("overlock-regular.ttf");
+    src: url("../style/fonts/Overlock-Regular.ttf");
 }
 
 .firsttitle {
