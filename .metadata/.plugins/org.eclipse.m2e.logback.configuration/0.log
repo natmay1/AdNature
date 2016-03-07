@@ -1150,3 +1150,8 @@ Caused by: org.eclipse.core.runtime.CoreException: One or more constraints have 
 2016-03-07 16:33:20,149 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2016-03-07 16:33:20,151 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2016-03-07 16:33:20,152 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/portalweb/src/test/resources
+2016-03-07 16:52:02,120 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-07 16:52:02,121 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-03-07 16:52:02,123 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-03-07 16:52:02,125 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-07 16:52:02,126 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/portalweb/src/test/resources
