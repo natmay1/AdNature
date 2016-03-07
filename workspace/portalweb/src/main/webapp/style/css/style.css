@@ -46,7 +46,7 @@
 
 .bgimage {
     margin-top: 0;
-    background-image: url(Website%20Pic.jpg);
+    background-image: url(../style/Website%20Pic.jpg);
     background-size: 1440px 800px;
     background-repeat: no-repeat;
     width: 100%;

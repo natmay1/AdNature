@@ -1,12 +1,12 @@
 Body {
-    background-image: url(../Profilebackground.png);
+    background-image: url(Profilebackground.png);
     background-size:cover;
     background-repeat: no-repeat;
     
 }
 
 .cover {
-    position: relative;
+
     left: 0; 
     top: 0; 
 }
@@ -17,10 +17,19 @@ Body {
     left: 0;*/
 }
 
+.desc {
+    
+    margin: 0;
+    border: 50px, white;
+    padding: 5px;
+    width: 90px;
+    text-align: left;
+     
+}
 .Logo {
     position: absolute; 
-    top: 30px; 
-    left: 70px;
+    top: 10px; 
+    left: 50px;
 }
 
 .Triangle {
@@ -38,10 +47,11 @@ Body {
     
 }
 #signout {
-    position: absolute; 
-    top: 10px; 
-    left: 1225px;
-     background-color: #035208;
+    top: 10px;
+    position: absolute;
+    float: right;
+    right: 20px;
+    background-color: #035208;
     -moz-border-radius: 15px;
     -webkit-border-radius: 15px;
     border: 5px solid #035208;
@@ -97,8 +107,7 @@ Body {
     font-size: 18pt;
     position: absolute;
     top: 300px; 
-    left: 1100px;
-    
+    right: 50px;
 }
 #Schedule {
      font-weight: bold;
@@ -136,4 +145,5 @@ Body {
 
     
 }
+
 
