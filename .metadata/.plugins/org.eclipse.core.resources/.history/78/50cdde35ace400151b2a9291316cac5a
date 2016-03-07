@@ -16,7 +16,7 @@
         <div class="Profile">
             <div class="cover">
                 <div class="BlueBG"><img src="/style/Blue%20Background.png" width=6000px height=270px></div>
-                <div class="Logo"><img src="../style/logo.png" width=165px height=84px ></div>
+                <div class="Logo"><img src="../style/logo.png" style="10px" float="left" margin-left="20px" width=165px height=84px ></div>
             </div>
             <div class="Triangle"><img src="/style/Green%20Triangle.png" width=235 height=213/></div>
             <a href="/logout.htm"><button type="button" id="signout">Sign Out</button></a>

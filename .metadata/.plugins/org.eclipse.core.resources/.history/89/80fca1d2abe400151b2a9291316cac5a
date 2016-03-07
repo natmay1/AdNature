@@ -19,7 +19,7 @@ html{
 
 .background {
     
-    background-image: url(background%20forest%20transparent.png);
+    background-image: url(../background%20forest%20transparent.png);
     background-size: cover;
     background-position: center center;
     font-family: calibri;  
