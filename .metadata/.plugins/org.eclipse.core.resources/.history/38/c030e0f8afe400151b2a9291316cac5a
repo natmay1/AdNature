@@ -1,5 +1,5 @@
 Body {
-    background-image: url(../Profilebackground.png);
+    background-image: url(Profilebackground.png);
     background-size:cover;
     background-repeat: no-repeat;
     
