@@ -108,7 +108,7 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="style/Soccer.png" alt="Soccer" height="238px" width="274px">
+      <img src="Soccer.png" alt="Soccer" height="238px" width="274px">
       <div class="carousel-caption">
         <h3>Soccer</h3>
 
@@ -116,7 +116,7 @@
     </div>
 
     <div class="item">
-      <img src="style/Walking.png" alt=Walking height="238px" width="274px">
+      <img src="Walking.png" alt=Walking height="238px" width="274px">
       <div class="carousel-caption">
         <h3>Walking</h3>
         
@@ -124,7 +124,7 @@
     </div>
 
     <div class="item">
-      <img src="style/Canoeing.png" alt="Canoeing" height="238px" width="274px">
+      <img src="Canoeing.png" alt="Canoeing" height="238px" width="274px">
       <div class="carousel-caption">
         <h3>Canoeing</h3>
       </div>
