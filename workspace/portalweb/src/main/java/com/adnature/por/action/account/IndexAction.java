@@ -70,7 +70,13 @@ public class IndexAction extends BaseAction{
     
     private String[] addSportNames;
     
+    private String level;
     
+    private List<Sport> faveActivities;
+    
+    
+	
+
 	/**
 	 * <p>个人中心首页初始化</p>.<br>
 	 * author：<br>
@@ -93,6 +99,9 @@ public class IndexAction extends BaseAction{
 		mediumSports = sportService.findByCriteria(criteria);
 		criteria.setFitnessLevel("3", Operator.equal);
 		highSports = sportService.findByCriteria(criteria);
+		
+		//level = sportService.findSportLevelByUserId(userId);
+		faveActivities = sportService.findSportByUserId(userId);
 		return "index";
 	}
 	
@@ -105,8 +114,9 @@ public class IndexAction extends BaseAction{
 			profile.setUserId(userId);
 			profileService.insert(profile);
 		}else{
-			profile.setUserId(userId);
-			profileService.dynamicUpdate(profile);
+			profileTemp.setCity(profile.getCity());
+			profileTemp.setProvince(profile.getProvince());
+			profileService.dynamicUpdate(profileTemp);
 		}
 		// save sport
 		sportService.insertSportUser(addSportIds, userId);
@@ -187,6 +197,22 @@ public class IndexAction extends BaseAction{
 
 	public void setAddSportNames(String[] addSportNames) {
 		this.addSportNames = addSportNames;
+	}
+
+	public String getLevel() {
+		return level;
+	}
+
+	public void setLevel(String level) {
+		this.level = level;
+	}
+
+	public List<Sport> getFaveActivities() {
+		return faveActivities;
+	}
+
+	public void setFaveActivities(List<Sport> faveActivities) {
+		this.faveActivities = faveActivities;
 	}
 
 

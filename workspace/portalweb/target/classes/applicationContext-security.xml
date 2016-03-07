@@ -8,7 +8,6 @@
            http://www.springframework.org/schema/security  
            http://www.springframework.org/schema/security/spring-security-3.2.xsd">
 
-	<http pattern="/login.htm" security="none" />
 	<http pattern="/**/*.jpg" security="none" />
 	<http pattern="/**/*.png" security="none" />
 	<http pattern="/**/*.gif" security="none" />

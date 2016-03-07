@@ -24,8 +24,12 @@
             <div class="name">${(webUser.login)!}</div>    
             <a href="#myModal" data-toggle="modal"> <button type="button" id="customize">Customize your <br> profile</button> </a> 
             <div id="City">City:${(profile.city)!} </div>
-            <div id="Type">Enjoys activities that are:</div>
-            <div id="Activities">Favourite activities:</div>
+            <div id="Type">Enjoys activities that are:${level}</div>
+            <div id="Activities">Favourite activities:
+            <#list faveActivitie as faveActivities>
+            ${faveActivitie.name}
+            </#list>
+            </div>
             <div id="Schedule">Renata's Schedule:</div>
         </div>
 
