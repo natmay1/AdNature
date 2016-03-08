@@ -118,7 +118,7 @@
     </div>
 
     <div class="item">
-      <img src="style/Walking.png" alt=Walking height="238px" width="274px">
+      <img src="style/Walking.jpg" alt=Walking height="238px" width="274px">
       <div class="carousel-caption">
         <h3>Walking</h3>
         
