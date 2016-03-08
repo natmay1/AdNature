@@ -30,7 +30,7 @@
             ${faveActivitie.name}
             </#list>
             </div>
-            <div id="Schedule">Renata's Schedule:</div>
+            <div id="Schedule">${(webUser.login)!}'s Schedule:</div>
         </div>
 
 <form role="form" action="saveProfile.htm" id="saveProfile" method="post">            
