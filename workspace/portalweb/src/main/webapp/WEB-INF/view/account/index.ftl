@@ -76,17 +76,17 @@
         	<div class="selections">
         		<input type="hidden" id="low" name="low" value="0"/> 
             	<button id="lowLevelButton" type="button" class="btn btn-primary btn-lg" > Low </button>
-            	<p>easy or low impact sports such as walking or swimming</p>
+            	<p class="desc">(easy or low impact sports such as walking or swimming)</p>
             </div>
             <div class="selections">
             	<input type="hidden" id="medium" name="medium" value="0"/>
                 <button id="mediumLevelButton" type="button" class="btn btn-primary btn-lg" > Medium </button>
-                <p>more physically intensive sports such as bicycling or running</p>
+                <p class="desc">(more physically intensive sports such as bicycling or running)</p>
             </div>
             <div class="selections">
             	<input type="hidden" id="high" name="high" value="0"/>
                 <button id="highLevelButton" type="button" class="btn btn-primary btn-lg" > High </button>
-                <p>extreme sports or sports that require more vigorous effort such as mountain biking or rock climbing</p>
+                <p class="desc">(extreme sports or sports that require more vigorous effort such as mountain biking or rock climbing)</p>
             </div>
             <a id="saveSportLevelLink" href="" data-toggle="modal"><button type="button" class="btn btn-default btn-success btn-block"> Continue</button></a>
         </div>
@@ -279,7 +279,10 @@ $(document).ready(function(){
 $("#lowLevelButton").on("click",function(){
 	$("input[name='low']").attr("value",'1');
 	$("#saveSportLevelButton").attr("low",'1');
+	
+
 });
+
 
 $("#mediumLevelButton").on("click",function(){
 	$("input[name='medium']").attr("value",'1');
@@ -292,6 +295,7 @@ $("#highLevelButton").on("click",function(){
 $(".sport").on("click",function(){
 	var sportId =  $(this).next('input').attr("data-sportId");
 	$(this).next().attr("value",sportId);
+	
 });
 
 $("#saveSportLevelLink").on("click",function(){
