@@ -1,6 +1,9 @@
 #logo {
     
-    margin-left: 50px;
+    margin-left: 30px;
+    text-align:left;
+    float:left;
+    
 }
 
 
@@ -148,13 +151,13 @@
     border: 1px solid black;
 }
 
-@font-face {
+/*@font-face {
     font-family: "Overlock";
-    src: url("overlock-regular.ttf");
-}
+    src: url(../Overlock-Regular.ttf);
+} */
 
 .firsttitle {
-    font-family: Overlock;
+    font-family: 'Overlock';
     font-size: 40pt;
     text-align: center;
     width: 50%;
@@ -192,13 +195,13 @@
     
 }
 .tile3 {
-    width: 100%;
-    height: 250px;
+    width: 274px;
+    height: 238px;
     float: left;    
     text-align: center;
     top: 1300px;
     margin-left: 50%;
-     transform: translate(-50%);
+    transform: translate(-50%);
     
 }
 .tile4 {
