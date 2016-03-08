@@ -14,6 +14,24 @@
 
 }
 
+#button1 {
+    
+    text-align: center;
+    background-color: #035208;
+    border: none;
+    color: white;
+    padding: 17px 90px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15pt;
+    margin: 30px 10px;
+    cursor: pointer;
+    float: left;
+    margin-left: 50%;
+     transform: translate(-50%);
+    
+}
 form{
 	width:600px;
 	margin:0 auto;
@@ -55,4 +73,17 @@ input[type=button], input[type=button]:hover {
 	border:1px solid #d0d0d0;
 	background-color:#fcfcfc;
     width: 450px;
+}
+
+.choice {
+    float:left;
+    margin: 20px;
+    padding: 10px;
+    font-size: 20pt;
+}
+
+#h1 {
+
+    text-align: center;
+    font-size: 35pt;
 }
