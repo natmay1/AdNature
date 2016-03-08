@@ -4,6 +4,12 @@
          <title>AdNature | Search</title>
         <link rel="shortcut icon" href="Transparent%20Mountain.ico" />
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     </head>
     
     <body class="Layer_1">
@@ -14,7 +20,36 @@
     <i class="glyphicon glyphicon-search"></i><input type="text" class="search square"><input type="button" value="Search">
 </form>
         </div>
-    
+        <button type=button id="button1" data-toggle="modal" data-target="#activityModal">Activity List</button></a>
         
+        <!-- Activity list modal -->
+        <div class="modal fade" id="activityModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <header id="h1">Select an Activity:</header>
+    
+        </div>
+        <div class="modal-body">
+          <form role="form">
+                  <p class="choice">Swimming</p>
+                  <p class="choice">Soccer</p>
+                  <p class="choice">Rugby</p>
+                  <p class="choice">Baseball</p>
+                  <p class="choice">Baseball</p><p class="choice">Cricket</p><p class="choice">Walking</p><p class="choice">Picnicking</p><p class="choice">Camping</p><p class="choice">Canoeing</p><p class="choice">Kayaking</p><p class="choice">Sailing</p><p class="choice">fishing</p><p class="choice">Cross-Country skiing</p><p class="choice">Snowshoeing</p><p class="choice">Hiking</p><p class="choice">Cycling</p><p class="choice">Swimming</p><p class="choice">Field Hockey</p>
+              
+            </form>
+              
+          <div class="modal-footer">
+           <button type="submit" class="btn btn-default btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+
     </body>
+    
 </html>
