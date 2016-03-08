@@ -1,7 +1,7 @@
 
-  @font-face {
+ /* @font-face {
     font-family: "Overlock";
-      src: url("overlock-regular.ttf");}
+      src: url("overlock-regular.ttf");} */
 .header {
     padding: 20px;
     text-align: center;
@@ -11,12 +11,13 @@
 }
 .info {
     float: center;
-    margin-left: 300px;
+    margin-left: 50%;
     width: 900px;
     text-align: left;
     font-family: "Overlock";
     font-size: 20pt;
     position: absolute;
+    transform: translate(-50%);
     
 }
 

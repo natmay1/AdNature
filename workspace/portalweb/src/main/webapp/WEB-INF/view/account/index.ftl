@@ -15,8 +15,8 @@
     <body>
         <div class="Profile">
             <div class="cover">
-                <div class="BlueBG"><img src="/style/Blue%20Background.png" width=6000px height=270px></div>
-                <div class="Logo"><img src="/style/logo.png" ></div>
+                <div class="BlueBG"><img src="/style/Blue%20Background.png" width=100% height=270px></div>
+                <div class="Logo"><img src="../style/logo.png" width=165px height=84px ></div>
             </div>
             <div class="Triangle"><img src="/style/Green%20Triangle.png" width=235 height=213/></div>
             <a href="/logout.htm"><button type="button" id="signout">Sign Out</button></a>
@@ -24,9 +24,13 @@
             <div class="name">${(webUser.login)!}</div>    
             <a href="#myModal" data-toggle="modal"> <button type="button" id="customize">Customize your <br> profile</button> </a> 
             <div id="City">City:${(profile.city)!} </div>
-            <div id="Type">Enjoys activities that are:</div>
-            <div id="Activities">Favourite activities:</div>
-            <div id="Schedule">Renata's Schedule:</div>
+            <div id="Type">Enjoys activities that are:${level}</div>
+            <div id="Activities">Favourite activities:
+            <#list faveActivitie as faveActivities>
+            ${faveActivitie.name}
+            </#list>
+            </div>
+            <div id="Schedule">${(webUser.login)!}'s Schedule:</div>
         </div>
 
 <form role="form" action="saveProfile.htm" id="saveProfile" method="post">            
