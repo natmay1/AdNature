@@ -4,6 +4,7 @@
         <title>AdNature | Username</title>
         <link rel="stylesheet" type="text/css" href="Profile.css">
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        
 
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -96,7 +97,7 @@
                   <p class="desc">(more physically intensive sports such as bicycling or running)</p>
             </div>
             <div class="selections">
-                <button type="submit" class="btn btn-primary btn-lg" > High </button>
+                <button type="submit" id="hi" class="btn btn-primary btn-lg" onclick="changeColour()"> High </button>
                 <p class="desc">(extreme sports or sports that require more vigorous effort such as mountain biking or rock climbing)</p>
               </div>
               <a href="#my3Modal" data-toggle="modal"><button type="submit" class="btn btn-default btn-success btn-block"> Continue</button></a>
@@ -326,6 +327,12 @@
     </div>
   </div> 
 </div>
+
+<script>
+function changeColour() {
+    document.getElementById("hi").style.backgroundColor = "red";
+}
+</script>
     </body>
 </html>
     
