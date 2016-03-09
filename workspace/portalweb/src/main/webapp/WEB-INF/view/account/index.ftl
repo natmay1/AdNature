@@ -184,8 +184,8 @@
 	               <input type="text" name="addSportNames" placeholder="other"></input> 
 	               </button>
 			  </div>
-              <a id="saveSportHighLink" href="" data-toggle="modal"><button type="button" class="btn btn-default btn-success btn-block"> Continue</button></a>
-        	  <button id="saveSportHighButton" type="submit" class="btn btn-default btn-success btn-block"> Continue</button>
+              <!--<a id="saveSportHighLink" href="" data-toggle="modal"><button type="button" class="btn btn-default btn-success btn-block"> Continue</button></a>-->
+        	  <button id="saveSportHighButton" type="submit" class="btn btn-default btn-success btn-block"> Continue</button> 
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
