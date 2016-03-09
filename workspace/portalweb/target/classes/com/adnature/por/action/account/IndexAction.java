@@ -100,7 +100,7 @@ public class IndexAction extends BaseAction{
 		criteria.setFitnessLevel("3", Operator.equal);
 		highSports = sportService.findByCriteria(criteria);
 		
-		//level = sportService.findSportLevelByUserId(userId);
+		level = sportService.findSportLevelByUserId(userId);
 		faveActivities = sportService.findSportByUserId(userId);
 		return "index";
 	}
