@@ -62,6 +62,8 @@ public class IndexAction extends BaseAction{
     
     private Sport sport;
     
+    private SportUser sportuser;
+    
     private List<Sport> lowSports;
     
     private List<Sport> mediumSports;
