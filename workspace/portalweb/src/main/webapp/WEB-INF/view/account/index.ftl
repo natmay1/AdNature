@@ -118,7 +118,7 @@
               </#list>
               <div class="activities">
 	              <button type="button" class="btn btn-primary" >
-	              <input type="text" name="addSportNames" placeholder="other"></input> 
+	              <input type="text" name="addSportNames" placeholder="other" style="color:black"></input> 
 	              </button>
 			  </div>
               <a id="saveSportLowLink" href="" data-toggle="modal"><button type="button" class="btn btn-default btn-success btn-block"> Continue</button></a>
@@ -149,7 +149,7 @@
               </#list>
               <div class="activities">
 	              <button type="button" class="btn btn-primary" > 
-	              <input type="text" name="addSportNames" placeholder="other"></input> 
+	              <input type="text" name="addSportNames" placeholder="other" style="color:black"></input> 
 	              </button>
 			  </div>
               <a id="saveSportMediumLink" href="" data-toggle="modal"><button type="button" class="btn btn-default btn-success btn-block"> Continue</button></a>
@@ -181,7 +181,7 @@
               </#list>
               <div class="activities">
 	               <button type="button" class="btn btn-primary" > 
-	               <input type="text" name="addSportNames" placeholder="other"></input> 
+	               <input type="text" name="addSportNames" placeholder="other" style="color:black"></input> 
 	               </button>
 			  </div>
               <!--<a id="saveSportHighLink" href="" data-toggle="modal"><button type="button" class="btn btn-default btn-success btn-block"> Continue</button></a>-->
