@@ -4,7 +4,7 @@
 
         <link rel="shortcut icon" href="/style/Transparent%20Mountain.ico" />
         <title>AdNature | About</title>
-        
+		<link href='https://fonts.googleapis.com/css?family=Overlock' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="/style/css/about.css">
 	</head>
     <body>

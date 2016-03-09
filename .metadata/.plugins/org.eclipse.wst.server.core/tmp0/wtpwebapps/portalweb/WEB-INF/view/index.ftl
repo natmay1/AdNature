@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="/style/css/about.css">
         <link rel="stylesheet" type="text/css" href="/style/css/style.css">
+        <link href='https://fonts.googleapis.com/css?family=Overlock' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="/style/js/AdNature.js"></script>
 
 <!-- jQuery library -->
@@ -61,8 +62,8 @@
                 <p>See all the options available</p> 
             </div>
             
-            <div class="tile image4">
-                <img src="style/Door.jpg" height="280" width="192.5"> <br>
+            <div class="tile4 image4">
+                <img src="style/Door.jpg" height="280" width="185.5"> <br>
                Get outside!
             </div>
             
@@ -76,6 +77,7 @@
 
 
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
         <!--Choose from over 30 outdoor activities -->    
              <br><br>
         <div class="header1" style="clear: both;">
@@ -116,7 +118,7 @@
     </div>
 
     <div class="item">
-      <img src="style/Walking.png" alt=Walking height="238px" width="274px">
+      <img src="style/Walking.jpg" alt=Walking height="238px" width="274px">
       <div class="carousel-caption">
         <h3>Walking</h3>
         
