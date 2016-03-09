@@ -125,8 +125,8 @@ public class IndexAction extends BaseAction{
 		sportService.insertOtherSportUser(addSportNames, userId);
 		return "saveProfile";
 	}
-	@Action(value="saveSportInput")
-	public String 
+	//@Action(value="saveSportInput")
+	//public String 
 	
 	public WebUser getWebUser() {
 		return webUser;
