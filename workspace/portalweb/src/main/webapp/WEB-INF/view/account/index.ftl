@@ -28,6 +28,7 @@
             <div id="Activities">Favourite activities:
             <#list faveActivitie as faveActivities>
             <button type="button" class="btn btn-primary sport" >${faveActivitie.name}</button>
+
             </#list>
             </div>
             <div id="Schedule">${(webUser.login)!}'s Schedule:</div>
@@ -45,13 +46,13 @@
         </div>
         <div class="modal-body">
             <div class="form-group"> 
-              <input type="text" name="profile.city" class="form-control" placeholder="City">
+              <input type="text" name="profile.city" class="form-control" placeholder="City" value="${(profile.city)!}">
             </div>
             <div class="form-group">
-              <input type="text" name="profile.postalCode" class="form-control"  placeholder="Postal Code">
+              <input type="text" name="profile.address" class="form-control"  placeholder="Postal Code" value="${(profile.address)!}">
             </div>
             <div class="form-group">
-              <input type="text" name="profile.province" class="form-control"  placeholder="Province">
+              <input type="text" name="profile.province" class="form-control"  placeholder="Province" value="${(profile.province)!}">
             </div>
             <a href="#my2Modal" data-toggle="modal"><button type="botton" class="btn btn-default btn-success btn-block"> Continue</button></a>
         </div>
@@ -278,7 +279,9 @@
 $(document).ready(function(){
 	$("#saveSportLowButton").hide();
 	$("#saveSportMediumButton").hide();
-	$("#saveSportHighButton").hide();
+	$("#saveSportLowLink").hide();
+	$("#saveSportMediumLink").hide();
+
 });
 
 $("#lowLevelButton").on("click",function(){
@@ -326,18 +329,19 @@ $("#saveSportLevelLink").on("click",function(){
 	
 	if(medium=="1"){
 		$("#saveSportLowLink").attr("href",'#my4Modal');//medium
+		$("#saveSportLowLink").show();
 	}else if(high=="1"){
 		$("#saveSportLowLink").attr("href",'#my5Modal');//high
+		$("#saveSportLowLink").show();
 	}else{
 		$("#saveSportLowButton").show();
-		$("#saveSportLowLink").hide();
 	}
 	
 	if(high=="1"){
 		$("#saveSportMediumLink").attr("href",'#my5Modal');//high
+		$("#saveSportMediumLink").show();
 	}else{
 		$("#saveSportMediumButton").show();
-		$("#saveSportMediumLink").hide();
 	}
 	
 });

@@ -118,6 +118,7 @@ public class IndexAction extends BaseAction{
 		}else{
 			profileTemp.setCity(profile.getCity());
 			profileTemp.setProvince(profile.getProvince());
+			profileTemp.setAddress(profile.getAddress());
 			profileService.dynamicUpdate(profileTemp);
 		}
 		// save sport
