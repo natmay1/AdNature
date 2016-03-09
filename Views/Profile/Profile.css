@@ -35,15 +35,16 @@ Body {
 .Triangle {
     position: absolute; 
     top: 140px; 
-    left: 560px;
+     margin-left: 50%;
+    transform: translate(-50%);
     
 }
 
 .Skiier {
     position: absolute;
      top: 190px; 
-    left: 630px;
-    
+     margin-left: 50%;
+    transform: translate(-40%);
     
 }
 #signout {
@@ -62,15 +63,17 @@ Body {
 }
 
 #customize {
-    position: absolute; 
-    top: 430px; 
-    left: 599px;
+    position: absolute;   
     background-color: #035208;    
     border: 5px solid #035208;
     padding: 8px 12px;
     font-size: 16px;
     margin: 4px 2px;
     color: white;
+        top: 430px; 
+     margin-left: 50%;
+    transform: translate(-50%);
+
     
 }
 
@@ -80,7 +83,8 @@ Body {
     font-size: 32pt;
     position: absolute;
     top:360px;
-    left: 555px;
+    margin-left: 50%;
+    transform: translate(-50%);
 }
 
 #City {
@@ -115,7 +119,8 @@ Body {
     font-size: 18pt;
     position: absolute;
     top: 540px; 
-    left: 580px;
+    margin-left: 50%;
+    transform: translate(-50%);
 }
 .header {
     
