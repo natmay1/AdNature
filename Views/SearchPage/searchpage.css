@@ -13,6 +13,11 @@
 
 
 }
+.title {
+    font-size: 20pt;
+    text-align: left;
+    padding: 40px;
+}
 
 #button1 {
     
@@ -79,7 +84,7 @@ input[type=button], input[type=button]:hover {
     float:left;
     margin: 20px;
     padding: 10px;
-    font-size: 20pt;
+    font-size: 15pt;
 }
 
 #h1 {
