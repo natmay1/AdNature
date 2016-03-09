@@ -1,7 +1,7 @@
 <html>
     <head>
         <link rel="shortcut icon" href="/style/Transparent%20Mountain.ico" />
-        <title>AdNature | Username</title>
+        <title>AdNature | ${(webUser.login)!}</title>
         <link rel="stylesheet" type="text/css" href="/style/css/Profile.css">
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
@@ -27,7 +27,7 @@
             <div id="Type">Enjoys activities that are:${level}</div>
             <div id="Activities">Favourite activities:
             <#list faveActivitie as faveActivities>
-            ${faveActivitie.name}
+            <button type="button" class="btn btn-primary sport" >${faveActivitie.name}</button>
             </#list>
             </div>
             <div id="Schedule">${(webUser.login)!}'s Schedule:</div>
@@ -81,11 +81,12 @@
             <div class="selections">
             	<input type="hidden" id="medium" name="medium" value="0"/>
                 <button id="mediumLevelButton" type="button" class="btn btn-primary btn-lg" > Medium </button>
+               
                 <p class="desc">(more physically intensive sports such as bicycling or running)</p>
             </div>
             <div class="selections">
             	<input type="hidden" id="high" name="high" value="0"/>
-                <button id="highLevelButton" type="button" class="btn btn-primary btn-lg" > High </button>
+                <button id="highLevelButton"  type="button" class="btn btn-primary btn-lg" > High </button>
                 <p class="desc">(extreme sports or sports that require more vigorous effort such as mountain biking or rock climbing)</p>
             </div>
             <a id="saveSportLevelLink" href="" data-toggle="modal"><button type="button" class="btn btn-default btn-success btn-block"> Continue</button></a>
@@ -182,7 +183,8 @@
 	               <input type="text" name="addSportNames" placeholder="other"></input> 
 	               </button>
 			  </div>
-              <button id="saveSportHighButton" type="submit" class="btn btn-default btn-success btn-block"> Continue</button>
+              <a id="saveSportHighLink" href="" data-toggle="modal"><button type="button" class="btn btn-default btn-success btn-block"> Continue</button></a>
+        	  <button id="saveSportHighButton" type="submit" class="btn btn-default btn-success btn-block"> Continue</button>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
@@ -271,28 +273,37 @@
 </div>
 
 <script>
+
+
 $(document).ready(function(){
 	$("#saveSportLowButton").hide();
 	$("#saveSportMediumButton").hide();
+	$("#saveSportHighButton").hide();
 });
 
 $("#lowLevelButton").on("click",function(){
+	$(this).css('background-color','navy');
 	$("input[name='low']").attr("value",'1');
 	$("#saveSportLevelButton").attr("low",'1');
 	
-
+	
 });
 
 
 $("#mediumLevelButton").on("click",function(){
+$(this).css('background-color','navy');
 	$("input[name='medium']").attr("value",'1');
+	$("#saveSportLevelButton").attr("medium",'1');
 });
 
 $("#highLevelButton").on("click",function(){
+$(this).css('background-color','navy');
 	$("input[name='high']").attr("value",'1');
+	$("#saveSportLevelButton").attr("high",'1');
 });
 
 $(".sport").on("click",function(){
+$(this).css('background-color','navy');
 	var sportId =  $(this).next('input').attr("data-sportId");
 	$(this).next().attr("value",sportId);
 	
@@ -323,7 +334,7 @@ $("#saveSportLevelLink").on("click",function(){
 	}
 	
 	if(high=="1"){
-		$("#saveSportMediumButton").attr("href",'#my5Modal');//high
+		$("#saveSportMediumLink").attr("href",'#my5Modal');//high
 	}else{
 		$("#saveSportMediumButton").show();
 		$("#saveSportMediumLink").hide();
