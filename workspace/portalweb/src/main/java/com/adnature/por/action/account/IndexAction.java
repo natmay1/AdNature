@@ -60,7 +60,7 @@ public class IndexAction extends BaseAction{
     
     private SportCriteria criteria = new SportCriteria();
     
-    private Sport sport;
+   // private Sport sport;
     
     private List<Sport> lowSports;
     
@@ -102,7 +102,7 @@ public class IndexAction extends BaseAction{
 		criteria.setFitnessLevel("3", Operator.equal);
 		highSports = sportService.findByCriteria(criteria);
 		
-		level = sportService.findSportLevelByUserId(userId);
+		//level = sportService.findSportLevelByUserId(userId);
 		faveActivities = sportService.findSportByUserId(userId);
 		return "index";
 	}
@@ -118,6 +118,7 @@ public class IndexAction extends BaseAction{
 		}else{
 			profileTemp.setCity(profile.getCity());
 			profileTemp.setProvince(profile.getProvince());
+			profileTemp.setAddress(profile.getAddress());
 			profileService.dynamicUpdate(profileTemp);
 		}
 		// save sport
