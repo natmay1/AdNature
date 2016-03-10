@@ -319,11 +319,6 @@ $("#lowLevelButton").on("click",function(){
 	$("#saveSportLevelButton").attr("low",'1');
 });
 
-$("#lowLevelButton").on("click",function(){
-	$(this).css('background-color','red');
-	$("input[name='low']").attr("value",'0');
-	$("#saveSportLevelButton").attr("low",'0');
-});
 
 
 $("#mediumLevelButton").on("click",function(){
