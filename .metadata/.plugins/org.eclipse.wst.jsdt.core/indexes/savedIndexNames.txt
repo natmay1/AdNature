@@ -3,5 +3,4 @@ INDEX VERSION 1.3+/Users/Natasha/AdNature/.metadata/.plugins/org.eclipse.wst.jsd
 3666753874.index
 2494658275.index
 591061248.index
-1893349433.index
 1228729810.index
