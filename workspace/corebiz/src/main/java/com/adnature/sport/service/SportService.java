@@ -26,5 +26,5 @@ public interface SportService {
 	
 	public void insert(Sport sport);
 
-	public String findSportLevelByUserId(String userId);
+	//public String findSportLevelByUserId(String userId);
 }
