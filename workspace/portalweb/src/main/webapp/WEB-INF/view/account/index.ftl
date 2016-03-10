@@ -274,6 +274,8 @@
 </div>
 
 <script>
+
+	
 <!--Functions for closing the modals when clicking continue button-->
 $(function () {
     $(".custom-close").on('click', function() {
@@ -313,11 +315,20 @@ $(document).ready(function(){
 });
 
 
-$("#lowLevelButton").on("click",function(){
-	$(this).css('background-color','navy');
-	$("input[name='low']").attr("value",'1');
-	$("#saveSportLevelButton").attr("low",'1');
-});
+<!------$("#lowLevelButton").on("click",function(){
+if ($(this).css('background-color','navy'){
+$("input[name='low']").attr("value",'1');
+$("#saveSportLevelButton").attr("low",'1');
+}
+else {
+$(this).css('background-color','navy');
+}
+
+	
+}); ------->
+  
+
+
 
 
 
@@ -334,9 +345,11 @@ $(this).css('background-color','navy');
 });
 
 $(".sport").on("click",function(){
+$("#sport11").attr('selectedIndex', '-1');
 $(this).css('background-color','navy');
 	var sportId =  $(this).next('input').attr("data-sportId");
 	$(this).next().attr("value",sportId);
+	
 	
 });
 
