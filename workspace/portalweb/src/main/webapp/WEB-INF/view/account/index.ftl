@@ -23,7 +23,7 @@
             <a href="#my6Modal" data-toggle="modal">  <div class="Skiier"><img src="/style/skiier.png" height="150" width="115"></div></a>
             <div class="name">${(webUser.login)!}</div>    
             <a href="#myModal" data-toggle="modal"> <button type="button" id="customize">Customize your <br> profile</button> </a> 
-            <div id="City">City:${(profile.city)!} </div>
+            <div id="City">City: ${(profile.city)!} </div>
             <div id="Type">Enjoys activities that are:${level}</div>
             <div id="Activities">Favourite activities:
             <#list faveActivitie as faveActivities>
@@ -208,60 +208,60 @@
         <div class="modal-body">
           <form role="form">
           	  <div class="activities">
-          	  <#--
-              <img src="../golf.png" width=100px height=100px>
+          	  
+              <img src="../style/golf.png" width=100px height=100px>
               </div>
               <div class="activities">
-                 <img src="../snowboarder.png" width=100px height=100px>
+                 <img src="../style/snowboarder.png" width=100px height=100px>
               </div>
               <div class="activities">
-              <img src="../camera.png" width=100px height=100px>
+              <img src="../style/camera.png" width=100px height=100px>
           	  </div>
               <div class="activities">
-               <img src="../canoe.png" width=100px height=100px>
+               <img src="../style/canoe.png" width=100px height=100px>
         	  </div>
               <div class="activities">
-              <img src="../kayak.gif" width=100px height=100px>
+              <img src="../style/kayak.gif" width=100px height=100px>
     		  </div>
               <div class="activities">
-               <img src="../swimming.png" width=100px height=100px>
+               <img src="../style/swimming.png" width=100px height=100px>
 			  </div>
               <div class="activities">
-                 <img src="../bike.png" width=100px height=100px>
+                 <img src="../style/bike.png" width=100px height=100px>
               </div>
               <div class="activities">
-                  <img src="../soccerball.png" width=100px height=100px> </div>
+                  <img src="../style/soccerball.png" width=100px height=100px> </div>
               <div class="activities">
-              <img src="../9c4o4oqdi.png" width=100px height=100px>
+              <img src="../style/9c4o4oqdi.png" width=100px height=100px>
             </div>
             <div class="activities">
-               <img src="../tent.png" width=100px height=74px>
+               <img src="../style/tent.png" width=100px height=74px>
   			</div>
             <div class="activities">
-               <img src="../football.png" width=100px height=70px>
+               <img src="../style/football.png" width=100px height=70px>
 			</div>              
 			<div class="activities">
-               <img src="../baseball-hat-clipart-black-and-white-baseball_2_coloring_book_black_white_line_art_christmas_xmas_toy-1331px.png" width=100px height=100px>
+               <img src="../style/baseball-hat-clipart-black-and-white-baseball_2_coloring_book_black_white_line_art_christmas_xmas_toy-1331px.png" width=100px height=100px>
 			</div>              
 			<div class="activities">
-               <img src="../rockclimbing.jpg" width=100px height=100px>
+               <img src="../style/rockclimbing.jpg" width=100px height=100px>
 			</div>              
 			<div class="activities">
-               <img src="../surfer.jpg" width=100px height=100px>
+               <img src="../style/surfer.jpg" width=100px height=100px>
 			</div>              
 			<div class="activities">
-               <img src="../Hockey.png" width=100px height=120px>
+               <img src="../style/Hockey.png" width=100px height=120px>
 			</div>              
 			<div class="activities">
-               <img src="../figureskating.png" width=100px height=100px>
+               <img src="../style/figureskating.png" width=100px height=100px>
 			</div>              
 			<div class="activities">
-               <img src="../fishingrod.svg" width=100px height=100px>
+               <img src="../style/fishingrod.svg" width=100px height=100px>
 			</div>              
 			<div class="activities">
-               <img src="../hiking.png" width=100px height=100px>
+               <img src="../style/hiking.png" width=100px height=100px>
 			</div>    
-			-->    
+		  
             <button type="button" class="btn btn-default btn-success btn-block"> Change Icon</button>
           </form>
         </div>
@@ -300,9 +300,9 @@ $(function () {
         $('#my2Modal').modal('hide');
     });
 });
-
-
 <!------End functions for closing modals -------->
+
+
 
 $(document).ready(function(){
 	$("#saveSportLowButton").hide();
@@ -317,8 +317,12 @@ $("#lowLevelButton").on("click",function(){
 	$(this).css('background-color','navy');
 	$("input[name='low']").attr("value",'1');
 	$("#saveSportLevelButton").attr("low",'1');
-	
-	
+});
+
+$("#lowLevelButton").on("click",function(){
+	$(this).css('background-color','red');
+	$("input[name='low']").attr("value",'0');
+	$("#saveSportLevelButton").attr("low",'0');
 });
 
 
