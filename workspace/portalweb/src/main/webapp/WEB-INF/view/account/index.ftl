@@ -54,7 +54,7 @@
             <div class="form-group">
               <input type="text" name="profile.province" class="form-control"  placeholder="Province" value="${(profile.province)!}">
             </div>
-            <a href="#my2Modal" data-toggle="modal"><button type="botton" class="btn btn-default btn-success btn-block"> Continue</button></a>
+            <a href="#my2Modal" data-toggle="modal"><button type="botton" class="btn btn-default btn-success btn-block custom-close4"> Continue</button></a>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
@@ -90,7 +90,7 @@
                 <button id="highLevelButton"  type="button" class="btn btn-primary btn-lg" > High </button>
                 <p class="desc">(extreme sports or sports that require more vigorous effort such as mountain biking or rock climbing)</p>
             </div>
-            <a id="saveSportLevelLink" href="" data-toggle="modal"><button type="button" class="btn btn-default btn-success btn-block"> Continue</button></a>
+            <a id="saveSportLevelLink" class="custom-close5" href="" data-toggle="modal"><button type="button" class="btn btn-default btn-success btn-block"> Continue</button></a>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
@@ -101,7 +101,7 @@
 </div>
     
 
-<div class="modal fade" id="my3Modal" role="dialog">
+<div class="modal fade" id="my3Modal" role="dialog" >
     <div class="modal-dialog">
       <!-- Modal content-->
       <div class="modal-content">
@@ -121,7 +121,7 @@
 	              <input type="text" name="addSportNames" placeholder="other" style="color:black"></input> 
 	              </button>
 			  </div>
-              <a id="saveSportLowLink" href="" data-toggle="modal"><button type="button" class="btn btn-default btn-success btn-block"> Continue</button></a>
+              <a id="saveSportLowLink" href="" data-toggle="modal" class="custom-close"><button type="button" class="btn btn-default btn-success btn-block"> Continue</button></a>
         	  <button id="saveSportLowButton" type="submit" class="btn btn-default btn-success btn-block"> Continue</button>
         <div class="modal-footer">
           <button type="button" class="btn btn-default btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
@@ -152,7 +152,7 @@
 	              <input type="text" name="addSportNames" placeholder="other" style="color:black"></input> 
 	              </button>
 			  </div>
-              <a id="saveSportMediumLink" href="" data-toggle="modal"><button type="button" class="btn btn-default btn-success btn-block"> Continue</button></a>
+              <a id="saveSportMediumLink" href="" data-toggle="modal"class="custom-close2"><button type="button" class="btn btn-default btn-success btn-block"> Continue</button></a>
         	  <button id="saveSportMediumButton" type="submit" class="btn btn-default btn-success btn-block"> Continue</button>
         </div>
         <div class="modal-footer">
@@ -185,7 +185,7 @@
 	               </button>
 			  </div>
               <!--<a id="saveSportHighLink" href="" data-toggle="modal"><button type="button" class="btn btn-default btn-success btn-block"> Continue</button></a>-->
-        	  <button id="saveSportHighButton" type="submit" class="btn btn-default btn-success btn-block"> Continue</button> 
+        	  <button id="saveSportHighButton" type="submit" class="btn btn-default btn-success btn-block custom-close3"> Continue</button> 
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
@@ -274,7 +274,35 @@
 </div>
 
 <script>
+<!--Functions for closing the modals when clicking continue button-->
+$(function () {
+    $(".custom-close").on('click', function() {
+        $('#my3Modal').modal('hide');
+    });
+});
+$(function () {
+    $(".custom-close2").on('click', function() {
+        $('#my4Modal').modal('hide');
+    });
+});
+$(function () {
+    $(".custom-close3").on('click', function() {
+        $('#my5Modal').modal('hide');
+    });
+});
+$(function () {
+    $(".custom-close4").on('click', function() {
+        $('#myModal').modal('hide');
+    });
+});
+$(function () {
+    $(".custom-close5").on('click', function() {
+        $('#my2Modal').modal('hide');
+    });
+});
 
+
+<!------End functions for closing modals -------->
 
 $(document).ready(function(){
 	$("#saveSportLowButton").hide();
@@ -283,6 +311,7 @@ $(document).ready(function(){
 	$("#saveSportMediumLink").hide();
 
 });
+
 
 $("#lowLevelButton").on("click",function(){
 	$(this).css('background-color','navy');
