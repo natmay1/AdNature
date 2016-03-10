@@ -206,57 +206,57 @@
           <form role="form">
           	  <div class="activities">
           	  <#--
-              <img src="golf.png" width=100px height=100px>
+              <img src="../golf.png" width=100px height=100px>
               </div>
               <div class="activities">
-                 <img src="snowboarder.png" width=100px height=100px>
+                 <img src="../snowboarder.png" width=100px height=100px>
               </div>
               <div class="activities">
-              <img src="camera.png" width=100px height=100px>
+              <img src="../camera.png" width=100px height=100px>
           	  </div>
               <div class="activities">
-               <img src="canoe.png" width=100px height=100px>
+               <img src="../canoe.png" width=100px height=100px>
         	  </div>
               <div class="activities">
-              <img src="kayak.gif" width=100px height=100px>
+              <img src="../kayak.gif" width=100px height=100px>
     		  </div>
               <div class="activities">
-               <img src="swimming.png" width=100px height=100px>
+               <img src="../swimming.png" width=100px height=100px>
 			  </div>
               <div class="activities">
-                 <img src=bike.png width=100px height=100px>
+                 <img src="../bike.png" width=100px height=100px>
               </div>
               <div class="activities">
-                  <img src="soccerball.png" width=100px height=100px> </div>
+                  <img src="../soccerball.png" width=100px height=100px> </div>
               <div class="activities">
-              <img src="9c4o4oqdi.png" width=100px height=100px>
+              <img src="../9c4o4oqdi.png" width=100px height=100px>
             </div>
             <div class="activities">
-               <img src="tent.png" width=100px height=74px>
+               <img src="../tent.png" width=100px height=74px>
   			</div>
             <div class="activities">
-               <img src="football.png" width=100px height=70px>
+               <img src="../football.png" width=100px height=70px>
 			</div>              
 			<div class="activities">
-               <img src="baseball-hat-clipart-black-and-white-baseball_2_coloring_book_black_white_line_art_christmas_xmas_toy-1331px.png" width=100px height=100px>
+               <img src="../baseball-hat-clipart-black-and-white-baseball_2_coloring_book_black_white_line_art_christmas_xmas_toy-1331px.png" width=100px height=100px>
 			</div>              
 			<div class="activities">
-               <img src="rockclimbing.jpg" width=100px height=100px>
+               <img src="../rockclimbing.jpg" width=100px height=100px>
 			</div>              
 			<div class="activities">
-               <img src="surfer.jpg" width=100px height=100px>
+               <img src="../surfer.jpg" width=100px height=100px>
 			</div>              
 			<div class="activities">
-               <img src="Hockey.png" width=100px height=120px>
+               <img src="../Hockey.png" width=100px height=120px>
 			</div>              
 			<div class="activities">
-               <img src="figureskating.png" width=100px height=100px>
+               <img src="../figureskating.png" width=100px height=100px>
 			</div>              
 			<div class="activities">
-               <img src="fishingrod.svg" width=100px height=100px>
+               <img src="../fishingrod.svg" width=100px height=100px>
 			</div>              
 			<div class="activities">
-               <img src="hiking.png" width=100px height=100px>
+               <img src="../hiking.png" width=100px height=100px>
 			</div>    
 			-->    
             <button type="button" class="btn btn-default btn-success btn-block"> Change Icon</button>

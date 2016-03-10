@@ -117,5 +117,11 @@ public class SportServiceImpl implements SportService{
 		sport.setId(StringUtils.getUUID());
 		sportRepository.insert(sport);
 	}
+
+	@Override
+	public String findSportLevelByUserId(String userId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 }
