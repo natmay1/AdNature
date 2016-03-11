@@ -314,22 +314,18 @@ $(document).ready(function(){
 
 });
 
+$("#lowLevelButton").on("click",function(){
+	if ($("#lowLevelButton").css('background-color') != ('navy')){
+		$("#lowLevelButton").css('background-color', 'navy');
+		$("input[name='low']").attr("value",'1');
+		$("#saveSportLevelButton").attr("low",'1');
+		
+	}
+	else if ($("#lowLevelButton").css('background-color') != ('red')) {
+		($("#lowLevelButton").css('background-color') == ('red'));
+	}
 
-<!------$("#lowLevelButton").on("click",function(){
-if ($(this).css('background-color','navy'){
-$("input[name='low']").attr("value",'1');
-$("#saveSportLevelButton").attr("low",'1');
-}
-else {
-$(this).css('background-color','navy');
-}
-
-	
-}); ------->
-  
-
-
-
+});
 
 
 $("#mediumLevelButton").on("click",function(){
