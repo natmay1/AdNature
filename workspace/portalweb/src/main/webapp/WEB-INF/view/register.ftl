@@ -17,11 +17,12 @@
         
         	<form action="saveinfo.htm" method="POST">
             <div class="signup">
-                <input type="text"  name="webUser.login" placeholder="Username" id="Username"> <br><br>
-                <input type="email" name="webUser.email"		placeholder="Email" id="Email"> <br><br>
-                <input type="tel"  	name="webUser.celphone"		placeholder="Phone Number" id="PhoneNum"> <br><br>
-                <input type="password" name="password"			placeholder="Password" id="Password"> <br><br>
-                <input type="password" name="webUser.password"	placeholder="Confirm Password" id="confirmPassword"> <br><br>
+                <input type="text"  name="webUser.login" placeholder="Username" id="Username" required> <br><br>
+                <input type="email" name="webUser.email"		placeholder="Email" id="Email" required> <br><br>
+              
+                <input type="password" name="password"			placeholder="Password" id="Password" required> <br><br>
+                <input type="password" name="webUser.password"	placeholder="Confirm Password" id="confirmPassword" required> <br><br>
+                  <input type="tel"  	name="webUser.celphone"		placeholder="Phone Number (Optional)" id="PhoneNum"> <br><br>
             </div>
             <br><br>
             <button type="submit" class="button5">Sign Up</button>
