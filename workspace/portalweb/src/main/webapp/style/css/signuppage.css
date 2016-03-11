@@ -20,6 +20,11 @@ html{
        font-size: 150%;
     
 }
+
+#divCheckPasswordMatch {
+	left: 50%;
+
+}
 .star1 {
 	color: transparent;
 	font-size: 200%;
