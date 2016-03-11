@@ -2,7 +2,7 @@
 
 <configuration scan="true">
 	<!-- 系统日志文件名 -->
-	<substitutionProperty name="log.base" value="C:\Users\Matthew\Documents\GitHub\AdNature" />
+	<substitutionProperty name="log.base" value="/Users/lulinghua/Documents/log/adnature" />
 	<!-- <substitutionProperty name="log.base" value="/logs/p2b" /> -->
 	<jmxConfigurator />
 
