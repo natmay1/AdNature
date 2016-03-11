@@ -29,26 +29,26 @@
             <br><br>
              
               </div>
-            <button type="submit" class="button5">Sign Up</button>
+              <input type="submit" class="button5" value="Sign Up">
             <br>
      
             </form>
             
         </div> 
-        <script>
-function checkPasswordMatch() {
-    var password = $("#Password").val();
-    var confirmPassword = $("#confirmPassword").val();
+        <script type="text/javascript">
+	var password = document.getElementById("Password"), confirm_password = document.getElementById("confirmPassword");
 
-    if (password != confirmPassword)
-        $("#divCheckPasswordMatch").html("Passwords do not match!");
-    else
-        $("#divCheckPasswordMatch").html("Passwords match.");
+function validatePassword(){
+  if(password.value != confirm_password.value) {
+    confirm_password.setCustomValidity("Passwords Don't Match");
+  } else {
+    confirm_password.setCustomValidity('');
+  }
 }
 
-$(document).ready(function () {
-   $("#confirmPassword").keyup(checkPasswordMatch);
-});
+password.onchange = validatePassword;
+confirm_password.onkeyup = validatePassword;
+
 
 </script>
     </body>
