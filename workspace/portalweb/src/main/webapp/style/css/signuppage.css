@@ -15,7 +15,15 @@ html{
  min-height:100%;
 
 }
-
+.star {
+    color: red;
+       font-size: 150%;
+    
+}
+.star1 {
+	color: transparent;
+	font-size: 200%;
+}
 
 .background {
     
