@@ -1,0 +1,219 @@
+package com.adnature.por.action.account;
+
+import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.apache.struts2.convention.annotation.Action;
+import org.apache.struts2.convention.annotation.Namespace;
+import org.apache.struts2.convention.annotation.Result;
+import org.apache.struts2.convention.annotation.Results;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.adnature.domain.cms.criteria.ArticleCriteria;
+import com.adnature.domain.profile.entity.Profile;
+import com.adnature.domain.sport.criteria.SportCriteria;
+import com.adnature.domain.sport.entity.Sport;
+import com.adnature.domain.user.entity.WebUser;
+import com.adnature.framework.dao.BaseCriteria.Operator;
+import com.adnature.framework.util.DESPlus;
+import com.adnature.framework.util.DateUtils;
+import com.adnature.framework.util.StringUtils;
+import com.adnature.framework.util.Struts2Utils;
+import com.adnature.framework.web.action.BaseAction;
+import com.adnature.framework.web.freemarker.FeroFreemarkerProcessor;
+import com.adnature.profile.service.ProfileService;
+import com.adnature.sport.service.SportService;
+import com.adnature.usermangent.service.WebUserService;
+import com.adnature.utils.Constants;
+
+/**
+ * 个人中心首页
+ * 
+ * @author 
+ */
+@Namespace("/account")
+@Results({ @Result(name = "index", location = "index.ftl", type = "freemarker"),
+		@Result(name = "saveProfile", location = "index.htm", type = "redirect")})
+public class IndexAction extends BaseAction{
+
+	private static final long serialVersionUID = 1L;
+	
+	@Autowired
+	private WebUserService webUserService;
+	
+	@Autowired
+	private ProfileService profileService;
+	
+	@Autowired
+	private SportService sportService;
+	
+	@Autowired
+	private FeroFreemarkerProcessor feroFreemarkerProcessor;
+	
+    private WebUser webUser;
+    
+    private Profile profile;
+    
+    private SportCriteria criteria = new SportCriteria();
+    
+    private List<Sport> lowSports;
+    
+    private List<Sport> mediumSports;
+    
+    private List<Sport> highSports;
+    
+    private String[] addSportIds;
+    
+    private String[] addSportNames;
+    
+    private String level;
+    
+    private List<Sport> faveActivities;
+    
+    
+	
+
+	/**
+	 * <p>个人中心首页初始化</p>.<br>
+	 * author：<br>
+	 *===================================
+	 * @return
+	 * @throws Exception
+	 */
+	@Action(value="index")
+	@Override
+	public String init() throws Exception {
+		String userId = getLoginuser().getId();
+		//user account info
+		webUser = webUserService.findOne(userId);
+		// profile info
+		profile = profileService.findProfileByUserId(userId);
+		// sport info
+		criteria.setFitnessLevel("1", Operator.equal);
+		lowSports = sportService.findByCriteria(criteria);
+		criteria.setFitnessLevel("2", Operator.equal);
+		mediumSports = sportService.findByCriteria(criteria);
+		criteria.setFitnessLevel("3", Operator.equal);
+		highSports = sportService.findByCriteria(criteria);
+		
+		level = sportService.findSportLevelByUserId(userId);
+		faveActivities = sportService.findSportByUserId(userId);
+		return "index";
+	}
+	
+	@Action(value="saveProfile")
+	public String submitAll() throws Exception {
+		String userId = getLoginuser().getId();
+		// save profile
+		Profile profileTemp = profileService.findProfileByUserId(userId);
+		if(profileTemp==null){
+			profile.setUserId(userId);
+			profileService.insert(profile);
+		}else{
+			profileTemp.setCity(profile.getCity());
+			profileTemp.setProvince(profile.getProvince());
+			profileService.dynamicUpdate(profileTemp);
+		}
+		// save sport
+		sportService.insertSportUser(addSportIds, userId);
+		sportService.insertOtherSportUser(addSportNames, userId);
+		return "saveProfile";
+	}
+	
+	
+	public WebUser getWebUser() {
+		return webUser;
+	}
+
+	public void setWebUser(WebUser webUser) {
+		this.webUser = webUser;
+	}
+
+
+	public Profile getProfile() {
+		return profile;
+	}
+
+
+	public void setProfile(Profile profile) {
+		this.profile = profile;
+	}
+
+
+
+	public List<Sport> getLowSports() {
+		return lowSports;
+	}
+
+
+
+	public void setLowSports(List<Sport> lowSports) {
+		this.lowSports = lowSports;
+	}
+
+
+
+	public List<Sport> getMediumSports() {
+		return mediumSports;
+	}
+
+
+
+	public void setMediumSports(List<Sport> mediumSports) {
+		this.mediumSports = mediumSports;
+	}
+
+
+
+	public List<Sport> getHighSports() {
+		return highSports;
+	}
+
+
+
+	public void setHighSports(List<Sport> highSports) {
+		this.highSports = highSports;
+	}
+
+
+
+	public String[] getAddSportIds() {
+		return addSportIds;
+	}
+
+
+
+	public void setAddSportIds(String[] addSportIds) {
+		this.addSportIds = addSportIds;
+	}
+
+	public String[] getAddSportNames() {
+		return addSportNames;
+	}
+
+	public void setAddSportNames(String[] addSportNames) {
+		this.addSportNames = addSportNames;
+	}
+
+	public String getLevel() {
+		return level;
+	}
+
+	public void setLevel(String level) {
+		this.level = level;
+	}
+
+	public List<Sport> getFaveActivities() {
+		return faveActivities;
+	}
+
+	public void setFaveActivities(List<Sport> faveActivities) {
+		this.faveActivities = faveActivities;
+	}
+
+
+}

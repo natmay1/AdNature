@@ -25,4 +25,6 @@ public interface SportService {
 	public void dynamicUpdate(Sport sport);
 	
 	public void insert(Sport sport);
+
+	//public String findSportLevelByUserId(String userId);
 }

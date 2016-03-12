@@ -60,6 +60,8 @@ public class IndexAction extends BaseAction{
     
     private SportCriteria criteria = new SportCriteria();
     
+   // private Sport sport;
+    
     private List<Sport> lowSports;
     
     private List<Sport> mediumSports;
@@ -124,7 +126,8 @@ public class IndexAction extends BaseAction{
 		sportService.insertOtherSportUser(addSportNames, userId);
 		return "saveProfile";
 	}
-	
+	//@Action(value="saveSportInput")
+	//public String 
 	
 	public WebUser getWebUser() {
 		return webUser;

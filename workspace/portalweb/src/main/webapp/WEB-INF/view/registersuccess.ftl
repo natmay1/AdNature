@@ -12,7 +12,9 @@
          <!-- <img src="background%20forest%20transparent.png"class="img"> -->
             <br>
             <p id="sign">SIGN UP</p>  
-            <p id="othertext">Sign Up Success<a href="${taglibs.ctx}/account/index.htm">link to your account</a></p>
+            <p id="othertext"><b>Sign Up Success</b><br><br><br>Welcome ${(webUser.login)!},<br><br> 
+            	<a href="${taglibs.ctx}/account/index.htm">Go to your Profile</a>
+            </p>
             <br><br><br>
         </div> 
     </body>

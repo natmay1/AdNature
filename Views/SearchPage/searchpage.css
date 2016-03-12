@@ -13,6 +13,13 @@
 
 
 }
+.title {
+    font-size: 20pt;
+    text-align: left;
+    padding: 40px;
+    float: left;
+    margin: 30px;
+}
 
 #button1 {
     
@@ -76,10 +83,11 @@ input[type=button], input[type=button]:hover {
 }
 
 .choice {
-    float:left;
-    margin: 20px;
-    padding: 10px;
-    font-size: 20pt;
+    width: 50px;
+    float:center;
+    margin: 50px;
+    padding: 50px;
+    font-size: 15pt;
 }
 
 #h1 {

@@ -15,7 +15,20 @@ html{
  min-height:100%;
 
 }
+.star {
+    color: red;
+       font-size: 150%;
+    
+}
 
+#divCheckPasswordMatch {
+	left: 50%;
+
+}
+.star1 {
+	color: transparent;
+	font-size: 200%;
+}
 
 .background {
     
@@ -58,7 +71,7 @@ html{
 }
 
 #othertext {
-    font-size: 18pt;
+    font-size: 20pt;
     text-align: center;
 
 }
