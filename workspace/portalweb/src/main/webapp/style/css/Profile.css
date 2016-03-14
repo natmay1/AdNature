@@ -104,6 +104,17 @@ Body {
     position: absolute;
     top: 400px;
     left:50px;
+    
+    
+    background-color: #035208;
+    border: none;
+    color: white;
+    padding: 17px 90px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer
 }
 #Activities {
      font-weight: bold;

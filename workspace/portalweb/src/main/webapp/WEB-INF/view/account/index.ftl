@@ -24,11 +24,11 @@
             <div class="name">${(webUser.login)!}</div>    
             <a href="#myModal" data-toggle="modal"> <button type="button" id="customize">Customize your <br> profile</button> </a> 
             <div id="City">City: ${(profile.city)!} </div>
-            <div id="Type">Enjoys activities that are:
+            <div id="Type">Enjoys activities that are: <br>
             <#list level as levelElem>
-            <#if levelElem =="1">low
-            <#elseif levelElem =="2">medium
-            <#elseif levelElem =="3">high
+            <#if levelElem =="1">Low  <br>
+            <#elseif levelElem =="2">Medium  <br>
+            <#elseif levelElem =="3">High  <br>
             </#if>
             </#list>
 			</div>
