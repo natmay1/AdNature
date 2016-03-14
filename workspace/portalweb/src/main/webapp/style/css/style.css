@@ -46,6 +46,7 @@
     margin-right: 50px;
     margin-top: 10px;
     
+    
 }
 
 .bgimage {
@@ -67,12 +68,12 @@
     border: none;
     color: white;
     padding: 17px 90px;
-    text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
-    cursor: pointer
+    cursor: pointer;
+    font-family: "Overlock";
     
 }
 
@@ -87,7 +88,7 @@
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
-    
+    font-family: "Overlock";
 }
 
 #button3 {

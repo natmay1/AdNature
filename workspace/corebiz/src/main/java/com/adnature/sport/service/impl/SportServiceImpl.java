@@ -1,5 +1,6 @@
 package com.adnature.sport.service.impl;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
@@ -119,8 +120,16 @@ public class SportServiceImpl implements SportService{
 	}
 
 	@Override
-	public String findSportLevelByUserId(String userId) {
-		return sportQuery.findSportLevelByUserId(userId);
+
+	public List<String> findSportLevelByUserId(String userId){
+		List<String> level =new ArrayList<String>();
+		List<Sport> sports= sportQuery.findSportByUserId(userId);
+		for(Sport sport:sports){
+			if(!level.contains(sport.getFitnessLevel())){
+				level.add(sport.getFitnessLevel());
+			}
+		}
+		return level;
 	}
 	
 }

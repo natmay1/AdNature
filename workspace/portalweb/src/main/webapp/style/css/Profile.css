@@ -60,7 +60,8 @@ Body {
     padding: 14px 25px;
     font-size: 16px;
     margin: 4px 2px;
-    color: White
+    color: White;
+    
 }
 
 #customize {
@@ -79,7 +80,7 @@ Body {
 
 .name {
     font-weight: bold;
-    font-family: calibri;
+    font-family: "calibri";
     font-size: 32pt;
     position: absolute;
     top:360px;
@@ -88,9 +89,9 @@ Body {
 }
 
 #City {
-    font-weight: bold;
+   font-weight: bold;
     font-family: calibri;
-    font-size: 18pt;
+    font-size: 24pt;
     position: absolute;
     top: 310px; 
     left: 50px;
@@ -102,11 +103,43 @@ Body {
     font-family: calibri;
     font-size: 18pt;
     position: absolute;
-    top: 400px;
+    top: 370px;
     left:50px;
+    
+    
+   
+}
+#lmh {
+	position: absolute;
+	top: 420px;
+	left: 50px;
+
+}
+.custom{
+	
+	float: left;
+	width: 225px;
+	
+	
+}
+#activ {
+	float: right;
+	border: 50px;
+	position: absolute;
+	top: 350px;
+	right: 50px;
+	
+}
+.activ{
+	
+	width: 180px;
+	display: block;
+	margin: 6px;
+	
+	
 }
 #Activities {
-     font-weight: bold;
+    font-weight: bold;
     font-family: calibri;
     font-size: 18pt;
     position: absolute;
