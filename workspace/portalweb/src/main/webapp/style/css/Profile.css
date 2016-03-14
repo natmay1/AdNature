@@ -1,22 +1,22 @@
 
-Body {
-    background-image: url(../Profilebackground.png);
-    background-size:cover;
-    background-repeat: no-repeat;
-    
+.background {
+	width:100%;  
+    z-index:-5;
+	
+}
+.fixed {
+	
+	position: fixed;
+
+
 }
 
 .cover {
-
-    left: 0; 
+	z-index:5;
+    left: 0;  
     top: 0; 
 }
 
-.BlueBG {
-    /*position: relative; 
-    top: 0; 
-    left: 0;*/
-}
 
 .desc {
     
@@ -61,6 +61,7 @@ Body {
     font-size: 16px;
     margin: 4px 2px;
     color: White;
+    font-family:"Overlock";
     
 }
 
