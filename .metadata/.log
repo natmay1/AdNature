@@ -2818,3 +2818,6 @@ org.osgi.framework.BundleException: Unable to acquire the state change lock for 
 	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1470)
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:46)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-03-14 14:26:40.189
+!MESSAGE The POM for org.apache.maven.plugins:maven-clean-plugin:jar:2.5 is missing, no dependency information available

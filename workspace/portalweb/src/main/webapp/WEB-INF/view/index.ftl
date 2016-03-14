@@ -200,7 +200,6 @@ AdNature is not responsible for what you do in nature.
         <div class="modal-footer">
            <button type="" class="btn btn-default btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
         </div>
-        
       </div>
     </div>
   </div> 
