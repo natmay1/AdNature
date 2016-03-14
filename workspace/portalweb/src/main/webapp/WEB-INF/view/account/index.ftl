@@ -4,6 +4,8 @@
         <title>AdNature | ${(webUser.login)!}</title>
         <link rel="stylesheet" type="text/css" href="/style/css/Profile.css">
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Overlock' rel='stylesheet' type='text/css'>
+     
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
@@ -12,12 +14,14 @@
     </head>
        
     <body>
+    <div class="background fixed"><img src="../style/Profilebackground.png" width=100%></div>
         <div class="Profile">
             <div class="cover">
-                <div class="BlueBG"><img src="/style/Blue%20Background.png" width=100% height=270px></div>
+                <div><img src="/style/Blue%20Background.png" width=100% height=270px></div>
                 <div class="Logo"><img src="../style/logo.png" width=165px height=84px ></div>
             </div>
             <div class="Triangle"><img src="/style/Green%20Triangle.png" width=235 height=213/></div>
+            
             <a href="/logout.htm"><button type="button" id="signout">Sign Out</button></a>
             <a href="#my6Modal" data-toggle="modal">  <div class="Skiier"><img src="/style/skiier.png" height="150" width="115"></div></a>
             <div class="name">${(webUser.login)!}</div>    
