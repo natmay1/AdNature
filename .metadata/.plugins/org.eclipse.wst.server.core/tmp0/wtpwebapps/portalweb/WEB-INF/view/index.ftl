@@ -59,17 +59,17 @@
             
             <div class="tile image2">
                 <img src="style/Locations.PNG" height="209" width="225"><br>
-                <p>See all the options available</p> 
+                <div class="text2">See all the options available</div> 
             </div>
             
             <div class="tile4 image4">
                 <img src="style/Door.jpg" height="280" width="185.5"> <br>
-               Get outside!
+               <div class="text4">Get outside!</div>
             </div>
             
             <div class="tile image3">
                 <img src="style/Map.png" height="178.5" width="307.5">
-                 <p>Check out the map to see user testimonials and plan your route</p>
+                 <div class="text3">Check out the map to see user testimonials and plan your route</div>
             </div>
             
             
