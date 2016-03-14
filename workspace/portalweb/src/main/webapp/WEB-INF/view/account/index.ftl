@@ -4,7 +4,6 @@
         <title>AdNature | ${(webUser.login)!}</title>
         <link rel="stylesheet" type="text/css" href="/style/css/Profile.css">
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
@@ -23,19 +22,27 @@
             <a href="#my6Modal" data-toggle="modal">  <div class="Skiier"><img src="/style/skiier.png" height="150" width="115"></div></a>
             <div class="name">${(webUser.login)!}</div>    
             <a href="#myModal" data-toggle="modal"> <button type="button" id="customize">Customize your <br> profile</button> </a> 
-            <div id="City">City: ${(profile.city)!} </div>
+            <div id="City">${(profile.city)!}, ${(profile.province)!}</div>
             <div id="Type">Enjoys activities that are: <br>
-            <#list level as levelElem>
-            <#if levelElem =="1">Low  <br>
-            <#elseif levelElem =="2">Medium  <br>
-            <#elseif levelElem =="3">High  <br>
-            </#if>
-            </#list>
+            </div>
+          <div id="lmh">
+	          
+		            <#list level as levelElem>
+
+			            <#if levelElem =="1"><button class="btn btn-success custom" >Low Impact</button> <br><br>
+			            <#elseif levelElem =="2"><button class="btn btn-success custom" >Medium Impact</button> <br><br>
+			            <#elseif levelElem =="3"><button class="btn btn-success custom" >High Impact</button> <br><br>
+		            </#if>
+		            </#list>
+				
 			</div>
-            <div id="Activities">Favourite activities:
-            <#list faveActivities as faveActivity>
-            <button type="button" class="btn btn-primary sport" >${faveActivity.name}</button>
-            </#list>
+            <div id="Activities">Favourite activities: </div>
+ 			<div id="activ">
+	            <#list faveActivities as faveActivity>
+	                       
+	            	<span class="btn btn-primary activ" >${faveActivity.name}</span><br>
+	            	
+	            </#list>
             </div>
             <div id="Schedule">${(webUser.login)!}'s Schedule:</div>
         </div>
