@@ -3,7 +3,7 @@ Navicat MySQL Data Transfer
 
 Source Server         : fero
 Source Server Version : 50027
-Source Host           : localhost:3306
+Source Host           profileprofile: localhost:3306
 Source Database       : adnature
 
 Target Server Type    : MYSQL
@@ -150,7 +150,7 @@ CREATE TABLE `category` (
 DROP TABLE IF EXISTS `profile`;
 CREATE TABLE `profile` (
   `ID` varchar(32) NOT NULL,
-  `ADDRESS` varchar(6) default NULL,
+  `ADDRESS` varchar(10) default NULL,
   `PROVINCE` varchar(255) default NULL,
   `CITY` varchar(255) default NULL,
   `USER_ID` varchar(32) default NULL,

@@ -72,7 +72,7 @@ public class IndexAction extends BaseAction{
     
     private String[] addSportNames;
     
-    private String level;
+    private List<String> level;
     
     private List<Sport> faveActivities;
     
@@ -102,7 +102,7 @@ public class IndexAction extends BaseAction{
 		criteria.setFitnessLevel("3", Operator.equal);
 		highSports = sportService.findByCriteria(criteria);
 		
-		//level = sportService.findSportLevelByUserId(userId);
+		setLevel(sportService.findSportLevelByUserId(userId));
 		faveActivities = sportService.findSportByUserId(userId);
 		return "index";
 	}
@@ -203,20 +203,20 @@ public class IndexAction extends BaseAction{
 		this.addSportNames = addSportNames;
 	}
 
-	public String getLevel() {
-		return level;
-	}
-
-	public void setLevel(String level) {
-		this.level = level;
-	}
-
 	public List<Sport> getFaveActivities() {
 		return faveActivities;
 	}
 
 	public void setFaveActivities(List<Sport> faveActivities) {
 		this.faveActivities = faveActivities;
+	}
+
+	public List<String> getLevel() {
+		return level;
+	}
+
+	public void setLevel(List<String> level) {
+		this.level = level;
 	}
 
 
