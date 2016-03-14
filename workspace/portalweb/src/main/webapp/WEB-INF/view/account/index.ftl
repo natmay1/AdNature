@@ -68,8 +68,8 @@
               <input type="text" name="profile.province" class="form-control"  placeholder="Province" value="${(profile.province)!}">
             </div>
             <div class="form-group">
-              <input type="checkbox" name="" class="form-control" value="">I want to see advertisements for equipment and tours.
-              
+              <input type="checkbox" name="" value=""> I want to see advertisements for equipment and tours.
+              <br>
             </div>
             <a href="#my2Modal" data-toggle="modal"><button type="botton" class="btn btn-default btn-success btn-block custom-close4"> Continue</button></a>
         </div>
