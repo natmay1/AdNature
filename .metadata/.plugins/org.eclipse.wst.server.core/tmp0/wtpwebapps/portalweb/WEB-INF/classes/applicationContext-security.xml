@@ -23,6 +23,7 @@
 		<intercept-url pattern="/index.htm" access="permitAll" />
 		<intercept-url pattern="/logout.htm" access="permitAll" />
 		<intercept-url pattern="/**/verifyCode.htm" access="permitAll" />
+		<intercept-url pattern="/Searchpage.htm" access="permitAll" />
 		<intercept-url pattern="/register.htm" access="permitAll" />
 		<intercept-url pattern="/**/sendPhoneVerifyCode.htm"
 			access="permitAll" />

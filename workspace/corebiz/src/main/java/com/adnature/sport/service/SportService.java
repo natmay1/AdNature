@@ -26,5 +26,6 @@ public interface SportService {
 	
 	public void insert(Sport sport);
 
+	
 	public List<String> findSportLevelByUserId(String userId);
 }

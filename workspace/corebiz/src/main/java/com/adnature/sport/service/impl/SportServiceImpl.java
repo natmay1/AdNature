@@ -120,6 +120,7 @@ public class SportServiceImpl implements SportService{
 	}
 
 	@Override
+
 	public List<String> findSportLevelByUserId(String userId){
 		List<String> level =new ArrayList<String>();
 		List<Sport> sports= sportQuery.findSportByUserId(userId);

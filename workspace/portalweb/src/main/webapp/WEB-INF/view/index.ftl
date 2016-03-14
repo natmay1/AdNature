@@ -31,7 +31,7 @@
                 <a href="register.htm"><button type="button" id="button1">Sign Up</button></a>
                 <br>
                 <br><br>
-                <a href="../SearchPage/Searchpage.html"><button type="button" id="button2">Search By Activity</button></a>
+                <a href="Searchpage.htm"><button type="button" id="button2">Search By Activity</button></a>
                 <br>
                 <br>
                 <br><br><br><br><br><br><br><br><br><br>
