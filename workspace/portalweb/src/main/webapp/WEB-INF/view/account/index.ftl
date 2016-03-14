@@ -327,8 +327,8 @@ $("#lowLevelButton").on("click",function(){
 		$("#saveSportLevelButton").attr("low",'1');
 		
 	}
-	else if ($("#lowLevelButton").css('background-color') != ('red')) {
-		($("#lowLevelButton").css('background-color') == ('red'));
+	else if ($("#lowLevelButton").css('background-color') == ('navy')) {
+		$("#lowLevelButton").css('background-color','red');
 	}
 
 });
