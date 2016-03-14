@@ -44,7 +44,7 @@
               <div class="modal-body title"><a data-toggle="modal" data-target="#intenseModal"><p>Intense</p></a></div>     
           <div class="modal-body title"><a data-toggle="modal" data-target="#teamModal"><p>Team Sports</p></a></div>       
         <div class="modal-body title"><a data-toggle="modal" data-target="#leisureModal"><p>Leisure</p></a></div>
-      
+          </div>
           <div class="modal-footer">
            <button type="submit" class="btn btn-default btn-default pull-left"  data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
         </div>
