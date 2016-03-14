@@ -24,8 +24,10 @@ import com.adnature.framework.web.action.BaseAction;
  * @author 
  */
 @Namespace("/")
-@Results({ @Result(name = "index", location = "index.ftl", type = "freemarker")})
-
+@Results({ 
+	@Result(name = "index", location = "index.ftl", type = "freemarker"), 
+	@Result(name = "Searchpage", location = "Searchpage.ftl", type = "freemarker"),
+	})
 public class IndexAction extends BaseAction{
 
 	/**
@@ -65,6 +67,12 @@ public class IndexAction extends BaseAction{
 	public String init() throws Exception {
 		//sysDate=DateUtils.getCurrentDateTime();
 		return "index";
+	}
+	
+	@Action(value="Searchpage")
+	public String hi() throws Exception {
+		//sysDate=DateUtils.getCurrentDateTime();
+		return "Searchpage";
 	}
 
 	

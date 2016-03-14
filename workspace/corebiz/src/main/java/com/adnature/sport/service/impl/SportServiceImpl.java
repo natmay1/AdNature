@@ -120,8 +120,7 @@ public class SportServiceImpl implements SportService{
 
 	@Override
 	public String findSportLevelByUserId(String userId) {
-		// TODO Auto-generated method stub
-		return null;
+		return sportQuery.findSportLevelByUserId(userId);
 	}
 	
 }
