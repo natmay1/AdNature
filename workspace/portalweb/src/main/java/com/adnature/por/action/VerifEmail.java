@@ -24,10 +24,10 @@
 	 * 
 	 * @author 
 	 */
-	@Namespace("/Search")
+	@Namespace("/")
 	@Results({ 
 		@Result(name = "index", location = "index.ftl", type = "freemarker"), 
-		@Result(name = "Verifpage", location = "Verifpage.ftl", type = "freemarker"),
+		@Result(name = "VerifEmail", location = "VerifEmail.ftl", type = "freemarker"),
 		
 		})
 	public class VerifEmail extends BaseAction{
