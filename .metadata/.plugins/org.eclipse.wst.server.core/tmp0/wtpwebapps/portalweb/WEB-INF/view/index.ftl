@@ -31,7 +31,7 @@
                 <a href="register.htm"><button type="button" id="button1">Sign Up</button></a>
                 <br>
                 <br><br>
-                <a href="../SearchPage/Searchpage.html"><button type="button" id="button2">Search By Activity</button></a>
+                <a href="Searchpage.htm"><button type="button" id="button2">Search By Activity</button></a>
                 <br>
                 <br>
                 <br><br><br><br><br><br><br><br><br><br>
@@ -59,17 +59,17 @@
             
             <div class="tile image2">
                 <img src="style/Locations.PNG" height="209" width="225"><br>
-                <p>See all the options available</p> 
+                <div class="text2">See all the options available</div> 
             </div>
             
             <div class="tile4 image4">
                 <img src="style/Door.jpg" height="280" width="185.5"> <br>
-               Get outside!
+               <div class="text4">Get outside!</div>
             </div>
             
             <div class="tile image3">
                 <img src="style/Map.png" height="178.5" width="307.5">
-                 <p>Check out the map to see user testimonials and plan your route</p>
+                 <div class="text3">Check out the map to see user testimonials and plan your route</div>
             </div>
             
             
@@ -200,7 +200,6 @@ AdNature is not responsible for what you do in nature.
         <div class="modal-footer">
            <button type="" class="btn btn-default btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
         </div>
-        
       </div>
     </div>
   </div> 

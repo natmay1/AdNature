@@ -29,7 +29,7 @@
             <br><br>
              
               </div>
-              <input type="submit" class="button5" value="Sign Up">
+              <input type="submit" onclick="sendEmail()" class="button5" name="signup" value="Sign Up">
             <br>
      
             </form>
@@ -37,7 +37,7 @@
         </div> 
         <script type="text/javascript">
 	var password = document.getElementById("Password"), confirm_password = document.getElementById("confirmPassword");
-
+ 
 function validatePassword(){
   if(password.value != confirm_password.value) {
     confirm_password.setCustomValidity("Passwords Don't Match");
@@ -48,6 +48,11 @@ function validatePassword(){
 
 password.onchange = validatePassword;
 confirm_password.onkeyup = validatePassword;
+
+function sendEmail(){
+
+document.signup.sendHtmlEmail();
+}
 
 
 </script>

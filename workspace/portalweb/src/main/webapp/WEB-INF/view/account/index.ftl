@@ -4,7 +4,8 @@
         <title>AdNature | ${(webUser.login)!}</title>
         <link rel="stylesheet" type="text/css" href="/style/css/Profile.css">
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-
+        <link href='https://fonts.googleapis.com/css?family=Overlock' rel='stylesheet' type='text/css'>
+     
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
@@ -13,29 +14,39 @@
     </head>
        
     <body>
+    <div class="background fixed"><img src="../style/Profilebackground.png" width=100%></div>
         <div class="Profile">
             <div class="cover">
-                <div class="BlueBG"><img src="/style/Blue%20Background.png" width=100% height=270px></div>
+                <div><img src="/style/Blue%20Background.png" width=100% height=270px></div>
                 <div class="Logo"><img src="../style/logo.png" width=165px height=84px ></div>
             </div>
             <div class="Triangle"><img src="/style/Green%20Triangle.png" width=235 height=213/></div>
+            
             <a href="/logout.htm"><button type="button" id="signout">Sign Out</button></a>
             <a href="#my6Modal" data-toggle="modal">  <div class="Skiier"><img src="/style/skiier.png" height="150" width="115"></div></a>
             <div class="name">${(webUser.login)!}</div>    
             <a href="#myModal" data-toggle="modal"> <button type="button" id="customize">Customize your <br> profile</button> </a> 
-            <div id="City">City: ${(profile.city)!} </div>
-            <div id="Type">Enjoys activities that are:
-            <#list level as levelElem>
-            <#if levelElem =="1">low
-            <#elseif levelElem =="2">medium
-            <#elseif levelElem =="3">high
-            </#if>
-            </#list>
+            <div id="City">${(profile.city)!}, ${(profile.province)!}</div>
+            <div id="Type">Enjoys <a href="../VerifEmail.htm">activities</a> that are: <br>
+            </div>
+          <div id="lmh">
+	          
+		            <#list level as levelElem>
+
+			            <#if levelElem =="1"><button class="btn btn-success custom" >Low Impact</button> <br><br>
+			            <#elseif levelElem =="2"><button class="btn btn-success custom" >Medium Impact</button> <br><br>
+			            <#elseif levelElem =="3"><button class="btn btn-success custom" >High Impact</button> <br><br>
+		            </#if>
+		            </#list>
+				
 			</div>
-            <div id="Activities">Favourite activities:
-            <#list faveActivities as faveActivity>
-            <button type="button" class="btn btn-primary sport" >${faveActivity.name}</button>
-            </#list>
+            <div id="Activities">Favourite activities: </div>
+ 			<div id="activ">
+	            <#list faveActivities as faveActivity>
+	                       
+	            	<span class="btn btn-primary activ" >${faveActivity.name}</span><br>
+	            	
+	            </#list>
             </div>
             <div id="Schedule">${(webUser.login)!}'s Schedule:</div>
         </div>
@@ -59,6 +70,10 @@
             </div>
             <div class="form-group">
               <input type="text" name="profile.province" class="form-control"  placeholder="Province" value="${(profile.province)!}">
+            </div>
+            <div class="form-group">
+              <input type="checkbox" name="" value=""> I want to see advertisements for equipment and tours.
+              <br>
             </div>
             <a href="#my2Modal" data-toggle="modal"><button type="botton" class="btn btn-default btn-success btn-block custom-close4"> Continue</button></a>
         </div>
@@ -327,8 +342,8 @@ $("#lowLevelButton").on("click",function(){
 		$("#saveSportLevelButton").attr("low",'1');
 		
 	}
-	else if ($("#lowLevelButton").css('background-color') != ('red')) {
-		($("#lowLevelButton").css('background-color') == ('red'));
+	else if ($("#lowLevelButton").css('background-color') == ('navy')) {
+		$("#lowLevelButton").css('background-color','red');
 	}
 
 });
