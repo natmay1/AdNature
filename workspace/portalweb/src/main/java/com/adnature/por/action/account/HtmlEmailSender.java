@@ -14,6 +14,7 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
  
 public class HtmlEmailSender {
+	
  
     public void sendHtmlEmail(String host, String port,
             final String userName, final String password, String toAddress,
@@ -45,7 +46,7 @@ public class HtmlEmailSender {
         msg.setSubject("Authenticate your AdNature Account");
         msg.setSentDate(new Date());
         // set plain text message
-        msg.setContent("Thank you for activating your account at AdNature.", "text/html");
+        msg.setContent("../view/VerifEmail.htm", "text/html");
  
         // sends the e-mail
         Transport.send(msg);
@@ -60,8 +61,8 @@ public class HtmlEmailSender {
         // SMTP server information
         String host = "smtp.gmail.com";
         String port = "587";
-        String mailFrom = "natasha.may.wall@gmail.com";
-        String password = "**holes**891";
+        String mailFrom = "no.reply.adnature@gmail.com";
+        String password = "no.reply.adnature11";
  
         // outgoing message information
         String mailTo = "mmilne130@gmail.com";
@@ -81,5 +82,7 @@ public class HtmlEmailSender {
             System.out.println("Failed to sent email.");
             ex.printStackTrace();
         }
+        
+       
     }
 }
