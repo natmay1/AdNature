@@ -27,7 +27,7 @@
             <div class="name">${(webUser.login)!}</div>    
             <a href="#myModal" data-toggle="modal"> <button type="button" id="customize">Customize your <br> profile</button> </a> 
             <div id="City">${(profile.city)!}, ${(profile.province)!}</div>
-            <div id="Type">Enjoys <a href="../VerifEmail.htm">activities</a> that are: <br>
+            <div id="Type">Enjoys activities that are: <br>
             </div>
           <div id="lmh">
 	          
