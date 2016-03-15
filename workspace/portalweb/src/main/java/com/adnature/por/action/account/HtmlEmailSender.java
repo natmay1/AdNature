@@ -12,6 +12,8 @@ import javax.mail.Transport;
 import javax.mail.internet.AddressException;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
+
+import com.adnature.por.action.VerifEmail;
  
 public class HtmlEmailSender {
 	
@@ -38,15 +40,15 @@ public class HtmlEmailSender {
         Session session = Session.getInstance(properties, auth);
  
         // creates a new e-mail message
-        Message msg = new MimeMessage(session);
+        MimeMessage msg = new MimeMessage(session);
  
         msg.setFrom(new InternetAddress(userName));
         InternetAddress[] toAddresses = { new InternetAddress(toAddress) };
         msg.setRecipients(Message.RecipientType.TO, toAddresses );
-        msg.setSubject("Authenticate your AdNature Account");
+        msg.setSubject(subject);
         msg.setSentDate(new Date());
         // set plain text message
-        msg.setContent("../view/VerifEmail.htm", "text/html");
+        msg.setContent(message, "text/html"); 
  
         // sends the e-mail
         Transport.send(msg);
@@ -66,12 +68,15 @@ public class HtmlEmailSender {
  
         // outgoing message information
         String mailTo = "mmilne130@gmail.com";
-        String subject = "Hello my friend";
+        String subject = "Authenticate your AdNature Account";
  
         // message contains HTML markups
         String message = "<i>Greetings!</i><br>";
         message += "<b>Wish you a nice day!</b><br>";
  
+
+                		
+                		
         HtmlEmailSender mailer = new HtmlEmailSender();
  
         try {
