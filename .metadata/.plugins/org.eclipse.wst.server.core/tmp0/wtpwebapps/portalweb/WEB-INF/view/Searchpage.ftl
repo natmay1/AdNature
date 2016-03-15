@@ -22,7 +22,7 @@
         <div class="lighter">
 <form action="search" method="post">
     <input type="text" id="tipue_drop_input" autocomplete="off" class="search">
-  
+  	
 </form>
 <div id="tipue_drop_content"></div>
         </div>
