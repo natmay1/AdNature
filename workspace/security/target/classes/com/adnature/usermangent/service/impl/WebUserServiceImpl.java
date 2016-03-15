@@ -206,7 +206,9 @@ public class WebUserServiceImpl implements WebUserService {
     	return output;
     }
 
-
+    
+    //@Override 
+    //public void sendHtmlEmail (String host, String port, final String userName final String password, String toAddress, String subject,String message) throws AddressException,MessagingException
 	
 	@Override
 	public List<WebUser> getWebUserAll(WebUserCriteria criteria) {
