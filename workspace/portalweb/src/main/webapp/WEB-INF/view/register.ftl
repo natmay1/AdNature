@@ -12,7 +12,7 @@
          <!-- <img src="background%20forest%20transparent.png"class="img"> -->
             <br>
             <p id="sign">SIGN UP</p>  
-            <p id="othertext">And customize your search experience</p>
+            <p id="othertext">And customize your search experience:${(error)!}</p>
             <br><br><br>
         
         	<form action="saveinfo.htm" method="POST">
