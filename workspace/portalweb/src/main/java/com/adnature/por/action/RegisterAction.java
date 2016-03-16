@@ -25,6 +25,7 @@ import com.adnature.framework.util.VerifyCodeGenerator;
 import com.adnature.framework.web.action.BaseAction;
 import com.adnature.framework.web.exception.CaptchaException;
 import com.adnature.framework.web.interceptor.Constant;
+import com.adnature.mail.service.MailService;
 import com.adnature.security.control.front.MyVerifyCodeFront;
 import com.adnature.system.service.SettingService;
 import com.adnature.usermangent.service.WebUserService;
@@ -52,8 +53,13 @@ public class RegisterAction extends BaseAction{
 	@Autowired
 	private SettingService settingService;
 	
+	@Autowired
+	private MailService mailService;
+	
     /** 前台用户实体 */
     private WebUser webUser;
+    
+    private String error;
     
     /**
      * <p>注册首页</p>
@@ -81,7 +87,19 @@ public class RegisterAction extends BaseAction{
 			
 	        // TODO 没有后台校验 
 			String password = webUser.getPassword();
-			webUserService.save(webUser);
+			
+			WebUserCriteria criteria = new WebUserCriteria();
+			criteria.setEmail(webUser.getEmail(), Operator.equal);
+			List<WebUser> result = webUserService.findByCriteria(criteria);
+			
+			if(result!=null && !result.isEmpty()){
+				error ="error";
+				return INIT;
+			}else{
+				webUserService.save(webUser);
+				mailService.sendEmail(webUser.getEmail());
+			}
+			
 //	        paymentService.ciccDoRegister(webUser.getId(),webUser.getLogin());
 			UsernamePasswordAuthenticationToken token = new UsernamePasswordAuthenticationToken(
 					webUser.getLogin(), password);
@@ -200,5 +218,13 @@ public class RegisterAction extends BaseAction{
     public void setWebUser(WebUser webUser) {
         this.webUser = webUser;
     }
+
+	public String getError() {
+		return error;
+	}
+
+	public void setError(String error) {
+		this.error = error;
+	}
 
 }
