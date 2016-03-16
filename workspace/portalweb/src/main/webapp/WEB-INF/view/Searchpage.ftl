@@ -177,6 +177,7 @@
       </div>
     </div>
   </div> 
+  </div>
   
   
    <!-- Activity list modal -->
