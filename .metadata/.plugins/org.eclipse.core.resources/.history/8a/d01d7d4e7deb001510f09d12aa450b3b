@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="shortcut icon" href="Transparent%20Mountain.ico" />
+        <title>AdNature | Search Results</title>
+        <link rel="stylesheet" type="text/css" href="/style/css/results.css">
+    </head>
+    
+    <body>
+        <img id="logo" src="/style/logo.png" alt="Logo" width=330px height=168px >
+
+        
+            <input type="text" class="searchbar" id="tipue_drop_input" name="" value="walking trails"> <!--Change the value to what is searched-->
+		
+
+    
+    </body>
+</html>

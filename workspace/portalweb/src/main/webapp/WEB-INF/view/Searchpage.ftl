@@ -21,7 +21,7 @@
         
         <div class="lighter">
 <form action="search" method="post">
-    <input type="text" id="tipue_drop_input" autocomplete="off" class="search">
+    <input type="text" id="tipue_drop_input" name="search" autocomplete="off" class="search">
   	
 </form>
 <div id="tipue_drop_content"></div>
@@ -65,7 +65,7 @@
     
         </div>
             <div class="modal-body choice">
-            <a href="<p>Swimming</p>
+            <p>Swimming</p>
             <p>Fishing</p>
             <p>Canoeing</p>
             <p>Sailing</p>
@@ -177,6 +177,8 @@
       </div>
     </div>
   </div> 
+  </div>
+  
   
    <!-- Activity list modal -->
         <div class="modal fade" id="leisureModal" role="dialog">
