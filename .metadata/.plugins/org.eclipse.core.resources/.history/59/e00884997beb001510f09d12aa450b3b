@@ -1,0 +1,9 @@
+#logo {
+	  position: absolute; 
+    top: 10px; 
+    left: 80px;
+}
+.searchbar {
+	
+	
+}
