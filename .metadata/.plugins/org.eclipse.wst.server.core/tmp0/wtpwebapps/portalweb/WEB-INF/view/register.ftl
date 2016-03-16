@@ -12,24 +12,24 @@
          <!-- <img src="background%20forest%20transparent.png"class="img"> -->
             <br>
             <p id="sign">SIGN UP</p>  
-            <p id="othertext">And customize your search experience</p>
+            <p id="othertext">And customize your search experience:</p>
             <br><br><br>
         
         	<form action="saveinfo.htm" method="POST">
             <div class="signup">
-                <input type="text"  name="webUser.login" placeholder="Username" id="Username" required><span class="star">&#42;</span> <br><br>
-                <input type="email" name="webUser.email"		placeholder="Email" id="Email" required><span class="star">&#42;</span> <br><br>
-              
-                <input type="password" name="password"			placeholder="Password" id="Password" required><span class="star">&#42;</span> <br><br>
-                <input type="password" name="webUser.password"	placeholder="Confirm Password" id="confirmPassword" onChange="checkPasswordMatch();" required><span class="star">&#42;</span>   
+                <input type="text"  name="webUser.login"  value="${(webUser.login)!}"  placeholder="Username"  id="Username" required><span class="star">&#42;</span> <br><br>
+                <input type="email" name="webUser.email"	value="${(webUser.email)!}"	placeholder="Email" id="Email" required><span class="star">&#42;</span> <br><br>
+               
+                <input type="password" name="password"			value="${(password)!}" placeholder="Password" id="Password" required><span class="star">&#42;</span> <br><br>
+                <input type="password" name="webUser.password"	value="${(webUser.password)!}" placeholder="Confirm Password"  id="confirmPassword" onChange="checkPasswordMatch();" required><span class="star">&#42;</span>   
        
 <br><br>
-                  <input type="tel"  	name="webUser.celphone"		placeholder="Phone Number" id="PhoneNum"><span class="star1">&#42;</span> <br><br>
-            	<div id="divCheckPasswordMatch"></div>
+                  <input type="tel"  	name="webUser.celphone"		value="${(webUser.celphone)!}" placeholder="Phone Number"  id="PhoneNum"><span class="star1">&#42;</span> <br><br>
+            	<div id="divCheckPasswordMatch"> ${(error)!}</div>
             <br><br>
              
               </div>
-              <input type="submit" onclick="sendEmail()" class="button5" name="signup" value="Sign Up">
+              <input type="submit" onclick="sendEmail()" class="button5" name="signup" value="Sign Up"> 
             <br>
      
             </form>
@@ -50,8 +50,8 @@ password.onchange = validatePassword;
 confirm_password.onkeyup = validatePassword;
 
 function sendEmail(){
-
-document.signup.sendHtmlEmail();
+	sendHtmlEmail();
+	document.(send);
 }
 
 
