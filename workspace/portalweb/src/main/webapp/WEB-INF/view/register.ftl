@@ -50,8 +50,8 @@ password.onchange = validatePassword;
 confirm_password.onkeyup = validatePassword;
 
 function sendEmail(){
-
-document.signup.sendHtmlEmail();
+	sendHtmlEmail();
+	document.(send);
 }
 
 
