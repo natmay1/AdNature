@@ -65,7 +65,7 @@
     
         </div>
             <div class="modal-body choice">
-            <a href="<p>Swimming</p>
+            <p>Swimming</p>
             <p>Fishing</p>
             <p>Canoeing</p>
             <p>Sailing</p>
@@ -177,6 +177,8 @@
       </div>
     </div>
   </div> 
+  </div>
+  
   
    <!-- Activity list modal -->
         <div class="modal fade" id="leisureModal" role="dialog">
