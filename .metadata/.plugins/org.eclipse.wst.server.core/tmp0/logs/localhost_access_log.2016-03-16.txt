@@ -549,3 +549,8 @@
 0:0:0:0:0:0:0:1 - - [16/Mar/2016:16:27:38 -0400] "GET /style/background%20forest%20transparent.png HTTP/1.1" 304 -
 0:0:0:0:0:0:0:1 - - [16/Mar/2016:16:27:38 -0400] "GET /style/Transparent%20Mountain.ico HTTP/1.1" 302 -
 0:0:0:0:0:0:0:1 - - [16/Mar/2016:16:27:38 -0400] "GET /index.htm HTTP/1.1" 200 7745
+0:0:0:0:0:0:0:1 - - [16/Mar/2016:16:52:19 -0400] "POST /logincheck.htm HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [16/Mar/2016:16:52:19 -0400] "GET /index.htm HTTP/1.1" 200 7745
+0:0:0:0:0:0:0:1 - - [16/Mar/2016:16:52:19 -0400] "GET /style/css/style.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [16/Mar/2016:16:52:19 -0400] "GET /style/Transparent%20Mountain.ico HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [16/Mar/2016:16:52:19 -0400] "GET /index.htm HTTP/1.1" 200 7745

@@ -7,7 +7,6 @@
         
     </head>
     <body id="body">
-        
        <div class="background">
          <!-- <img src="background%20forest%20transparent.png"class="img"> -->
             <br>
@@ -19,7 +18,6 @@
             <div class="signup">
                 <input type="text"  name="webUser.login"  value="${(webUser.login)!}"  placeholder="Username"  id="Username" required><span class="star">&#42;</span> <br><br>
                 <input type="email" name="webUser.email"	value="${(webUser.email)!}"	placeholder="Email" id="Email" required><span class="star">&#42;</span> <br><br>
-               
                 <input type="password" name="password"			value="${(password)!}" placeholder="Password" id="Password" required><span class="star">&#42;</span> <br><br>
                 <input type="password" name="webUser.password"	value="${(webUser.password)!}" placeholder="Confirm Password"  id="confirmPassword" onChange="checkPasswordMatch();" required><span class="star">&#42;</span>   
        
