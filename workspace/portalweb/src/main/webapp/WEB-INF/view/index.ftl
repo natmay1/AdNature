@@ -28,6 +28,7 @@
         <p id="slogan">Making it easier for you to get outside</p><br><br><br>
         </div>
             <div class="center">
+            	<img id="movingskiier" src="style/Skiier2.png" width=190px height= 129px>
                 <a href="register.htm"><button type="button" id="button1">Sign Up</button></a>
                 <br>
                 <br><br>
@@ -204,6 +205,21 @@ AdNature is not responsible for what you do in nature.
     </div>
   </div> 
 </div>
+<script>
+
+var duration= 2000;
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 50) {
+        $("#movingskiier").animate({left: '1000px',top:'550px'},{duration:duration});
+  
+    }
+});
+
+
+
+
+</script>
+
 
 </body>
     
