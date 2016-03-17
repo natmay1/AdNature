@@ -14,7 +14,8 @@
     left: 0;
     top: 0;
     width: 100%;
-	z-index:2;
+    z-index:1;
+
 }
 
 .relative {
@@ -133,6 +134,7 @@
 
 #movingskiier {
 	position:absolute;
+	z-index:0;
 	top:295px;
 	left:-50px;
 	z-index:0;
