@@ -14,7 +14,7 @@
 <!-- Latest compiled JavaScript -->
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
-    <body>
+    <body>${(error1)!}
         <div class="bgimage">
         <div class="header">
         <img id="logo" src="style/logo.png" alt="Logo" width=165px height=84px >
@@ -55,7 +55,7 @@
             <div class="tile image1">
                 <img src= "style/Search%20Bar%203.png" height="64" width="270">
                 
-                <div class="text1">Search an activity or make a customized search that fits your needs</div>
+                <div class="text1">Search an activity or make a customized search that fits your needs ${(error1)!}</div>
             </div>
             
             <div class="tile image2">
@@ -194,6 +194,7 @@ AdNature is not responsible for what you do in nature.
 	          <input type="password" class="password" name ="j_password" placeholder="Password" >
 	          <br>
 	          <br>
+	         <p></p>
 	          </div>
 	          <button type="submit" class="btn btn-default btn-success btn-block"> Log in</button>
 	    </form>
@@ -206,6 +207,7 @@ AdNature is not responsible for what you do in nature.
   </div> 
 </div>
 <script>
+
 
 var duration= 2000;
 $(window).scroll(function() {
