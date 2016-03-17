@@ -89,15 +89,38 @@ public class RegisterAction extends BaseAction{
 			String password = webUser.getPassword();
 			
 			WebUserCriteria criteria = new WebUserCriteria();
-			criteria.setEmail(webUser.getEmail(), Operator.equal);
-			List<WebUser> result = webUserService.findByCriteria(criteria);
+			criteria.setLogin(webUser.getLogin(), Operator.equal);
+			List<WebUser> loginresult = webUserService.findByCriteria(criteria);
+			
+			if(loginresult!=null && !loginresult.isEmpty()){
+				error ="Your username is already in our system. Please enter a different one.";
+				return INIT;
+			}else{
+				webUserService.save(webUser);
+			}
+			
+			WebUserCriteria emailcriteria = new WebUserCriteria();
+			emailcriteria.setEmail(webUser.getEmail(), Operator.equal);
+			List<WebUser> result = webUserService.findByCriteria(emailcriteria);
 			
 			if(result!=null && !result.isEmpty()){
-				error ="error";
+				error ="Your email address is already in our system. Please enter a different one.";
 				return INIT;
 			}else{
 				webUserService.save(webUser);
 				mailService.sendEmail(webUser.getEmail());
+			}
+			
+
+			WebUserCriteria phonecriteria = new WebUserCriteria();
+			phonecriteria.setLogin(webUser.getLogin(), Operator.equal);
+			List<WebUser> phoneresult = webUserService.findByCriteria(phonecriteria);
+			
+			if(phoneresult!=null && !phoneresult.isEmpty()){
+				error ="Your phone number is already in our system. Please enter a different one.";
+				return INIT;
+			}else{
+				webUserService.save(webUser);
 			}
 			
 //	        paymentService.ciccDoRegister(webUser.getId(),webUser.getLogin());

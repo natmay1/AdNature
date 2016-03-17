@@ -25,6 +25,7 @@ import com.adnature.framework.util.VerifyCodeGenerator;
 import com.adnature.framework.web.action.BaseAction;
 import com.adnature.framework.web.exception.CaptchaException;
 import com.adnature.framework.web.interceptor.Constant;
+import com.adnature.mail.service.MailService;
 import com.adnature.security.control.front.MyVerifyCodeFront;
 import com.adnature.system.service.SettingService;
 import com.adnature.usermangent.service.WebUserService;
@@ -52,8 +53,13 @@ public class RegisterAction extends BaseAction{
 	@Autowired
 	private SettingService settingService;
 	
+	@Autowired
+	private MailService mailService;
+	
     /** 前台用户实体 */
     private WebUser webUser;
+    
+    private String error;
     
     /**
      * <p>注册首页</p>
@@ -81,7 +87,42 @@ public class RegisterAction extends BaseAction{
 			
 	        // TODO 没有后台校验 
 			String password = webUser.getPassword();
-			webUserService.save(webUser);
+			
+			WebUserCriteria criteria = new WebUserCriteria();
+			criteria.setLogin(webUser.getLogin(), Operator.equal);
+			List<WebUser> loginresult = webUserService.findByCriteria(criteria);
+			
+			if(loginresult!=null && !loginresult.isEmpty()){
+				error ="Your username is already in our system. Please enter a different one.";
+				return INIT;
+			}else{
+				webUserService.save(webUser);
+			}
+			
+			WebUserCriteria emailcriteria = new WebUserCriteria();
+			emailcriteria.setEmail(webUser.getEmail(), Operator.equal);
+			List<WebUser> result = webUserService.findByCriteria(emailcriteria);
+			
+			if(result!=null && !result.isEmpty()){
+				error ="Your email address is already in our system. Please enter a different one.";
+				return INIT;
+			}else{
+				webUserService.save(webUser);
+				mailService.sendEmail(webUser.getEmail());
+			}
+			
+
+			WebUserCriteria phonecriteria = new WebUserCriteria();
+			phonecriteria.setLogin(webUser.getLogin(), Operator.equal);
+			List<WebUser> phoneresult = webUserService.findByCriteria(phonecriteria);
+			
+			if(phoneresult!=null && !phoneresult.isEmpty()){
+				error ="Your phone number is already in our system. Please enter a different one.";
+				return INIT;
+			}else{
+				webUserService.save(webUser);
+			}
+			
 //	        paymentService.ciccDoRegister(webUser.getId(),webUser.getLogin());
 			UsernamePasswordAuthenticationToken token = new UsernamePasswordAuthenticationToken(
 					webUser.getLogin(), password);
@@ -200,5 +241,13 @@ public class RegisterAction extends BaseAction{
     public void setWebUser(WebUser webUser) {
         this.webUser = webUser;
     }
+
+	public String getError() {
+		return error;
+	}
+
+	public void setError(String error) {
+		this.error = error;
+	}
 
 }
