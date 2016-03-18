@@ -208,20 +208,12 @@ AdNature is not responsible for what you do in nature.
 </div>
 <script>
 
-var duration= 3000;
-var iScrollPos = 0;
-$(window).scroll(function () {
-    var iCurScrollPos = $(this).scrollTop();
-    if (iCurScrollPos > iScrollPos) {
-        //Scrolling Down
-        $("#movingskiier").stop(true,false).animate({left: '1000px',top:'550px'},{duration:duration});
-        
-    } else if (iCurScrollPos < iScrollPos && iCurScrollPos <200) {
-        //Scrolling Up
-        $("#movingskiier").stop(true,false).animate({left: '-50px',top:'295px'},{duration:duration});
-    }
-    iScrollPos = iCurScrollPos;
-});
+
+
+
+
+
+
 
 </script>
 
