@@ -215,6 +215,7 @@ AdNature is not responsible for what you do in nature.
 </div>
 <script>
 
+
 var window_width = $(window).width() - $('#object').width();
 
 var document_height = $(window).height() * 0.07; 
