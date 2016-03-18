@@ -283,7 +283,7 @@
 			<div class="activities">
                <img src="../style/hiking.png" width=100px height=100px>
 			</div>    
-		  </select>
+		  </div>
             <button type="button" class="btn btn-default btn-success btn-block"> Change Icon</button>
           </form>
         </div>

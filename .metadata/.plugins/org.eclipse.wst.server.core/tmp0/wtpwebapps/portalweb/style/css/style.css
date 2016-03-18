@@ -141,7 +141,7 @@
 }
 
 #object {
-    position: fixed;
+    position: relative;
     left: 0;
     top: 55%;
     height: 129px;
