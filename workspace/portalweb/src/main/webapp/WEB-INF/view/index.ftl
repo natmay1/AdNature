@@ -5,11 +5,13 @@
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="/style/css/about.css">
         <link rel="stylesheet" type="text/css" href="/style/css/style.css">
+        
         <link href='https://fonts.googleapis.com/css?family=Overlock' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="/style/js/AdNature.js"></script>
 
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
 <!-- Latest compiled JavaScript -->
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -19,7 +21,7 @@
         <div class="header">
         <img id="logo" src="style/logo.png" alt="Logo" width=165px height=84px >
         <div id="buttons">
-            <button type="button" id="button3" data-toggle="modal" data-target="#loginModal">Log In</button></a>
+            <button type="button" id="button3" data-toggle="modal" data-target="#loginModal">Log In</button>
         	<a href="register.htm"><button type="button" id="button4">Sign Up</button></a>
         </div>
         </div>
@@ -32,22 +34,26 @@
             	<br><br>
                 <a href="register.htm"><button type="button" id="button1">Sign Up</button></a>
                 <br>
-                <br><br><br><br>
+                <br><br>
                 <a href="Searchpage.htm"><button type="button" id="button2">Search By Activity</button></a>
                 <br>
                 <br>
-                <br><br><br><br><br><br><br><br><br><br><br><br>
+                
+                <br><br><br><br><br><br><br><p><a id="scroll1" href="#howit">Scroll down or click to see more<div class="circle">&darr;</div></a></p><br><br><br id="howit"><br><br>
+                
             </div>
         </div>
+       
         
         
     	<div class="page">
         <!--Here's how it works---------------------->
-             
+             <br><br>
         <div class="firsttitle">
-            <br>
+   
+            <br> 
             Here's how it works
-        </div>    
+        </div>      <br><br>
 
         
 
@@ -212,7 +218,7 @@ AdNature is not responsible for what you do in nature.
 
 var window_width = $(window).width() - $('#object').width();
 
-var document_height = $(window).height() * 0.35;
+var document_height = $(window).height() * 0.07; 
 
 $(function () {
     $(window).scroll(function () {
