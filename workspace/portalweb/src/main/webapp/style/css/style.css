@@ -14,7 +14,8 @@
     left: 0;
     top: 0;
     width: 100%;
-	z-index:2;
+    z-index:4;
+
 }
 
 .relative {
@@ -89,6 +90,7 @@
     font-size: 16px;
     margin: 4px 2px;
     font-family: "Overlock";
+    z-index:3;
 }
 
 #button3 {
@@ -133,6 +135,7 @@
 
 #movingskiier {
 	position:absolute;
+	z-index:0;
 	top:295px;
 	left:-50px;
 	z-index:0;
