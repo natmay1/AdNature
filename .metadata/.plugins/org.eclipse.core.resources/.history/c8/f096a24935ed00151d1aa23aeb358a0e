@@ -136,7 +136,7 @@
 #object {
     position: fixed;
     left: 0;
-    bottom: 300px;
+    bottom: 350px;
     height: 129px;
     width: 190px;
     
