@@ -133,14 +133,14 @@
     
 }
 
-#movingskiier {
-	position:absolute;
-	z-index:0;
-	top:295px;
-	left:-50px;
-	z-index:0;
+#object {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    height: 129px;
+    width: 190px;
+    
 }
-
 
 .pic {
     
