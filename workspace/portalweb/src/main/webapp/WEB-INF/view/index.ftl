@@ -208,44 +208,20 @@ AdNature is not responsible for what you do in nature.
 </div>
 <script>
 
-
 var duration= 3000;
-/*var scrolledDown = false;
-$(window).scroll(function() {
-    if ($(this).scrollTop() > 50 && scrolledDown == false) {
-        $("#movingskiier").animate({left: '1000px',top:'550px'},{duration:duration});
-  		//if ($(this).scrollTop() > 300) {
-  			scrolledDown = true;
-  		//}
-    }
-    
-    else if ($(this).scrollTop() < 300 && scrolledDown == true) {
-    	$("#movingskiier").animate({left: '-50px',top:'295px'},{duration:duration});
-  		scrolledDown = false;
-    }
-    
-}); */
-
-var iScrollPos = 0;
+var iScrollPos = 50;
 $(window).scroll(function () {
     var iCurScrollPos = $(this).scrollTop();
     if (iCurScrollPos > iScrollPos) {
         //Scrolling Down
-        $("#movingskiier").animate({left: '1000px',top:'550px'},{duration:duration});
+        $("#movingskiier").stop(true,false).animate({left: '1000px',top:'550px'},{duration:duration});
         
     } else {
        //Scrolling Up
-        $("#movingskiier").animate({left: '-50px',top:'295px'},{duration:duration});
+        $("#movingskiier").stop(true,false).animate({left: '-50px',top:'295px'},{duration:duration});
     }
     iScrollPos = iCurScrollPos;
 });
-
-
-
-
-
-
-
 
 </script>
 
