@@ -9,7 +9,7 @@
 <script type="text/javascript" src="/style/js/AdNature.js"></script>
 
 <!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
 
 <!-- Latest compiled JavaScript -->
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -28,13 +28,15 @@
         <p id="slogan">Making it easier for you to get outside</p><br><br><br>
         </div>
             <div class="center">
+            	<img id="object" src="style/Skiier2.png" >
+            	<br><br>
                 <a href="register.htm"><button type="button" id="button1">Sign Up</button></a>
                 <br>
-                <br><br>
+                <br><br><br><br>
                 <a href="Searchpage.htm"><button type="button" id="button2">Search By Activity</button></a>
                 <br>
                 <br>
-                <br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br>
             </div>
         </div>
         
@@ -206,7 +208,22 @@ AdNature is not responsible for what you do in nature.
   </div> 
 </div>
 <script>
+
+var window_width = $(window).width() - $('#object').width();
+
+var document_height = $(window).height() * 0.35;
+
+$(function () {
+    $(window).scroll(function () {
+        var scroll_position = $(window).scrollTop();
+        var object_position_left = window_width * (scroll_position / document_height);
+        $('#object').css({
+            'left': object_position_left
+        });
+    });
+});
 </script>
+
 
 </body>
     
