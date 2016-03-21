@@ -218,7 +218,7 @@ AdNature is not responsible for what you do in nature.
 
 var window_width = $(window).width() - $('#object').width();
 
-var document_height = $(window).height() * 0.07; 
+var document_height = $(window).height() * 0.08; 
 
 $(function () {
     $(window).scroll(function () {
