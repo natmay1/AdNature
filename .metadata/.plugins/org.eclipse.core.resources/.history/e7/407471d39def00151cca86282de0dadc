@@ -1,7 +1,7 @@
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="style/css/laurelcreek.css">
-         <title>AdNature | Laurel Creek</title>
+        <link rel="stylesheet" type="text/css" href="style/css/result.css">
+         <title>AdNature | Waterloo Park</title>
         <link rel="shortcut icon" href="Transparent%20Mountain.ico" />
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
@@ -11,11 +11,12 @@
     <body>
     <img src="style/logo.png" id="logo" width=195px height=96px><br>
         <div>
-    <header class="title">Laurel Creek</header>
+    <header class="title">Waterloo Park</header>
         </div>
         <br><br><br><br><br>
         <div class="info">
-        <p class="info1">625 Westmount Road North, Waterloo, ON N2J 2Z4</p>
+        <p class="info1">50 Young Street West, Waterloo ON, N2L 2Z4<br>
+Entrances on Westmount and Seagram as well</p>
                                 
           
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -27,6 +28,7 @@
     <li data-target="#myCarousel" data-slide-to="2"></li>
     <li data-target="#myCarousel" data-slide-to="3"></li>
      <li data-target="#myCarousel" data-slide-to="4"></li>
+    <li data-target="#myCarousel" data-slide-to="5"></li>
   </ol>
 
   <!-- Wrapper for slides -->
@@ -34,24 +36,26 @@
 
 
     <div class="item active">
-      <img src="style/Laurel-Creek1.jpg" alt=Walking height="250px" width="822px">
+      <img src="style/wloo.png" alt=Walking height="450px" width="822px">
     </div>
 
     <div class="item">
-      <img src="style/Laurel-Creek2.jpg" alt="Canoeing" height="250px" width="822px">
+      <img src="style/wloo1.png" alt="Canoeing" height="450px" width="822px">
       
     </div>
     
     <div class="item">
-      <img src="style/Laurel-Creek3.jpg" alt="Walking" height="250px" width="822px">
+      <img src="style/wloo2.png" alt="Walking" height="450px" width="822px">
     </div>
     <div class="item">
-      <img src="style/Laurel-Creek4.jpg" alt="Walking" height="250px" width="822px">
+      <img src="style/wloo3.png" alt="Walking" height="450px" width="822px">
     </div>
     <div class="item">
-      <img src="style/laurel-creek5.jpg" alt=Walking height="250px" width="822px">
+      <img src="style/wloo4.png" alt=Walking height="450px" width="822px">
     </div>
- 
+    <div class="item">
+      <img src="style/wloo6.png" alt=Walking height="450px" width="822px">
+    </div>
     
 
   </div>
@@ -67,19 +71,21 @@
   </a>  
     </div>
 <br><br>
-<p class="info2">Open April 30 to Oct. 16, and during the winter when conditions allow.</p><br><br><p class="info2">
-Facility rentals available (Critter shelter, Baseball shelter, Dam Shelter)<br>(<a href="http://www.waterloo.ca/en/gettingactive/facilitiesandrooms.asp ">Link to rent</a>)<br>
-Cross-Country Skis, Canoe, and storage rentals also available. <br><br>
-Day or Overnight trip
+<p class="info2">Open 6am to 11pm daily</p><br><br><p class="info2">
+Facility rentals available (baseball diamonds, picnic shelter, BBQ’s, gazebos, hospitality area, bandshell, Lions lagoon shelter, grist mill, film permits, splash park, skate park, playground)(<a href="http://www.waterloo.ca/en/gettingactive/facilitiesandrooms.asp ">Link to rent</a>)<br><br>
+Day trips only
 <br>
-Phone: 519-621-2761
-Toll free: 1-866-900-4722
+Phone # (519) 725-0511
 <br>
-General Admission: $6 (<a href="https://www.grandriver.ca/en/outdoor-recreation/resources/Documents/ParkFeeSchedules/fees_laurel2016.pdf">Click here for more price information</a>)
+No admission fee
+<br>
+Gardens up for rental
+<br>
+Free movies in the park in the summer
 
 </p>
 <div class="pleasecenter">
- <img class="center" src="style/Lcreekmap.png">
+ <img class="center" src="style/wlooparkmap.png">
  </div>
         </div>     
         <div class="fixed">      
@@ -87,20 +93,15 @@ General Admission: $6 (<a href="https://www.grandriver.ca/en/outdoor-recreation/
         <div class="act1">
         <button id="Activities">Hiking</button>
          <button id="Activities">Walking</button>
-         <button id="Activities">Fishing</button>
+         <button id="Activities">Dog Walking</button>
          <button id="Activities">Picknicking</button>
          <button id="Activities">Photography</button>
-         <button id="Activities">Swimming</button>
-         <button id="Activities">Snowshoeing</button>
-         <button id="Activities">Camping</button>
+         <button id="Activities">Swimming (Splash Pad)</button>
          </div>
          <h2 class="act">Medium Impact Activities:</h2>
           <div class="act1">
-         <button id="Activities">Canoeing</button>
-         <button id="Activities">Kayaking</button>
-         <button id="Activities">Sailing</button>
-         <button id="Activities">Cross-Country Skiing</button>
-         <button id="Activities">Cycling</button>
+         <button id="Activities">Baseball</button>
+         <button id="Activities">Soccer</button>
       </div>
         </div>
         

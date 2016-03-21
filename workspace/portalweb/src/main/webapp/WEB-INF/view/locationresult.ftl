@@ -72,7 +72,7 @@ Entrances on Westmount and Seagram as well</p>
     </div>
 <br><br>
 <p class="info2">Open 6am to 11pm daily</p><br><br><p class="info2">
-Facility rentals available (baseball diamonds, picnic shelter, BBQ’s, gazebos, hospitality area, bandshell, Lions lagoon shelter, grist mill, film permits, splash park, skate park, playground)<br><br>
+Facility rentals available (baseball diamonds, picnic shelter, BBQ’s, gazebos, hospitality area, bandshell, Lions lagoon shelter, grist mill, film permits, splash park, skate park, playground)<br>(<a href="http://www.waterloo.ca/en/gettingactive/facilitiesandrooms.asp ">Link to rent</a>)<br><br>
 Day trips only
 <br>
 Phone # (519) 725-0511
@@ -96,7 +96,7 @@ Free movies in the park in the summer
          <button id="Activities">Dog Walking</button>
          <button id="Activities">Picknicking</button>
          <button id="Activities">Photography</button>
-         <button id="Activities">Swimming</button>
+         <button id="Activities">Swimming (Splash Pad)</button>
          </div>
          <h2 class="act">Medium Impact Activities:</h2>
           <div class="act1">
