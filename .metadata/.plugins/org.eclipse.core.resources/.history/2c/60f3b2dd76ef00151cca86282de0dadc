@@ -1,0 +1,11 @@
+#logo {
+    
+    margin-left: 50px;
+}
+.title {
+    font-size: 30pt;
+    text-algin:center;
+    right: 50%;
+    font-weight: bold;
+    font-color: navy;
+}

@@ -18,11 +18,11 @@
     
     <body class="Layer_1">
           <img src="style/logo.png" class="logo" >
-        
+         
         <div class="lighter">
 <form action="search" method="post">
     <input type="text" id="tipue_drop_input" name="search" autocomplete="off" class="search">
-  	
+
 </form>
 <div id="tipue_drop_content"></div>
         </div>
@@ -196,6 +196,7 @@
               <p>Fruit Picking</p>
               <p>Picnic</p>
           </div>
+        
            <div class="modal-footer">
            <button type="submit" class="btn btn-default btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
         </div>

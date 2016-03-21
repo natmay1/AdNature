@@ -230,7 +230,8 @@
           <form role="form">
           	  <div class="activities">
           	  
-              <img src="../style/golf.png" width=100px height=100px>
+          	  <select name="icons" id="icons">
+              <option value="../style/golf.png"><img src="../style/golf.png" width=100px height=100px>
               </div>
               <div class="activities">
                  <img src="../style/snowboarder.png" width=100px height=100px>
@@ -282,7 +283,7 @@
 			<div class="activities">
                <img src="../style/hiking.png" width=100px height=100px>
 			</div>    
-		  
+		  </select>
             <button type="button" class="btn btn-default btn-success btn-block"> Change Icon</button>
           </form>
         </div>
@@ -403,6 +404,22 @@ $("#saveSportLevelLink").on("click",function(){
 	}
 	
 });
+
+
+var img={
+  imgEl:document.getElementById("my6modal"),
+  sel:document.getElementById("imageSelector"),
+  changeHandler:function(){
+    img.imgEl.src=img.sel.options
+      [img.sel.selectedIndex].value;
+    console.log(img.imgEl);
+  },
+  init:function(){
+    img.sel.onchange=img.changeHandler;
+  }
+};
+img.init();
+
 
 
 </script>
