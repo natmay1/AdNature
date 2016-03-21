@@ -14,10 +14,10 @@
     </head>
        
     <body>
-    <div class="background fixed"><img src="../style/Profilebackground.png" width=100%></div>
+    <div class="background fixed"><!----<img src="../style/Profilebackground.png" width=100%>---></div>
         <div class="Profile">
             <div class="cover">
-                <div><img src="/style/Blue%20Background.png" width=100% height=270px></div>
+                <div><img src="/style/Blue-Background2.gif" width=100% height=270px></div>
                 <div class="Logo"><img src="../style/logo.png" width=165px height=84px ></div>
             </div>
             <div class="Triangle"><img src="/style/Green%20Triangle.png" width=235 height=213/></div>
@@ -230,7 +230,8 @@
           <form role="form">
           	  <div class="activities">
           	  
-              <img src="../style/golf.png" width=100px height=100px>
+          	  <select name="icons" id="icons">
+              <option value="../style/golf.png"><img src="../style/golf.png" width=100px height=100px>
               </div>
               <div class="activities">
                  <img src="../style/snowboarder.png" width=100px height=100px>
@@ -282,7 +283,7 @@
 			<div class="activities">
                <img src="../style/hiking.png" width=100px height=100px>
 			</div>    
-		  
+		  </select>
             <button type="button" class="btn btn-default btn-success btn-block"> Change Icon</button>
           </form>
         </div>
@@ -403,6 +404,22 @@ $("#saveSportLevelLink").on("click",function(){
 	}
 	
 });
+
+
+var img={
+  imgEl:document.getElementById("my6modal"),
+  sel:document.getElementById("imageSelector"),
+  changeHandler:function(){
+    img.imgEl.src=img.sel.options
+      [img.sel.selectedIndex].value;
+    console.log(img.imgEl);
+  },
+  init:function(){
+    img.sel.onchange=img.changeHandler;
+  }
+};
+img.init();
+
 
 
 </script>

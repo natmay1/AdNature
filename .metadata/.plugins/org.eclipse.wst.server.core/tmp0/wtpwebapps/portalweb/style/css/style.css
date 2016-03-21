@@ -6,7 +6,14 @@
     
 }
 
+#scroll1 {
+	
+	color: white;
+	
+}
 
+.circle{
+	width:50px;height:50px;border-radius:25px;font-size:25px;color:#fff;line-height:45px;text-align:center;background:gray;position:absolute;right:50%;transform: translate(50%);}
 .header {
     
     background-color: white;
@@ -14,6 +21,7 @@
     left: 0;
     top: 0;
     width: 100%;
+    z-index:4;
 
 }
 
@@ -52,13 +60,14 @@
 .bgimage {
     margin-top: 0;
     background-image: url(../Website%20Pic.jpg);
-    background-size: 1440px 800px;
+    background-size: cover;  
     background-repeat: no-repeat;
     width: 100%;
     display: compact;
     background-position:50%, 300px;
     font: 13px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
-    
+	position:relative;
+	
 }
 
 #button1 {
@@ -89,6 +98,7 @@
     font-size: 16px;
     margin: 4px 2px;
     font-family: "Overlock";
+    z-index:3;
 }
 
 #button3 {
@@ -131,7 +141,15 @@
     
 }
 
-
+#object {
+ 
+    position: fixed;
+    left: 0;
+    top: 410px;
+    height: 129px;
+    width: 190px;
+    
+}
 
 .pic {
     
@@ -214,7 +232,6 @@
     margin-bottom: 200px;
     float: left;
     text-align: center;
-    /*border: 1px solid black;*/
     
 }
 .image1 {

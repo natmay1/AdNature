@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="result.css">
+         <title>AdNature | @location</title>
+        <link rel="shortcut icon" href="Transparent%20Mountain.ico" />
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    </head>
+    <body>
+    <img src="../Logo.png" id="logo">
+    <header class="title">Place</header>
+        <p class="info">Address</p>
+        
+    </body>
+</html>

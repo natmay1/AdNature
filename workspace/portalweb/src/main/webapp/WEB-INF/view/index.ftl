@@ -5,21 +5,23 @@
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="/style/css/about.css">
         <link rel="stylesheet" type="text/css" href="/style/css/style.css">
+        
         <link href='https://fonts.googleapis.com/css?family=Overlock' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="/style/js/AdNature.js"></script>
 
 <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
 <!-- Latest compiled JavaScript -->
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
-    <body>
+    <body>${(error1)!}
         <div class="bgimage">
         <div class="header">
         <img id="logo" src="style/logo.png" alt="Logo" width=165px height=84px >
         <div id="buttons">
-            <button type="button" id="button3" data-toggle="modal" data-target="#loginModal">Log In</button></a>
+            <button type="button" id="button3" data-toggle="modal" data-target="#loginModal">Log In</button>
         	<a href="register.htm"><button type="button" id="button4">Sign Up</button></a>
         </div>
         </div>
@@ -28,24 +30,30 @@
         <p id="slogan">Making it easier for you to get outside</p><br><br><br>
         </div>
             <div class="center">
+            	<img id="object" src="style/Skiier2.png" >
+            	<br><br>
                 <a href="register.htm"><button type="button" id="button1">Sign Up</button></a>
                 <br>
                 <br><br>
                 <a href="Searchpage.htm"><button type="button" id="button2">Search By Activity</button></a>
                 <br>
                 <br>
-                <br><br><br><br><br><br><br><br><br><br>
+                
+                <br><br><br><br><br><br><br><p><a id="scroll1" href="#howit">Scroll down or click to see more <br><br><img src="../style/Circle.png" height=60px width=60px></a></p><br id="howit">
+                
             </div>
         </div>
+       
         
         
     	<div class="page">
         <!--Here's how it works---------------------->
-             
+             <br><br>
         <div class="firsttitle">
-            <br>
+   
+            <br> 
             Here's how it works
-        </div>    
+        </div>      <br><br>
 
         
 
@@ -54,7 +62,7 @@
             <div class="tile image1">
                 <img src= "style/Search%20Bar%203.png" height="64" width="270">
                 
-                <div class="text1">Search an activity or make a customized search that fits your needs</div>
+                <div class="text1">Search an activity or make a customized search that fits your needs ${(error1)!}</div>
             </div>
             
             <div class="tile image2">
@@ -104,7 +112,7 @@
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
     <li data-target="#myCarousel" data-slide-to="1"></li>
     <li data-target="#myCarousel" data-slide-to="2"></li>
-    <li data-target="#myCarousel" data-slide-to="3"></li>
+    <!---<li data-target="#myCarousel" data-slide-to="3"></li> --->
   </ol>
 
   <!-- Wrapper for slides -->
@@ -193,6 +201,7 @@ AdNature is not responsible for what you do in nature.
 	          <input type="password" class="password" name ="j_password" placeholder="Password" >
 	          <br>
 	          <br>
+	         <p></p>
 	          </div>
 	          <button type="submit" class="btn btn-default btn-success btn-block"> Log in</button>
 	    </form>
@@ -204,6 +213,31 @@ AdNature is not responsible for what you do in nature.
     </div>
   </div> 
 </div>
+<script>
+
+
+var window_width = $(window).width() - $('#object').width();
+
+var document_height = $(window).height() * 0.08; 
+
+$(function () {
+    $(window).scroll(function () {
+        var scroll_position = $(window).scrollTop();
+        var object_position_left = window_width * (scroll_position / document_height);
+        $('#object').css({
+            'left': object_position_left
+        });
+    });
+});
+function pageScroll() {
+    window.scrollBy(0,50); 
+    scrolldelay = setTimeout('pageScroll()',100);
+                      }
+
+
+
+</script>
+
 
 </body>
     

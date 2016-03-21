@@ -28,10 +28,20 @@ public class FrontLoginServiceImpl implements UserDetailsService, FrontLoginServ
     @Autowired
     private WebUserRepository webUserRepo;
 
+	private String error1;
+
 //    @Autowired TODOBUG
 //    private SendMessage sendMessage;
 
-    /**
+    public void setSettings(Properties settings) {
+		this.settings = settings;
+	}
+
+	public void setWebUserRepo(WebUserRepository webUserRepo) {
+		this.webUserRepo = webUserRepo;
+	}
+   
+	/**
      * 用户登录 spring security借口实现
      */
     @Override
@@ -143,6 +153,7 @@ public class FrontLoginServiceImpl implements UserDetailsService, FrontLoginServ
             if (webuserList.size() == 0) {
                 criteria.setCelphone(j_username, Operator.equal);
                 webuserList = webUserRepo.findByCriteria(criteria);
+                
             }
 
             if (webuserList.size() > 0) {
@@ -154,10 +165,13 @@ public class FrontLoginServiceImpl implements UserDetailsService, FrontLoginServ
                 webUser.setCurrentLoginIp(ip);// 本次登录ip
                 webUser.setCurrentLoginAt(new Date());// 最后登录时间
                 webUser.setUpdateTime(new Date());
-                if (webUser.getFailedLoginCount() != null) {
+    
+				if (webUser.getFailedLoginCount() != null) {
                     failCnt = webUser.getFailedLoginCount() + 1;
+                    error1 = "Login not valid";
                 } else {
                     failCnt = 1;
+                    error1 = "Login not valid";
                 }
 
                 webUser.setFailedLoginCount(failCnt);
@@ -188,5 +202,22 @@ public class FrontLoginServiceImpl implements UserDetailsService, FrontLoginServ
         }
         return failCnt;
     }
+
+	public Properties getSettings() {
+		return settings;
+	}
+
+	public WebUserRepository getWebUserRepo() {
+		return webUserRepo;
+	}
+	
+
+	public String getError1() {
+		return error1;
+	}
+
+	public void setError1(String error1) {
+		this.error1 = error1;
+	}
 
 }
