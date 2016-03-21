@@ -24,9 +24,10 @@
 <br><br>
                   <input type="tel"  	name="webUser.celphone"		value="${(webUser.celphone)!}" placeholder="Phone Number"  id="PhoneNum"><span class="star1">&#42;</span> <br><br>
             	<div id="divCheckPasswordMatch"> ${(error)!}</div>
-            <br><br>
+            <br>
              
               </div>
+             
               <input type="submit" onclick="sendEmail()" class="button5" name="signup" value="Sign Up"> 
             <br>
      

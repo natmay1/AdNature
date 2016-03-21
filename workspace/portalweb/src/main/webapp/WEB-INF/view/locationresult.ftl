@@ -1,7 +1,7 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="style/css/result.css">
-         <title>AdNature | @location</title>
+         <title>AdNature | Waterloo Park</title>
         <link rel="shortcut icon" href="Transparent%20Mountain.ico" />
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
