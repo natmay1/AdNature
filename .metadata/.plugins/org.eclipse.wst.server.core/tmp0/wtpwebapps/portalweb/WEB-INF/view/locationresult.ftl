@@ -18,7 +18,7 @@
         <p class="info1">50 Young Street West, Waterloo ON, N2L 2Z4<br>
 Entrances on Westmount and Seagram as well</p>
                                 
-            <div class="photos">
+          
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 
   <!-- Indicators -->
@@ -29,36 +29,32 @@ Entrances on Westmount and Seagram as well</p>
     <li data-target="#myCarousel" data-slide-to="3"></li>
      <li data-target="#myCarousel" data-slide-to="4"></li>
     <li data-target="#myCarousel" data-slide-to="5"></li>
-    <li data-target="#myCarousel" data-slide-to="6"></li>
   </ol>
 
   <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
+  <div class="photos carousel-inner" role="listbox">
 
 
     <div class="item active">
-      <img src="style/wloo.png" alt=Walking height="500px" width="746px">
+      <img src="style/wloo.png" alt=Walking height="450px" width="822px">
     </div>
 
     <div class="item">
-      <img src="style/wloo1.png" alt="Canoeing" height="500px" width="822px">
+      <img src="style/wloo1.png" alt="Canoeing" height="450px" width="822px">
       
     </div>
     
     <div class="item">
-      <img src="style/wloo2.png" alt="Walking" height="500px" width="746px">
+      <img src="style/wloo2.png" alt="Walking" height="450px" width="822px">
     </div>
     <div class="item">
-      <img src="style/wloo3.png" alt="Walking" height="500px" width="746px">
+      <img src="style/wloo3.png" alt="Walking" height="450px" width="822px">
     </div>
     <div class="item">
-      <img src="style/wloo4.png" alt=Walking height="500px" width="746px">
+      <img src="style/wloo4.png" alt=Walking height="450px" width="822px">
     </div>
     <div class="item">
-      <img src="style/wloo5.png" alt=Walking height="500px" width="746px">
-    </div>
-    <div class="item">
-      <img src="style/wloo6.png" alt=Walking height="500px" width="746px">
+      <img src="style/wloo6.png" alt=Walking height="450px" width="822px">
     </div>
     
 
@@ -74,12 +70,26 @@ Entrances on Westmount and Seagram as well</p>
     <span class="sr-only">Next</span>
   </a>  
     </div>
-</div>
-<p class="info2">Open 6am to 11pm daily</p><p class="info2">
-Facility rentals available (baseball diamonds, picnic shelter, BBQ’s, gazebos, hospitality area, bandshell, film permits, splash park, skate park, playground   
+<br><br>
+<p class="info2">Open 6am to 11pm daily</p><br><br><p class="info2">
+Facility rentals available (baseball diamonds, picnic shelter, BBQ’s, gazebos, hospitality area, bandshell, Lions lagoon shelter, grist mill, film permits, splash park, skate park, playground)<br><br>
+Day trips only
+<br>
+Phone # (519) 725-0511
+<br>
+No admission fee
+<br>
+Gardens up for rental
+<br>
+Free movies in the park in the summer
+
 </p>
-        </div>           
-<h1 class="act">Activities:</h1>
+<div class="pleasecenter">
+ <img class="center" src="style/wlooparkmap.png">
+ </div>
+        </div>     
+        <div class="fixed">      
+<h1 class="act">Low Impact Activities:</h1>
         <div class="act1">
         <button id="Activities">Hiking</button>
          <button id="Activities">Walking</button>
@@ -87,9 +97,12 @@ Facility rentals available (baseball diamonds, picnic shelter, BBQ’s, gazebos,
          <button id="Activities">Picknicking</button>
          <button id="Activities">Photography</button>
          <button id="Activities">Swimming</button>
+         </div>
+         <h2 class="act">Medium Impact Activities:</h2>
+          <div class="act1">
          <button id="Activities">Baseball</button>
          <button id="Activities">Soccer</button>
-      
+      </div>
         </div>
         
     </body>

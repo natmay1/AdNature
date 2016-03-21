@@ -26,6 +26,8 @@
 		<intercept-url pattern="/Searchpage.htm" access="permitAll" />
 		<intercept-url pattern="/locationresult.htm" access="permitAll" />
 		<intercept-url pattern="/VerifEmail.htm" access="permitAll" />
+		<intercept-url pattern="/bechtelpark.htm" access="permitAll" />
+		<intercept-url pattern="/laurelcreek.htm" access="permitAll" />
 		<intercept-url pattern="/register.htm" access="permitAll" />
 		<intercept-url pattern="/**/sendPhoneVerifyCode.htm"
 			access="permitAll" />

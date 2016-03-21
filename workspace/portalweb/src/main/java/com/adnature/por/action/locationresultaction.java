@@ -29,7 +29,10 @@
 		@Result(name = "index", location = "index.ftl", type = "freemarker"), 
 		@Result(name = "Searchpage", location = "Searchpage.ftl", type = "freemarker"),
 		@Result(name = "locationresult", location = "locationresult.ftl", type = "freemarker"),
+		@Result(name = "bechtelpark", location = "bechtelpark.ftl", type = "freemarker"),
+		@Result(name = "laurelcreek", location = "laurelcreek.ftl", type = "freemarker"),
 		})
+	
 	public class locationresultaction extends BaseAction{
 
 		/**
@@ -82,6 +85,19 @@
 			//sysDate=DateUtils.getCurrentDateTime();
 			return "locationresult";
 		}
+		
+		@Action(value="laurelcreek")
+		public String lcreek() throws Exception {
+			//sysDate=DateUtils.getCurrentDateTime();
+			return "laurelcreek";
+		}
+
+		@Action(value="bechtelpark")
+		public String bpark() throws Exception {
+			//sysDate=DateUtils.getCurrentDateTime();
+			return "bechtelpark";
+		}
+
 
 		
 		//----------------------------画面使用数据定义----------------------------------------------
