@@ -1,6 +1,6 @@
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="style/css/result.css">
+        <link rel="stylesheet" type="text/css" href="style/css/laurelcreek.css">
          <title>AdNature | @location</title>
         <link rel="shortcut icon" href="Transparent%20Mountain.ico" />
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -27,7 +27,6 @@
     <li data-target="#myCarousel" data-slide-to="2"></li>
     <li data-target="#myCarousel" data-slide-to="3"></li>
      <li data-target="#myCarousel" data-slide-to="4"></li>
-    <li data-target="#myCarousel" data-slide-to="5"></li>
   </ol>
 
   <!-- Wrapper for slides -->
@@ -35,26 +34,24 @@
 
 
     <div class="item active">
-      <img src="style/wloo.png" alt=Walking height="450px" width="822px">
+      <img src="style/Laurel-Creek1.jpg" alt=Walking height="250px" width="822px">
     </div>
 
     <div class="item">
-      <img src="style/wloo1.png" alt="Canoeing" height="450px" width="822px">
+      <img src="style/Laurel-Creek2.jpg" alt="Canoeing" height="250px" width="822px">
       
     </div>
     
     <div class="item">
-      <img src="style/wloo2.png" alt="Walking" height="450px" width="822px">
+      <img src="style/Laurel-Creek3.jpg" alt="Walking" height="250px" width="822px">
     </div>
     <div class="item">
-      <img src="style/wloo3.png" alt="Walking" height="450px" width="822px">
+      <img src="style/Laurel-Creek4.jpg" alt="Walking" height="250px" width="822px">
     </div>
     <div class="item">
-      <img src="style/wloo4.png" alt=Walking height="450px" width="822px">
+      <img src="style/laurel-creek5.jpg" alt=Walking height="250px" width="822px">
     </div>
-    <div class="item">
-      <img src="style/wloo6.png" alt=Walking height="450px" width="822px">
-    </div>
+ 
     
 
   </div>

@@ -24,38 +24,21 @@
   <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
     <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-    <li data-target="#myCarousel" data-slide-to="3"></li>
-     <li data-target="#myCarousel" data-slide-to="4"></li>
-    <li data-target="#myCarousel" data-slide-to="5"></li>
+   
   </ol>
 
   <!-- Wrapper for slides -->
   <div class="photos carousel-inner" role="listbox">
 
-
     <div class="item active">
-      <img src="style/wloo.png" alt=Walking height="450px" width="822px">
-    </div>
-
-    <div class="item">
-      <img src="style/wloo1.png" alt="Canoeing" height="450px" width="822px">
+      <img src="style/Bechtel-Park2.jpg" alt="Canoeing" height="450px" width="822px">
       
     </div>
     
     <div class="item">
-      <img src="style/wloo2.png" alt="Walking" height="450px" width="822px">
+      <img src="style/Bechtel-Park3.jpg" alt="Walking" height="450px" width="822px">
     </div>
-    <div class="item">
-      <img src="style/wloo3.png" alt="Walking" height="450px" width="822px">
-    </div>
-    <div class="item">
-      <img src="style/wloo4.png" alt=Walking height="450px" width="822px">
-    </div>
-    <div class="item">
-      <img src="style/wloo6.png" alt=Walking height="450px" width="822px">
-    </div>
-    
+  
 
   </div>
 
