@@ -1,7 +1,7 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="style/css/result.css">
-         <title>AdNature | @location</title>
+         <title>AdNature | Bechtel Park</title>
         <link rel="shortcut icon" href="Transparent%20Mountain.ico" />
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
@@ -56,7 +56,7 @@
 <p class="info2">Open: Mondays to Fridays from 9 a.m. to 4:30 p.m., as well as at other times for programs and
 
 rentals</p><br><br><p class="info2">
-You can register for programs that will take place here, or rent the facilities, i.e. the indoor floor space.<br><br>
+You can register for programs that will take place here, or rent the facilities, i.e. the indoor floor space. (<a href="http://www.waterloo.ca/en/gettingactive/facilitiesandrooms.asp">Link to request a rental</a>)<br><br>
 Day trips only
 <br>
 Phone # 519-576-2420

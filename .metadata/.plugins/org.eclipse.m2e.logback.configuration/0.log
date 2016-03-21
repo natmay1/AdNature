@@ -5641,3 +5641,39 @@ Caused by: org.eclipse.core.runtime.CoreException: One or more constraints have 
 2016-03-21 15:32:09,664 [Worker-148] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2016-03-21 15:32:09,665 [Worker-148] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2016-03-21 15:32:09,665 [Worker-148] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/portalweb/src/test/resources
+2016-03-21 15:34:15,696 [Worker-146] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2016-03-21 15:34:15,702 [Worker-146] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-21 15:34:15,702 [Worker-146] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-03-21 15:34:15,702 [Worker-146] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-03-21 15:34:15,703 [Worker-146] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-21 15:34:15,703 [Worker-146] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/portalweb/src/test/resources
+2016-03-21 15:34:26,435 [Worker-148] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2016-03-21 15:34:26,439 [Worker-148] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-21 15:34:26,440 [Worker-148] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-03-21 15:34:26,440 [Worker-148] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-03-21 15:34:26,441 [Worker-148] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-21 15:34:26,441 [Worker-148] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/portalweb/src/test/resources
+2016-03-21 15:34:37,404 [Worker-145] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2016-03-21 15:34:37,407 [Worker-145] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-21 15:34:37,407 [Worker-145] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-03-21 15:34:37,407 [Worker-145] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-03-21 15:34:37,408 [Worker-145] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-21 15:34:37,408 [Worker-145] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/portalweb/src/test/resources
+2016-03-21 15:35:49,413 [Worker-151] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2016-03-21 15:35:49,430 [Worker-151] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-21 15:35:49,430 [Worker-151] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-03-21 15:35:49,431 [Worker-151] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-03-21 15:35:49,432 [Worker-151] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-21 15:35:49,432 [Worker-151] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/portalweb/src/test/resources
+2016-03-21 15:36:03,806 [Worker-147] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2016-03-21 15:36:03,810 [Worker-147] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-21 15:36:03,811 [Worker-147] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-03-21 15:36:03,811 [Worker-147] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-03-21 15:36:03,812 [Worker-147] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-21 15:36:03,812 [Worker-147] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/portalweb/src/test/resources
+2016-03-21 15:36:43,671 [Worker-146] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2016-03-21 15:36:43,677 [Worker-146] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-21 15:36:43,677 [Worker-146] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-03-21 15:36:43,677 [Worker-146] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-03-21 15:36:43,678 [Worker-146] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-21 15:36:43,678 [Worker-146] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/portalweb/src/test/resources
