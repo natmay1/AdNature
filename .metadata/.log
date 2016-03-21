@@ -3006,3 +3006,6 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.
 
 !ENTRY org.eclipse.m2e.logback.appender 4 0 2016-03-21 11:52:05.646
 !MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-03-21 13:06:29.077
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
