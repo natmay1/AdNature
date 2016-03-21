@@ -60,13 +60,14 @@
 .bgimage {
     margin-top: 0;
     background-image: url(../Website%20Pic.jpg);
-    background-size: 1440px 800px;
+    background-size: cover;  
     background-repeat: no-repeat;
     width: 100%;
     display: compact;
     background-position:50%, 300px;
     font: 13px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
-    
+	position:relative;
+	
 }
 
 #button1 {
@@ -141,9 +142,10 @@
 }
 
 #object {
+ 
     position: fixed;
     left: 0;
-    top: 400px;
+    top: 410px;
     height: 129px;
     width: 190px;
     

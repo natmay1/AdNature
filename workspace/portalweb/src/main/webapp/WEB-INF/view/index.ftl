@@ -39,7 +39,7 @@
                 <br>
                 <br>
                 
-                <br><br><br><br><br><br><br><p><a id="scroll1" href="#howit">Scroll down or click to see more<div class="circle">&darr;</div></a></p><br><br><br id="howit"><br><br>
+                <br><br><br><br><br><br><br><p><a id="scroll1" href="#howit">Scroll down or click to see more <br><br><img src="../style/Circle.png" height=60px width=60px></a></p><br id="howit">
                 
             </div>
         </div>
@@ -218,7 +218,7 @@ AdNature is not responsible for what you do in nature.
 
 var window_width = $(window).width() - $('#object').width();
 
-var document_height = $(window).height() * 0.07; 
+var document_height = $(window).height() * 0.08; 
 
 $(function () {
     $(window).scroll(function () {

@@ -14,10 +14,10 @@
     </head>
        
     <body>
-    <div class="background fixed"><img src="../style/Profilebackground.png" width=100%></div>
+    <div class="background fixed"><!----<img src="../style/Profilebackground.png" width=100%>---></div>
         <div class="Profile">
             <div class="cover">
-                <div><img src="/style/Blue%20Background.png" width=100% height=270px></div>
+                <div><img src="/style/Blue-Background2.gif" width=100% height=270px></div>
                 <div class="Logo"><img src="../style/logo.png" width=165px height=84px ></div>
             </div>
             <div class="Triangle"><img src="/style/Green%20Triangle.png" width=235 height=213/></div>
