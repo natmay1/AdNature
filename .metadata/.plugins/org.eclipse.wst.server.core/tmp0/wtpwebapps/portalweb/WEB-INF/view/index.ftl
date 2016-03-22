@@ -19,6 +19,7 @@
     <body>${(error1)!}
         <div class="bgimage">
         <div class="header">
+        
         <img id="logo" src="style/logo.png" alt="Logo" width=165px height=84px >
         <div id="buttons">
             <button type="button" id="button3" data-toggle="modal" data-target="#loginModal">Log In</button>
@@ -233,7 +234,13 @@ function pageScroll() {
     window.scrollBy(0,50); 
     scrolldelay = setTimeout('pageScroll()',100);
                       }
-
+$(window).on('scroll', function() {
+    if ($(this).scrollTop() > 50) {
+        $(".header").stop(true).fadeTo(400, 1);
+    } else {
+        $(".header").stop(true).fadeTo(400, 0.7);
+    }
+});
 
 
 </script>
