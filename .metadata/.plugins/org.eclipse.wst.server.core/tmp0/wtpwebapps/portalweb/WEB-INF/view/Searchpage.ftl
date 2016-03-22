@@ -8,6 +8,9 @@
         
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMd5vu2VVm-MaJNZEJ62ujy3PRh4hk6jQ&callback=initMap"
+  type="text/javascript"></script>
 <script src="style/js/tipuedrop/tipuedrop_content.js"></script>
 <link href="style/js/tipuedrop/tipuedrop.css" rel="stylesheet">
 <script src="style/js/tipuedrop/tipuedrop.min.js"></script>
@@ -206,11 +209,14 @@
   </div> 
 
 <script>
+
+
 $(document).ready(function() {
      $('#tipue_drop_input').tipuedrop();
 });
 </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMd5vu2VVm-MaJNZEJ62ujy3PRh4hk6jQ&callback=initMap"
+  type="text/javascript"></script>
 
     </body>
-    
 </html>

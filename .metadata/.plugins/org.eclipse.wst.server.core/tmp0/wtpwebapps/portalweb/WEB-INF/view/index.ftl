@@ -18,14 +18,14 @@
 </head>
     <body>
         <div class="bgimage">
-        <div class="header">
+        <header class="header">
         
         <img id="logo" src="style/logo.png" alt="Logo" width=165px height=84px >
         <div id="buttons">
             <button type="button" id="button3" data-toggle="modal" data-target="#loginModal">Log In</button>
         	<a href="register.htm"><button type="button" id="button4">Sign Up</button></a>
-        </div>
-        </div>
+       </div>
+        </header>
         <br><br><br><br><br><br><br><br><br><br><br><br>
         <div class="center" >
         <p id="slogan">Making it easier for you to get outside</p><br><br><br>
@@ -216,6 +216,15 @@ AdNature is not responsible for what you do in nature.
 </div>
 <script>
 
+$(window).scroll(function() {
+if ($(this).scrollTop() > 20){  
+    $('header').addClass("sticky");
+  }
+  else{
+    $('header').removeClass("sticky");
+  }
+});
+
 
 var window_width = $(window).width() - $('#object').width();
 
@@ -230,18 +239,15 @@ $(function () {
         });
     });
 });
-function pageScroll() {
-    window.scrollBy(0,50); 
-    scrolldelay = setTimeout('pageScroll()',100);
-                      }
+
+
 $(window).on('scroll', function() {
-    if ($(this).scrollTop() > 50) {
-        $(".header").stop(true).fadeTo(400, 1);
+    if ($(this).scrollTop() > 480) {
+        $(".images").stop(true).fadeTo(400, 1);
     } else {
-        $(".header").stop(true).fadeTo(400, 0.7);
+        $(".images").stop(true).fadeTo(400, 0);
     }
 });
-
 
 </script>
 
