@@ -3,7 +3,7 @@
     <head>
         <link rel="stylesheet" type="text/css" href="/style/css/Searchpage.css">
          <title>AdNature | Search</title>
-        <link rel="shortcut icon" href="Transparent%20Mountain.ico" />
+        <link rel="shortcut icon" href="../style/Transparent%20Mountain.ico" height="5px"/>
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         
 <!-- jQuery library -->
