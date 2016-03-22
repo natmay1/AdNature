@@ -228,10 +228,10 @@
         </div>
         <div class="modal-body">
           <form role="form">
-          	 
+          	  <div class="activities">
           	  
           	  <div class="activities">
-              <img src="../style/golf.png" width=100px height=100px>
+              <img src="../style/golf.png"><img src="../style/golf.png" width=100px height=100px>
               </div>
               <div class="activities">
                  <img src="../style/snowboarder.png" width=100px height=100px>
@@ -283,7 +283,7 @@
 			<div class="activities">
                <img src="../style/hiking.png" width=100px height=100px>
 			</div>    
-		  
+		  </select>
             <button type="button" class="btn btn-default btn-success btn-block"> Change Icon</button>
           </form>
         </div>

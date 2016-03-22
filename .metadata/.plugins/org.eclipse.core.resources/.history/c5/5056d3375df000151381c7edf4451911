@@ -228,7 +228,7 @@
         </div>
         <div class="modal-body">
           <form role="form">
-          	 
+          	  <div class="activities">
           	  
           	  <div class="activities">
               <img src="../style/golf.png" width=100px height=100px>
