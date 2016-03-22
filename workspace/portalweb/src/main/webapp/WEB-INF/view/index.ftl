@@ -242,6 +242,16 @@ $(window).on('scroll', function() {
     }
 });
 
+$(window).on('scroll', function() {
+    if ($(this).scrollTop() > 480) {
+        $(".images").stop(true).fadeTo(400, 1);
+    } else {
+        $(".images").stop(true).fadeTo(400, 0);
+    }
+});
+
+
+
 
 </script>
 
