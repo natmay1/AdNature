@@ -1,222 +1,142 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="/style/css/Searchpage.css">
-         <title>AdNature | Search</title>
-        <link rel="shortcut icon" href="../style/Transparent%20Mountain.ico" height="5px"/>
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-        
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Places Searchbox</title>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+      .controls {
+        margin-top: 10px;
+        border: 1px solid transparent;
+        border-radius: 2px 0 0 2px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        height: 32px;
+        outline: none;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+      }
 
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMd5vu2VVm-MaJNZEJ62ujy3PRh4hk6jQ&callback=initMap"
-  type="text/javascript"></script>
-<script src="style/js/tipuedrop/tipuedrop_content.js"></script>
-<link href="style/js/tipuedrop/tipuedrop.css" rel="stylesheet">
-<script src="style/js/tipuedrop/tipuedrop.min.js"></script>
+      #pac-input {
+        background-color: #fff;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+        margin-left: 12px;
+        padding: 0 11px 0 13px;
+        text-overflow: ellipsis;
+        width: 300px;
+      }
 
-<!-- Latest compiled JavaScript -->
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    </head>
-    
-    <body class="Layer_1">
-          <img src="style/logo.png" class="logo" >
-         
-        <div class="lighter">
-<form action="search" method="post">
-    <input type="text" id="tipue_drop_input" name="search" autocomplete="off" class="search">
+      #pac-input:focus {
+        border-color: #4d90fe;
+      }
 
-</form>
-<div id="tipue_drop_content"></div>
-        </div>
-        <button type=button id="button1" data-toggle="modal" data-target="#categoryModal">Activity List</button></a>
-        
-        <!-- Activity list modal -->
-        <div class="modal fade" id="categoryModal" role="dialog">
-    <div class="modal-dialog">
+      .pac-container {
+        font-family: Roboto;
+      }
 
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <header id="h1">Select a Category:</header>
-    </div>
-    
-           <div class="modal-body title"><a data-toggle="modal" data-target="#waterModal"><p>Water Sports</p></a></div>
-           <div class="modal-body title"><a data-toggle="modal" data-target="#trailModal"><p>Trail/Road Sports</p></a></div>
-          <div class="modal-body title"><a data-toggle="modal" data-target="#winterModal"><p>Winter Sports</p></a></div>
-              <div class="modal-body title"><a data-toggle="modal" data-target="#intenseModal"><p>Intense</p></a></div>     
-          <div class="modal-body title"><a data-toggle="modal" data-target="#teamModal"><p>Team Sports</p></a></div>       
-        <div class="modal-body title"><a data-toggle="modal" data-target="#leisureModal"><p>Leisure</p></a></div>
-      
-          <div class="modal-footer">
-           <button type="submit" class="btn btn-default btn-default pull-left"  data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div> 
+      #type-selector {
+        color: #fff;
+        background-color: #4d90fe;
+        padding: 5px 11px 0px 11px;
+      }
 
+      #type-selector label {
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: 300;
+      }
+      #target {
+        width: 345px;
+      }
+    </style>
+  </head>
+  <body>
+    <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+    <div id="map"></div>
+    <script>
+      // This example adds a search box to a map, using the Google Place Autocomplete
+      // feature. People can enter geographical searches. The search box will return a
+      // pick list containing a mix of places and predicted search terms.
 
-	 <!-- Activity list modal -->
-        <div class="modal fade" id="waterModal" role="dialog">
-    <div class="modal-dialog">
+      // This example requires the Places library. Include the libraries=places
+      // parameter when you first load the API. For example:
+      // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
 
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <header id="h1">Select an Activity:</header>
-    
-        </div>
-            <div class="modal-body choice">
-            <p>Swimming</p>
-            <p>Fishing</p>
-            <p>Canoeing</p>
-            <p>Sailing</p>
-            <p>Stand up Paddleboarding</p>
-            <p>Windsurfing</p>
-            <p>Rowing</p>
-            <p>Waterskiing</p>
-            <p>Rowing</p>
-            <p>Wakeboarding</p>
-            <p>Kayaking</p>
-              </div> 
-        
-          <div class="modal-footer">
-           <button type="submit" class="btn btn-default btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div> 
-  
-  
-	 <!-- Activity list modal -->
-        <div class="modal fade" id="trailModal" role="dialog">
-    <div class="modal-dialog">
+      function initAutocomplete() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 43.466451, lng: -80.533059},
+           
+          zoom: 15,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        });
 
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <header id="h1">Select an Activity:</header>
-   
-          <div class="modal-body choice">
-            <p>Hiking</p>
-                <p>Horseback Riding</p>
-              <p>Running</p>
-              <p>Road Biking</p>
-              <p>Mountain Biking</p><p>Casual Biking</p>
-          </div>
-           <div class="modal-footer">
-           <button type="submit" class="btn btn-default btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div> 
-  
-  	 <!-- Activity list modal -->
-        <div class="modal fade" id="winterModal" role="dialog">
-    <div class="modal-dialog">
+        // Create the search box and link it to the UI element.
+        var input = document.getElementById('pac-input');
+        var searchBox = new google.maps.places.SearchBox(input);
+        map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
 
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <header id="h1">Select an Activity:</header>
-   
-          <div class="modal-body choice">
-            <p>Skiing</p>
-              <p>Snowboarding</p>
-                <p>Cross-country Skiing</p>
-              <p>Snowshoeing</p>
-          </div>
-           <div class="modal-footer">
-           <button type="submit" class="btn btn-default btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div> 
-  
-   <!-- Activity list modal -->
-        <div class="modal fade" id="intenseModal" role="dialog">
-    <div class="modal-dialog">
+        // Bias the SearchBox results towards current map's viewport.
+        map.addListener('bounds_changed', function() {
+          searchBox.setBounds(map.getBounds());
+        });
 
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <header id="h1">Select an Activity:</header>
-   
-        <div class="modal-body choice">
-            <p>Rock Climbing</p>
-              <p>Tobogganning</p>
-                <p>Cliff Diving</p>
-          </div>
-           <div class="modal-footer">
-           <button type="submit" class="btn btn-default btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div> 
-  
-   <!-- Activity list modal -->
-        <div class="modal fade" id="teamModal" role="dialog">
-    <div class="modal-dialog">
+        var markers = [];
+        // Listen for the event fired when the user selects a prediction and retrieve
+        // more details for that place.
+        searchBox.addListener('places_changed', function() {
+          var places = searchBox.getPlaces();
 
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <header id="h1">Select an Activity:</header>
-   
-          <div class="modal-body choice">
-            <p>Soccer</p>
-              <p>Rugby</p>
-                <p>Baseball</p>
-              <p>Basketball</p>
-           <div class="modal-footer">
-           <button type="submit" class="btn btn-default btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div> 
-  </div>
-  
-  
-   <!-- Activity list modal -->
-        <div class="modal fade" id="leisureModal" role="dialog">
-    <div class="modal-dialog">
+          if (places.length == 0) {
+            return;
+          }
 
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <header id="h1">Select an Activity:</header>
-     <div class="modal-body choice">
-            <p>Walking</p>
-              <p>Dog Walking</p>
-                <p>Camping</p>
-              <p>Photography</p>
-              <p>Fruit Picking</p>
-              <p>Picnic</p>
-          </div>
-        
-           <div class="modal-footer">
-           <button type="submit" class="btn btn-default btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div> 
+          // Clear out the old markers.
+          markers.forEach(function(marker) {
+            marker.setMap(null);
+          });
+          markers = [];
 
-<script>
+          // For each place, get the icon, name and location.
+          var bounds = new google.maps.LatLngBounds();
+          places.forEach(function(place) {
+            var icon = {
+              url: place.icon,
+              size: new google.maps.Size(71, 71),
+              origin: new google.maps.Point(0, 0),
+              anchor: new google.maps.Point(17, 34),
+              scaledSize: new google.maps.Size(25, 25)
+            };
 
+            // Create a marker for each place.
+            markers.push(new google.maps.Marker({
+              map: map,
+              icon: icon,
+              title: place.name,
+              position: place.geometry.location
+            }));
 
-$(document).ready(function() {
-     $('#tipue_drop_input').tipuedrop();
-});
-</script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMd5vu2VVm-MaJNZEJ62ujy3PRh4hk6jQ&callback=initMap"
-  type="text/javascript"></script>
+            if (place.geometry.viewport) {
+              // Only geocodes have viewport.
+              bounds.union(place.geometry.viewport);
+            } else {
+              bounds.extend(place.geometry.location);
+            }
+          });
+          map.fitBounds(bounds);
+        });
+      }
 
-    </body>
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMd5vu2VVm-MaJNZEJ62ujy3PRh4hk6jQ&libraries=places&callback=initAutocomplete"
+         async defer></script>
+  </body>
 </html>
