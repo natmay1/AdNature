@@ -97,7 +97,6 @@ public class RegisterAction extends BaseAction{
 				return INIT;
 			}else{
 				webUserService.save(webUser);
-			}
 			
 			WebUserCriteria emailcriteria = new WebUserCriteria();
 			emailcriteria.setEmail(webUser.getEmail(), Operator.equal);
@@ -109,9 +108,12 @@ public class RegisterAction extends BaseAction{
 			}else{
 				webUserService.save(webUser);
 				mailService.sendEmail(webUser.getEmail());
+			
+			}
 			}
 			
-
+			
+			
 			WebUserCriteria phonecriteria = new WebUserCriteria();
 			phonecriteria.setLogin(webUser.getLogin(), Operator.equal);
 			List<WebUser> phoneresult = webUserService.findByCriteria(phonecriteria);
@@ -123,6 +125,7 @@ public class RegisterAction extends BaseAction{
 				webUserService.save(webUser);
 			}
 			
+		
 //	        paymentService.ciccDoRegister(webUser.getId(),webUser.getLogin());
 			UsernamePasswordAuthenticationToken token = new UsernamePasswordAuthenticationToken(
 					webUser.getLogin(), password);

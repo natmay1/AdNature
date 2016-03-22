@@ -28,7 +28,7 @@ public class FrontLoginServiceImpl implements UserDetailsService, FrontLoginServ
     @Autowired
     private WebUserRepository webUserRepo;
 
-	private String error1;
+	private String error1 = "login not valid.";
 
 //    @Autowired TODOBUG
 //    private SendMessage sendMessage;
@@ -49,7 +49,7 @@ public class FrontLoginServiceImpl implements UserDetailsService, FrontLoginServ
 
         LoginUserDetail lud = null;
         List<GrantedAuthority> list = new ArrayList<GrantedAuthority>();
-
+        
         // 前台登录用户取得
         WebUser webUser = null;
         WebUserCriteria criteria = new WebUserCriteria();
@@ -109,6 +109,7 @@ public class FrontLoginServiceImpl implements UserDetailsService, FrontLoginServ
     @Override
     public void doLoginSuccess(String currentIp) {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        error1 = "Login not valid";
         if (authentication != null) {
             if (authentication.getPrincipal() != null && authentication.getPrincipal() instanceof LoginUserDetail) {
                 LoginUserDetail userDetails = (LoginUserDetail) authentication.getPrincipal();
@@ -143,13 +144,14 @@ public class FrontLoginServiceImpl implements UserDetailsService, FrontLoginServ
     public int doLoginFailure(String j_username, String ip) {
         int failCnt = 0;
         String userName = j_username;
+       
         if (userName != null && userName.length() > 0) {
             // 前台登录用户取得
             WebUser webUser = null;
             WebUserCriteria criteria = new WebUserCriteria();
             criteria.setLogin(j_username, Operator.equal);
             List<WebUser> webuserList = webUserRepo.findByCriteria(criteria);
-
+           
             if (webuserList.size() == 0) {
                 criteria.setCelphone(j_username, Operator.equal);
                 webuserList = webUserRepo.findByCriteria(criteria);
@@ -168,10 +170,10 @@ public class FrontLoginServiceImpl implements UserDetailsService, FrontLoginServ
     
 				if (webUser.getFailedLoginCount() != null) {
                     failCnt = webUser.getFailedLoginCount() + 1;
-                    error1 = "Login not valid";
+                   
                 } else {
                     failCnt = 1;
-                    error1 = "Login not valid";
+                    
                 }
 
                 webUser.setFailedLoginCount(failCnt);
