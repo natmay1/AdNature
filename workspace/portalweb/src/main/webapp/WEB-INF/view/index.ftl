@@ -17,15 +17,18 @@
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
     <body>
-        <div class="bgimage">
-        <header class="header">
+      <div class="header">
         
         <img id="logo" src="style/logo.png" alt="Logo" width=165px height=84px >
         <div id="buttons">
             <button type="button" id="button3" data-toggle="modal" data-target="#loginModal">Log In</button>
         	<a href="register.htm"><button type="button" id="button4">Sign Up</button></a>
        </div>
-        </header>
+       </div>
+        <div class="bgimage">
+        <div id="buttons">
+       <button type="button" id="button6" data-toggle="modal" data-target="#loginModal">Log In</button>
+       </div>
         <br><br><br><br><br><br><br><br><br><br><br><br>
         <div class="center" >
         <p id="slogan">Making it easier for you to get outside</p><br><br><br>
@@ -50,7 +53,7 @@
     	<div class="page">
         <!--Here's how it works---------------------->
              <br><br>
-        <div class="firsttitle">
+        <div class="firsttitle" >
    
             <br> 
             Here's how it works
@@ -214,16 +217,14 @@ AdNature is not responsible for what you do in nature.
   </div> 
 </div>
 <script>
-
-$(window).scroll(function() {
-if ($(this).scrollTop() > 20){  
-    $('header').addClass("sticky");
-  }
-  else{
-    $('header').removeClass("sticky");
-  }
-});
-
+window.addEventListener("scroll",function() { 
+   if(window.scrollY > 500) {
+      $('.header').slideDown();
+   }
+   else {
+      $('.header').slideUp();
+   }
+},false);
 
 var window_width = $(window).width() - $('#object').width();
 
