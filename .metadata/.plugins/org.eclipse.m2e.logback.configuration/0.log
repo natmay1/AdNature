@@ -5877,3 +5877,263 @@ Caused by: org.eclipse.core.runtime.CoreException: One or more constraints have 
 2016-03-22 11:35:45,185 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2016-03-22 11:35:45,186 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2016-03-22 11:35:45,187 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/portalweb/src/test/resources
+2016-03-22 11:46:45,602 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 11:46:45,605 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-03-22 11:46:45,606 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-03-22 11:46:45,611 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 11:46:45,611 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/portalweb/src/test/resources
+2016-03-22 11:46:51,464 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 11:46:51,464 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-03-22 11:46:51,465 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-03-22 11:46:51,467 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 11:46:51,467 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/portalweb/src/test/resources
+2016-03-22 11:47:10,243 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 11:47:10,245 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-03-22 11:47:10,246 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-03-22 11:47:10,247 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 11:47:10,247 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/portalweb/src/test/resources
+2016-03-22 13:05:50,154 [Worker-81] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:05:50,157 [Worker-81] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-03-22 13:05:50,158 [Worker-81] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-03-22 13:05:50,167 [Worker-81] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:05:50,167 [Worker-81] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/portalweb/src/test/resources
+2016-03-22 13:18:18,539 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:18:18,578 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 19 resources
+2016-03-22 13:18:18,601 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2016-03-22 13:18:18,608 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:18:18,608 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/security/src/test/resources
+2016-03-22 13:19:25,387 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:19:25,394 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 19 resources
+2016-03-22 13:19:25,397 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2016-03-22 13:19:25,406 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:19:25,407 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/security/src/test/resources
+2016-03-22 13:20:29,339 [Worker-89] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:20:29,342 [Worker-89] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-03-22 13:20:29,342 [Worker-89] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-03-22 13:20:29,346 [Worker-89] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:20:29,346 [Worker-89] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/portalweb/src/test/resources
+2016-03-22 13:21:36,537 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:21:36,537 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-03-22 13:21:36,537 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-03-22 13:21:36,544 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:21:36,545 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/portalweb/src/test/resources
+2016-03-22 13:22:25,093 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:22:25,097 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 19 resources
+2016-03-22 13:22:25,102 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2016-03-22 13:22:25,107 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:22:25,107 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/security/src/test/resources
+2016-03-22 13:24:37,893 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:24:37,896 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-03-22 13:24:37,901 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2016-03-22 13:24:37,935 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:24:37,935 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/portalweb/src/test/resources
+2016-03-22 13:25:00,124 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:25:00,128 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-03-22 13:25:00,130 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2016-03-22 13:25:00,162 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:25:00,162 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/portalweb/src/test/resources
+2016-03-22 13:25:40,402 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:25:40,403 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-03-22 13:25:40,403 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-03-22 13:25:40,405 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:25:40,405 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/portalweb/src/test/resources
+2016-03-22 13:25:45,319 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:25:45,319 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-03-22 13:25:45,319 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-03-22 13:25:45,321 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:25:45,321 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/portalweb/src/test/resources
+2016-03-22 13:26:09,238 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:26:09,240 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-03-22 13:26:09,242 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-03-22 13:26:09,243 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:26:09,244 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/portalweb/src/test/resources
+2016-03-22 13:28:10,077 [Worker-89] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:28:10,080 [Worker-89] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-03-22 13:28:10,081 [Worker-89] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-03-22 13:28:10,084 [Worker-89] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:28:10,085 [Worker-89] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/portalweb/src/test/resources
+2016-03-22 13:28:32,244 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:28:32,244 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-03-22 13:28:32,244 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-03-22 13:28:32,248 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:28:32,248 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/portalweb/src/test/resources
+2016-03-22 13:28:53,465 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:28:53,466 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-03-22 13:28:53,466 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-03-22 13:28:53,467 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:28:53,467 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/portalweb/src/test/resources
+2016-03-22 13:34:42,991 [Worker-83] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:34:42,994 [Worker-83] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-03-22 13:34:42,994 [Worker-83] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-03-22 13:34:42,996 [Worker-83] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:34:42,996 [Worker-83] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/portalweb/src/test/resources
+2016-03-22 13:38:07,030 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:38:07,037 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 19 resources
+2016-03-22 13:38:07,041 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2016-03-22 13:38:07,065 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:38:07,066 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/security/src/test/resources
+2016-03-22 13:38:28,416 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:38:28,425 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 19 resources
+2016-03-22 13:38:28,428 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2016-03-22 13:38:28,435 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:38:28,436 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/security/src/test/resources
+2016-03-22 13:38:36,151 [Worker-99] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:38:36,154 [Worker-99] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 19 resources
+2016-03-22 13:38:36,158 [Worker-99] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2016-03-22 13:38:36,163 [Worker-99] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:38:36,164 [Worker-99] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/security/src/test/resources
+2016-03-22 13:39:38,191 [Worker-94] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:39:38,195 [Worker-94] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-03-22 13:39:38,198 [Worker-94] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2016-03-22 13:39:38,242 [Worker-94] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:39:38,242 [Worker-94] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/portalweb/src/test/resources
+2016-03-22 13:43:34,966 [Worker-97] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:43:34,978 [Worker-97] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-03-22 13:43:34,980 [Worker-97] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2016-03-22 13:43:35,000 [Worker-97] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:43:35,000 [Worker-97] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/portalweb/src/test/resources
+2016-03-22 13:45:16,012 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:45:16,020 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-03-22 13:45:16,025 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2016-03-22 13:45:16,045 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:45:16,046 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/portalweb/src/test/resources
+2016-03-22 13:45:18,998 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:45:19,002 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-03-22 13:45:19,004 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2016-03-22 13:45:19,033 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:45:19,033 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/portalweb/src/test/resources
+2016-03-22 13:46:05,939 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:46:05,940 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-03-22 13:46:05,942 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2016-03-22 13:46:05,951 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:46:05,952 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/portalweb/src/test/resources
+2016-03-22 13:47:58,023 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:47:58,026 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-03-22 13:47:58,028 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2016-03-22 13:47:58,057 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:47:58,057 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/portalweb/src/test/resources
+2016-03-22 13:48:41,440 [Worker-105] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:48:41,442 [Worker-105] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-03-22 13:48:41,443 [Worker-105] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2016-03-22 13:48:41,456 [Worker-105] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:48:41,456 [Worker-105] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/portalweb/src/test/resources
+2016-03-22 13:48:52,458 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:48:52,461 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-03-22 13:48:52,463 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2016-03-22 13:48:52,484 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:48:52,484 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/portalweb/src/test/resources
+2016-03-22 13:52:51,108 [Worker-105] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:52:51,111 [Worker-105] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-03-22 13:52:51,113 [Worker-105] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2016-03-22 13:52:51,129 [Worker-105] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:52:51,130 [Worker-105] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/portalweb/src/test/resources
+2016-03-22 13:53:22,222 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:53:22,229 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-03-22 13:53:22,234 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2016-03-22 13:53:22,266 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:53:22,266 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/portalweb/src/test/resources
+2016-03-22 13:53:33,598 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:53:33,602 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-03-22 13:53:33,605 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2016-03-22 13:53:33,635 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:53:33,636 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/portalweb/src/test/resources
+2016-03-22 13:56:22,917 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:56:22,920 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 19 resources
+2016-03-22 13:56:22,923 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2016-03-22 13:56:22,928 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:56:22,928 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/security/src/test/resources
+2016-03-22 13:56:56,139 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:56:56,142 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 19 resources
+2016-03-22 13:56:56,145 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2016-03-22 13:56:56,151 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:56:56,151 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/security/src/test/resources
+2016-03-22 13:57:02,593 [Worker-108] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:57:02,598 [Worker-108] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 19 resources
+2016-03-22 13:57:02,599 [Worker-108] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2016-03-22 13:57:02,602 [Worker-108] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:57:02,603 [Worker-108] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/security/src/test/resources
+2016-03-22 13:58:04,680 [Worker-106] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:58:04,683 [Worker-106] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-03-22 13:58:04,683 [Worker-106] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-03-22 13:58:04,687 [Worker-106] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 13:58:04,687 [Worker-106] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/portalweb/src/test/resources
+2016-03-22 14:01:04,313 [Worker-108] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 14:01:04,319 [Worker-108] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-03-22 14:01:04,321 [Worker-108] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2016-03-22 14:01:04,333 [Worker-108] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 14:01:04,333 [Worker-108] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/portalweb/src/test/resources
+2016-03-22 14:01:30,642 [Worker-112] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 14:01:30,644 [Worker-112] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-03-22 14:01:30,646 [Worker-112] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2016-03-22 14:01:30,661 [Worker-112] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 14:01:30,661 [Worker-112] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/portalweb/src/test/resources
+2016-03-22 14:02:32,946 [Worker-107] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 14:02:32,948 [Worker-107] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-03-22 14:02:32,950 [Worker-107] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2016-03-22 14:02:32,962 [Worker-107] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 14:02:32,962 [Worker-107] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/portalweb/src/test/resources
+2016-03-22 14:02:45,846 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 14:02:45,847 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-03-22 14:02:45,849 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2016-03-22 14:02:45,887 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 14:02:45,887 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/portalweb/src/test/resources
+2016-03-22 14:07:29,260 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 14:07:29,265 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-03-22 14:07:29,270 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2016-03-22 14:07:29,282 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 14:07:29,283 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/portalweb/src/test/resources
+2016-03-22 14:10:07,533 [Worker-107] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 14:10:07,539 [Worker-107] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-03-22 14:10:07,541 [Worker-107] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2016-03-22 14:10:07,560 [Worker-107] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 14:10:07,560 [Worker-107] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/portalweb/src/test/resources
+2016-03-22 14:11:06,847 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 14:11:06,849 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-03-22 14:11:06,850 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2016-03-22 14:11:06,863 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 14:11:06,864 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/portalweb/src/test/resources
+2016-03-22 14:12:09,010 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 14:12:09,012 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-03-22 14:12:09,014 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2016-03-22 14:12:09,036 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 14:12:09,037 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/portalweb/src/test/resources
+2016-03-22 14:12:11,608 [Worker-107] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 14:12:11,609 [Worker-107] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-03-22 14:12:11,611 [Worker-107] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2016-03-22 14:12:11,621 [Worker-107] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 14:12:11,621 [Worker-107] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/portalweb/src/test/resources
+2016-03-22 14:14:31,765 [Worker-115] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 14:14:31,767 [Worker-115] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-03-22 14:14:31,768 [Worker-115] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2016-03-22 14:14:31,781 [Worker-115] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 14:14:31,781 [Worker-115] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/portalweb/src/test/resources
+2016-03-22 14:14:44,703 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 14:14:44,705 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-03-22 14:14:44,707 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2016-03-22 14:14:44,722 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 14:14:44,723 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/portalweb/src/test/resources
+2016-03-22 14:15:02,645 [Worker-115] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 14:15:02,652 [Worker-115] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-03-22 14:15:02,654 [Worker-115] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2016-03-22 14:15:02,670 [Worker-115] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 14:15:02,670 [Worker-115] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/portalweb/src/test/resources
+2016-03-22 14:15:58,518 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 14:15:58,520 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-03-22 14:15:58,523 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2016-03-22 14:15:58,542 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 14:15:58,543 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/portalweb/src/test/resources
+2016-03-22 14:16:04,551 [Worker-115] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 14:16:04,552 [Worker-115] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2016-03-22 14:16:04,553 [Worker-115] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 10 resources
+2016-03-22 14:16:04,561 [Worker-115] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 14:16:04,561 [Worker-115] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/portalweb/src/test/resources
+2016-03-22 14:17:15,003 [Worker-119] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 14:17:15,005 [Worker-119] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-03-22 14:17:15,005 [Worker-119] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-03-22 14:17:15,008 [Worker-119] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 14:17:15,008 [Worker-119] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/portalweb/src/test/resources
+2016-03-22 14:22:52,482 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 14:22:52,483 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-03-22 14:22:52,483 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-03-22 14:22:52,485 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-03-22 14:22:52,485 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/Natasha/AdNature/workspace/portalweb/src/test/resources

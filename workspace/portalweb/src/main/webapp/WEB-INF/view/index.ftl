@@ -16,7 +16,7 @@
 <!-- Latest compiled JavaScript -->
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
-    <body>${(error1)!}
+    <body>
         <div class="bgimage">
         <div class="header">
         
@@ -63,7 +63,7 @@
             <div class="tile image1">
                 <img src= "style/Search%20Bar%203.png" height="64" width="270">
                 
-                <div class="text1">Search an activity or make a customized search that fits your needs ${(error1)!}</div>
+                <div class="text1">Search an activity or make a customized search that fits your needs </div>
             </div>
             
             <div class="tile image2">
@@ -94,7 +94,7 @@
             <br><br>
             <h2 class= "secondtitle"> Choose from over 
                 <div class="thirty">30</div> 
-            outdoor activities  
+            outdoor activities  ${(error1)!}
             </h2>    
         </div>    
             
@@ -194,7 +194,7 @@ AdNature is not responsible for what you do in nature.
     
         </div>
         <div class="modal-body">
-        <form action="logincheck.htm" name="" id="loginform" method="post">
+        <form action="logincheck.htm" name="" id="loginform" method="POST">
 	          <div class="glow">
 	          <input type="text" class="username" name ="j_username" placeholder="Username">
 	          <br>

@@ -19,7 +19,7 @@
                 <input type="text"  name="webUser.login"  value="${(webUser.login)!}"  placeholder="Username"  id="Username" required><span class="star">&#42;</span> <br><br>
                 <input type="email" name="webUser.email"	value="${(webUser.email)!}"	placeholder="Email" id="Email" required><span class="star">&#42;</span> <br><br>
                 <input type="password" name="password"			value="${(password)!}" placeholder="Password" id="Password" required><span class="star">&#42;</span> <br><br>
-                <input type="password" name="webUser.password"	value="${(webUser.password)!}" placeholder="Confirm Password"  id="confirmPassword" onChange="checkPasswordMatch();" required><span class="star">&#42;</span>   
+                <input type="text" name="webUser.password"	value="${(webUser.password)!}" placeholder="Confirm Password"  id="confirmPassword" onChange="checkPasswordMatch();" required><span class="star">&#42;</span>   
        
 <br><br>
                   <input type="tel"  	name="webUser.celphone"		value="${(webUser.celphone)!}" placeholder="Phone Number"  id="PhoneNum"><span class="star1">&#42;</span> <br><br>
@@ -35,7 +35,8 @@
             
         </div> 
         <script type="text/javascript">
-	var password = document.getElementById("Password"), confirm_password = document.getElementById("confirmPassword");
+        
+var password = document.getElementById("Password"), confirm_password = document.getElementById("confirmPassword");
  
 function validatePassword(){
   if(password.value != confirm_password.value) {

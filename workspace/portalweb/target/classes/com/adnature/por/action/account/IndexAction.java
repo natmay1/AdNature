@@ -37,6 +37,7 @@ import com.adnature.utils.Constants;
  */
 @Namespace("/account")
 @Results({ @Result(name = "index", location = "index.ftl", type = "freemarker"),
+		@Result(name = "logincheck", location="index.ftl", type = "freemarker"),
 		@Result(name = "saveProfile", location = "index.htm", type = "redirect")})
 public class IndexAction extends BaseAction{
 
@@ -58,7 +59,17 @@ public class IndexAction extends BaseAction{
     
     private Profile profile;
     
-    private SportCriteria criteria = new SportCriteria();
+    private String error1 = "login not valid";
+    
+    public String getError1() {
+		return error1;
+	}
+
+	public void setError1(String error1) {
+		this.error1 = error1;
+	}
+
+	private SportCriteria criteria = new SportCriteria();
     
    // private Sport sport;
     
@@ -125,9 +136,17 @@ public class IndexAction extends BaseAction{
 		sportService.insertSportUser(addSportIds, userId);
 		sportService.insertOtherSportUser(addSportNames, userId);
 		return "saveProfile";
+		
+	
 	}
-	//@Action(value="saveSportInput")
-	//public String 
+	
+	@Action(value="logincheck")
+	public String login() throws Exception {
+		String userId = getLoginuser().getId();
+		error1 = "login not valid.";
+	
+	return error1;
+	}
 	
 	public WebUser getWebUser() {
 		return webUser;
