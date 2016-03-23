@@ -1,9 +1,8 @@
-
-<html lang="en">
+<html>
     <head>
-    	<link rel="shortcut icon" type="image/x-icon" href="style/TransparentMountain.ico" height="5px">
         <link rel="stylesheet" type="text/css" href="/style/css/Searchpage.css">
         <title>AdNature | Search</title>
+		<link rel="shortcut icon" type="image/ico" href="Transparent%20Mountain.ico" height="5px">
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         
 <!-- jQuery library -->
@@ -17,7 +16,7 @@
     </head>
     
     <body class="Layer_1">
-          <img src="style/logo.png" class="logo" >
+        <img src="style/logo.png" class="logo">
         
         <div class="lighter">
 <form action="search" method="post">

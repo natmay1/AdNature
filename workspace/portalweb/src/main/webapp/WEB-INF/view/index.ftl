@@ -1,7 +1,7 @@
 <html lang="en" >
     <head>
-        <link rel="shortcut icon" href="style/TransparentMountain.ico" height="3px">
-        <title>AdNature | outdoor recreation locating tool</title>
+        <link rel="shortcut icon" href="../style/Transparent%20Mountain.ico" height="5px"/>
+        <title>AdNature | Outdoor Recreation Locating Tool</title>
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="/style/css/about.css">
         <link rel="stylesheet" type="text/css" href="/style/css/style.css">
