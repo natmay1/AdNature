@@ -1,6 +1,6 @@
 <html lang="en" >
     <head>
-        <link rel="shortcut icon" href="/style/Transparent%20Mountain.ico" />
+        <link rel="shortcut icon" href="/style/TransparentMountain.ico" />
         <title>AdNature | Sign Up</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
         <link rel="stylesheet" type="text/css" href="/style/css/signuppage.css">

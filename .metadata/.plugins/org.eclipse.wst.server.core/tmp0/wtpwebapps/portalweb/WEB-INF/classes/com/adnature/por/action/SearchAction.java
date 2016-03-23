@@ -28,6 +28,7 @@
 	@Results({ 
 		@Result(name = "index", location = "index.ftl", type = "freemarker"), 
 		@Result(name = "Searchpage", location = "Searchpage.ftl", type = "freemarker"),
+		
 		})
 	public class SearchAction extends BaseAction{
 
