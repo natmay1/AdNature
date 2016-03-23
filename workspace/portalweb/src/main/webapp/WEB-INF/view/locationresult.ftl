@@ -2,7 +2,7 @@
     <head>
         <link rel="stylesheet" type="text/css" href="style/css/result.css">
          <title>AdNature | Waterloo Park</title>
-        <link rel="shortcut icon" href="Transparent%20Mountain.ico" />
+        <link rel="shortcut icon" href="TransparentMountain.ico" />
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
