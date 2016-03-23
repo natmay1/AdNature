@@ -26,6 +26,7 @@
        </div>
        </div>
         <div class="bgimage">
+        <img class="logo" src="style/logo.png" alt="Logo" width=165px height=84px top=20px>
         <div id="buttons">
        <button type="button" id="button6" data-toggle="modal" data-target="#loginModal">Log In</button>
        </div>
@@ -34,7 +35,7 @@
         <p id="slogan">Making it easier for you to get outside</p><br><br><br>
         </div>
             <div class="center">
-            	<img id="object" src="style/Skiier2.png" >
+            	<!--skiier animation<img id="object" src="style/Skiier2.png" >-->
             	<br><br>
                 <a href="register.htm"><button type="button" id="button1">Sign Up</button></a>
                 <br>
@@ -226,6 +227,18 @@ window.addEventListener("scroll",function() {
    }
 },false);
 
+
+
+$(window).on('scroll', function() {
+    if ($(this).scrollTop() > 480) {
+        $(".images").stop(true).fadeTo(400, 1);
+    } else {
+        $(".images").stop(true).fadeTo(400, 0.5);
+    }
+});
+
+</script>
+<!-- skiier animation commented out for first iteration 
 var window_width = $(window).width() - $('#object').width();
 
 var document_height = $(window).height() * 0.08; 
@@ -238,20 +251,8 @@ $(function () {
             'left': object_position_left
         });
     });
-});
-
-
-$(window).on('scroll', function() {
-    if ($(this).scrollTop() > 480) {
-        $(".images").stop(true).fadeTo(400, 1);
-    } else {
-        $(".images").stop(true).fadeTo(400, 0);
-    }
-});
-
-</script>
-
-
+}); 
+-->
 </body>
     
 </html>
