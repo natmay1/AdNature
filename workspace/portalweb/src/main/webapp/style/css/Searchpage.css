@@ -1,52 +1,88 @@
- html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-      #map {
-        height: 100%;
-      }
-      .controls {
-        margin-top: 10px;
-        border: 1px solid transparent;
-        border-radius: 2px 0 0 2px;
-        box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        height: 32px;
-        outline: none;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-      }
 
-      #pac-input {
-        background-color: #fff;
-        font-family: Roboto;
-        font-size: 15px;
-        font-weight: 300;
-        margin-left: 12px;
-        padding: 0 11px 0 13px;
-        text-overflow: ellipsis;
-        width: 300px;
-      }
+.Layer_1 {
+  background-image: url("/style/searchbackground.png");
 
-      #pac-input:focus {
-        border-color: #4d90fe;
-      }
+}
+.logo {
+    
+    float: center;
+    width: 500px;
+    margin-left: 50%;
+    margin-top: 130px;
+    transform: translate(-50%);
 
-      .pac-container {
-        font-family: Roboto;
-      }
 
-      #type-selector {
-        color: #fff;
-        background-color: #4d90fe;
-        padding: 5px 11px 0px 11px;
-      }
+}
+.title {
+    font-size: 20pt;
+    text-align: left;
+    width: 200px;
+    padding: 40px;
+   	border: 50px;
+    float: left;
+    margin: 30px;
+}
 
-      #type-selector label {
-        font-family: Roboto;
-        font-size: 13px;
-        font-weight: 300;
-      }
-      #target {
-        width: 345px;
-      }
+#button1 {
+    
+    text-align: center;
+    background-color: #035208;
+    border: none;
+    color: white;
+    padding: 17px 90px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15pt;
+    margin: 30px 10px;
+    cursor: pointer;
+    float: left;
+    margin-left: 50%;
+     transform: translate(-50%);
+    
+}
+form{
+	width:600px;
+	margin:0 auto;
+    margin-left: 50%;
+    margin-top: 0px;
+    transform: translate(-43%);
+
+}
+.search { 
+	padding:6px 15px 6px 30px;
+	margin: 3px;
+
+}
+input[type=text]{
+	color:#bcbcbc;
+}
+
+.lighter {
+	width:100%;
+	height:50px;
+	padding:40px 25px;
+	
+    
+
+}
+.lighter input[type=text]{
+	border:1px solid #d0d0d0;
+	background-color:#fcfcfc;
+    width: 450px;
+}
+
+.choice {
+    width: 50px;
+    float:center;
+    margin: 50px;
+    padding: 50px;
+    font-size: 15pt;
+}
+
+#h1 {
+
+    text-align: center;
+    font-size: 35pt;
+}
+
